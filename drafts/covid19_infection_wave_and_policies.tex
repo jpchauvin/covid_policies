@@ -1,0 +1,268 @@
+\documentclass[12pt,english]{article}
+
+\usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,color,setspace,sectsty,comment,caption,pdflscape,subfigure,array,authblk,babel,float,rotfloat,booktabs, multirow,graphics,adjustbox,threeparttable,tablefootnote,ltablex}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setstretch{1.2}
+\usepackage{bbm}
+\usepackage[unicode=true,breaklinks=false,colorlinks=true]{hyperref}
+\usepackage{breakurl}
+\setlength{\footnotesep}{12pt}
+\addtolength{\footskip}{0.8cm}
+\usepackage[bottom]{footmisc}
+\usepackage{titlesec}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{threeparttable}
+\setlength{\parskip}{0.5em}
+\usepackage{multirow}
+ \usepackage{array,multirow}
+ \usepackage{bigstrut}
+  \usepackage{nicefrac}
+  \usepackage{breakurl}
+  \usepackage{rotating}
+  \usepackage{longtable}
+
+
+\usepackage[labelfont={bf,sf}, tableposition=top]{caption}
+
+\usepackage[authoryear]{natbib}
+\PassOptionsToPackage{normalem}{ulem}
+% Add commands for files imported from Lyx
+\providecommand{\tabularnewline}{\\}
+
+\titlelabel{\thetitle.\quad}
+
+\makeatletter
+\normalem
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}{Proposition}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}[hyp]
+\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+%AER style headers
+\def\thesection{\arabic{section}}
+\def\thesubsection {\thesection.\arabic{subsection}}
+
+% define subscript / superscript commands
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+
+\geometry{verbose,tmargin=1.1in,bmargin=1.1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0.3in,footskip=0.3in}
+
+\hypersetup{linkcolor=blue}
+\hypersetup{citecolor=blue}
+\hypersetup{urlcolor=blue}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{{\Large{}Global policy responses along the first COVID-19 infection wave\footnote{Please address related correspondence to juancha@iadb.org. The opinions expressed in this publication are those of the author and do not necessarily reflect the views of the Inter-American Development Bank, its Board of Directors, or the countries they represent.} \\ White paper}}
+
+\author{Juan Pablo Chauvin}
+
+\affil{Research Department, Inter-American Development Bank}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\date{\today\\
+\vspace{-10bp}
+}
+
+\maketitle
+\begin{abstract}
+\noindent 
+
+
+This paper describes how the government responses to  COVID-19 evolve as countries go through different stages of the first wave of the pandemic.  I define five observable stages of the wave, and identify them in the data for most countries. Combining this with a panel of government responses to the crisis, I characterize the policy priorities at each stage, and how they vary with country characteristics. This analysis can be useful to anticipate the need for financial and other resources, either for countries that are at earlier stages of the first wave, or in the event of new future waves. 
+
+
+  
+\bigskip
+\end{abstract}
+\setcounter{page}{0}
+\thispagestyle{empty}
+\end{titlepage}
+\pagebreak \newpage
+
+
+\onehalfspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+The COVID-19 pandemic has prompted policy responses from governments around the world.  As the infection web advances through different stages, the priorities for governments also evolve.  The goal of this paper is to characterize this evolution.  This analysis can be useful to anticipate the need for information and other resources, either for countries that are at earlier stages of the first wave, or in the event of new future waves of COVID-19 or other illnesses. 
+
+I start by defining five observable stages of COVID-109, based on the number of daily reported cases. This definition allows me to identify in what stage a country is in at a specific date, for all countries with data available.  
+
+I combine the case and stages data with the "Variation in government responses to COVID-19" dataset  \citep{Roser2020}, a panel of government responses to the crisis created and regularly updated by Oxford University.  This allows me to characterize the policy priorities at each stage, 
+
+Third, I use data from the World Development Indicators \citep{WorldBank2020} to describe how policy responses vary with country characteristics. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Defining observable stages of COVID-19 infection\label{sec:Stages}}
+
+The definition of the sections
+
+\subsection{Measurement issues}
+
+Researchers working with data on the COVID-19 epidemic have recognized important weaknesses in the cases data.  
+
+\subsection{Stage duration around the globe}
+
+Figure \ref{fig:current_stage} summarizes the stage at which countries are in the first wave of the COVID-19 pandemic at the time of writing of the current draft.
+
+%% FIGURE: Current stage %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Stage of countries in the first wave of the COVID-19 pandemic at writing date}  \label{fig:current_stage}
+	\resizebox{0.8\width}{!} {
+		\begin{threeparttable}
+
+ 			  \includegraphics[width=1\textwidth]{figures/countries_today}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item \textbf{Note:} Sample restricted to 113 countries with population 250k or larger.
+			 \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+Figure \ref{fig:stage_by_region} summarizes the average duration of each stage by region of the world. 
+
+%% FIGURE: Current stage %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Stage duration by region of the world}  \label{fig:stage_by_region}
+	\resizebox{0.7\width}{!} {
+		\begin{threeparttable}
+
+ 			  \includegraphics[width=1\textwidth]{figures/lac_stage_duration}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item \textbf{Note:} All countries are assumed to start stage A on December 31st, 2019.  The last date used in the analysis is April 21, 2020.
+			 \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Government policies at different stages \label{sec:Policies}}
+
+In this section I..
+
+\subsection{Policies data \label{subsec:Policies-data}}
+
+The Oxford dataset 
+
+\subsection{How policy intensity varies by stage \label{subsec:Policies-by-stage}}
+
+Figure \ref{fig:policies_by_stage} summarizes the average duration of each stage by region of the world. 
+
+%% FIGURE: Current stage %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Stage duration by region of the world}  \label{fig:policies_by_stage}
+	\resizebox{0.7\width}{!} {
+		\begin{threeparttable}
+
+ 			  \includegraphics[width=1\textwidth]{figures/policies_by_stage}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item \textbf{Note:} The figure considers all policies implemented between December 31, 2019 and April 21, 2020.
+			 \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{COVID-19 policy responses and government characteristics \label{sec:Characteristics}}
+
+
+This section 
+
+%%%%%%%%%%%%%%
+
+\section{Conclusions\label{sec:Conclusion}}
+
+Conclusions here
+
+\pagebreak{}
+
+\setlength\bibsep{0.65pt}
+\setlength{\parskip}{0.1em}
+
+\bibliographystyle{elsarticle-harv-nourl}
+\bibliography{bibliography}
+
+
+\pagebreak{}
+
+
+%%%%%%%%%%%%%%
+
+\appendix
+\vphantom{}
+\begin{center}
+\textbf{\LARGE{}Appendix}
+\par\end{center}{\LARGE \par}
+
+\setcounter{figure}{0} \renewcommand{\thefigure}{A.\arabic{figure}}
+\setcounter{table}{0} \renewcommand{\thetable}{A.\arabic{table}}
+
+
+%%%%
+\section{Data appendix\label{sec:Figures}}
+\begin{spacing}{0.40000000000000002}
+
+This appendix describes the calculation of the main variables used in the analysis. 
+
+\subsection{Definition of observable stages}
+
+The stages are defined....
+
+\subsection{Policy variables}
+
+The policy variables...
+
+
+
+\end{spacing}
+
+\end{document}

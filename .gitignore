@@ -1,0 +1,38 @@
+*.[oa]
+*~
+*.DS_Store
+*.lyx~
+*.Rhistory
+
+# Ignore stata datasets
+*.dta
+*.RData
+
+# Ignore R project files from RStudio
+*.Rproj
+
+# Keep tracking the mappings folder
+!build/inputs/mappings
+
+# Ignore compressed files
+*.rar
+*.zip
+*.xz
+
+# Ignore tex compiling files
+*.blg
+*.dvi
+*.aux
+*.bbl
+*.log
+*.out
+
+# Ignore other large databases
+.Rproj.user
+*.Rproj
+*Rmd
+*.rds
+
+# Ignore Icon file, from Dropbox
+Icon
+Icon?

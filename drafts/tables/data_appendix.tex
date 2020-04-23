@@ -1,0 +1,109 @@
+%\usepackage{booktabs}
+%\usepackage{multirow}
+%\usepackage{rotating}
+
+
+\begin{sidewaystable}[htbp]
+  \caption{Definitions}\\
+
+
+    \begin{tabular}{lp{47.5em}}
+    \textbf{Definitions} & \multicolumn{1}{l}{\textbf{Description / comments}} \\
+    \midrule
+    Working age population & Individuals between 15 and 64 years old in the period of reference. \\
+    Formally employed & Individual that worked over the period of reference with a signed work card , or was an employer. \\
+    Informally employed & Individual that worked over the period of reference without a signed work card, or was self-employed.  \\
+    Employed & Individual either formally or informally employed. \\
+    Non-employed & Working age individual declared as non employed. \\
+    Migrant & Individual that declares that its time of residence in their current municipality is less or equal to 5 years.  \\
+    High skill & Individuals that completed at least high-school-equivalent education (2do grau, colegial o medio 2do ciclo). \\
+    Wage  & Monthly labor income in main occupation in the reference period. \\
+    Rent* & Monthly value of housing rent. \\
+    Industry of employment & Four major industries based on CNAE - Domiciliar definition \\
+    Catchment area** & Set of rural municipalities with a positive rate of emigration to a given city. The rate of  emigration uses individuals who migrated 5 to 10 years before the reference period. \\
+    Arranjos populacional & Grouping of two or more municipalities where there is a strong population integration due to commuting to work or study, or due to contiguity between the spots main urbanized areas \citet{IBGE2016}. We use a time-consistent definition joining the arranjos that share a common municipality for the period 1970-2010 . \\
+    Urban  & Individual living inside an arranjo populacional and identified as living in an urban area in the census of the reference period. \\
+    Rural & Individual living outside an arranjo populacional and identified as living in a rural area in the census of the reference period. \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:addlabel}%
+	 \begin{tablenotes}
+			\footnotesize \textbf{Notes.} * Housing rents are not available for the 2000 census. We discarded the upper 1\%  extreme values to compute the average values of this variable.
+
+			** The 2000 census does not allow to identify the municipality of the previous residence for individuals who migrated before 1995. We use instead, the share of migrants between 1991-1986 (from the 1991 census) as weights for this year.
+
+			\end{tablenotes}
+\end{sidewaystable}%
+
+\begin{sidewaystable}[htbp]
+
+  \caption{Variables related to the HT prediction error}
+    \begin{tabular}{p{14.445em}rp{37.89em}}
+    \multicolumn{1}{l}{\textbf{Variable}} & \multicolumn{1}{l}{\textbf{Samples}} & \multicolumn{1}{l}{\textbf{Description / comments}} \\
+    \midrule
+    \multicolumn{1}{r}{} &       & \multicolumn{1}{r}{} \\
+    Average rural wage* & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average log-wage of invididuals identified as living in rural areas in the catchment area of a city.  \\
+    Minimum wage & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & National minimum wage published by the Ministry of Labor and Employment in the reference period, in 2010 reais. \\
+    Average urban wage** & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average log-wage of individuals identified as living in urban areas of a city.  \\
+    Average formal urban wage & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average log-wage of individuals identified as formally employed living in urban areas of a city.  \\
+    Average informal urban wage & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average log-wage of individuals identified as informally employed living in urban areas of a city.  \\
+    Rural-minimum wage ratio & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average across cities of the ratio between the average rural wage and minimum wage. \\
+    Rural-urban wage ratio & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average across cities of the ratio between the average rural wage and average urban wage. \\
+    Rural-formal urban wage ratio & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average across cities of the ratio between the average rural wage and average urban formal wage. \\
+    Rural-informal urban wage ratio & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average across cities of the ratio between the average rural wage and average urban informal wage. \\
+    Urban housing rent & \multicolumn{1}{p{7.055em}}{1991, 2010} & Average log-rent of households identified as living in urban areas of a city.  \\
+    Rural housing rent* & \multicolumn{1}{p{7.055em}}{1991, 2010} & Average log-rent of households identified as living in rural areas in the catchment area of a city.  \\
+    Urban non-employed / employed & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average across cities of the ratio between the number of the ratio between non-employed  and employed individuals. \\
+    Informality rate & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Share of informally employed in a city. \\
+    \multicolumn{1}{r}{} &       & \multicolumn{1}{r}{} \\
+    Urban population prediction error (minimum wage /formal/informal/two urban sectors)*** & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} & Average across cities of the value of the error defined in equation 4. For each city, the error is computed using as inputs the ratio between employed and non-employed working age-urban population, and the ratio between the average rural wage and the average minimum/urban formal/urban informal/urban wage.  \\
+    Urban unemployment prediction error (minimum wage /formal/informal/two urban sectors)*** & \multicolumn{1}{p{7.055em}}{1991, 2000, 2010} &   Average across cities of the value of the error defined in equation 5. For each city, the error is computed using as inputs the ratio between non-employed and employed working age-urban population and the ratio between the average minimum/urban formal/urban informal/urban wage and the average rural wage.  \\
+    Urban population prediction error with housing market*** & \multicolumn{1}{p{7.055em}}{1991,  2010} &   Average across cities of the value of the error defined in equation 9. For each city, the error is computed using as inputs the ratio between employed and non-employed working age-urban population, the ratio between the average rural wage and the average urban wage, and the ratio between rural and urban housing rent to the power of 0.33.  \\
+    Urban unemployment prediction error with housing market*** & \multicolumn{1}{p{7.055em}}{1991, 2010} &   Average across cities of the value of the error defined in equation 10. For each city, the error is computed using as inputs the ratio between non-employed and employed working age-urban population, the ratio between the average urban wage and the average rural wage, and the ratio between rural and urban housing rent to the power of 0.33.    \\
+    Percent of cities within 0.1 &       & Share of errors lying in the interval -0.1  to  0.1  for cities in a reference period. \\
+
+
+    \bottomrule
+
+    \end{tabular}%
+  \label{tab:addlabel}%
+ \begin{tablenotes}
+			\footnotesize \textbf{Notes.}*  For rural areas, we compute the average value for a location; subsequently, we compute the weighted average of the rural areas within the catchment area of a city.  We used the share of emigrants from each rural municipality to an urban area as weights.  Migration shares represent the total number of individuals who migrated from a rural area to an urban area between 10 and 5 years previous to the census year over the total number of immigrants of the urban area.
+
+ ** It is computed separately for formal and informal workers within a city. Finally, we compute a weighted average of both average values using the share of formality/informality in a given city as weights.
+
+  *** To avoid extreme values, errors are winzorized at 1\% and 99\%.
+
+
+			\end{tablenotes}
+
+\end{sidewaystable}%
+
+\begin{sidewaystable}[htbp]
+
+
+  \caption{Correlates of the HT prediction error}
+    \begin{tabular}{p{14.445em}rp{37.89em}}
+    \multicolumn{1}{l}{\textbf{Variable}} & \multicolumn{1}{l}{\textbf{Samples}} & \multicolumn{1}{l}{\textbf{Description / comments}} \\
+    \midrule
+    \multicolumn{1}{r}{} &       & \multicolumn{1}{r}{} \\
+
+  Distance* &       & Average distance between the centroid of the most populated municipality within an urban area and the centroid of each rural municipality in the catchment area.  \\
+    Population density* &       & Ratio between the working-age population in a municipality and its area in square kilometers. \\
+    Rural areas in the catchment area &       & Number of rural municipalities with positive emigration to a city in a reference period. \\
+    Population* &       & Working-age population of a municipality. \\
+    Share of HS educated* &       & Share of high skilled individuals in the working-age population a of a municipality with education information. \\
+    Share of population aged 15-39* &       & Share of individuals aged 15-39 from the working-age population. \\
+    Agriculture/Manufacture employment share* &       & Share of employed individuals working in manufacturing/agriculture in the reference period. \\
+
+    \bottomrule
+
+    \end{tabular}%
+  \label{tab:addlabel}%
+ \begin{tablenotes}
+			\footnotesize \textbf{Notes.}*  For rural areas, we compute the average value for a location; subsequently, we compute the weighted average of the rural areas within the catchment area of a city.  We used the share of emigrants from each rural municipality to an urban area as weights.  Migration shares represent the total number of individuals who migrated from a rural area to an urban area between 10 and 5 years previous to the census year over the total number of immigrants of the urban area.
+
+
+			\end{tablenotes}
+
+\end{sidewaystable}%
