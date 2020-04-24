@@ -19,7 +19,7 @@ use "$db_out/pol_countries_stages", clear
 
  keep ccode stage polgen* polext* polextgen*
  reshape long polgen polext polextgen, i(ccode stage) j(policy_str) string
-
+ 
 /* New variables  */
 
  g pol_none = 0

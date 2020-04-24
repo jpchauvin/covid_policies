@@ -38,6 +38,10 @@ global da_log "$danalysis/logs"
 global da_grs "$danalysis/outputs/graphs"
 global da_tab "$danalysis/outputs/tables"
 
+/* Paper figures folder */
+global dd_fig "$dir/drafts/figures"
+global dd_tab "$dir/drafts/tables"
+
 /*---------------------------------------------------------------
   General settings
 ---------------------------------------------------------------*/

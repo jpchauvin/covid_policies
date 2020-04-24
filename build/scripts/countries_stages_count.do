@@ -53,6 +53,7 @@
  /*************************************************/
 
  merge m:1 ccode using $db_out/current_stage.dta;
+ drop if _merge==2;
  drop _merge;
 
  merge m:1 ccode using $db_out/WDI_2018_pop_gdp.dta;
@@ -120,7 +121,7 @@
  lab var stringency "Average Oxford stringency index in stage"
  lab var cum_case "Cumulative confirmed cases in stage"
  lab var cum_deaths "Cumulative confirmed deaths in stage"
-
+ 
   /* Order and save */
  drop   fiscal_ext health_ext vacc_ext
  save "$db_out/pol_countries_stages", replace
