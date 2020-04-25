@@ -54,7 +54,7 @@ include $db_scr/programs.do
 
 /* The following global stores the names of the packages used in the project
 to check their existance and installe them if they are not */
-global packages "blindschemes gtools parallel ineqdeco"
+global packages "blindschemes gtools parallel ineqdeco catplot tabplot grc1leg"
 
 /* Start a loop over the  */
 foreach pack of global packages {
