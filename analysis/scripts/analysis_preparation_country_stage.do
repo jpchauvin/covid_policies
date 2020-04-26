@@ -5,7 +5,7 @@
  * Purpose: Prepare country-stage data for analysis
  * Created by: Juan Pablo Chauvin
  * Created on: 04/21/2020
- * Last modified on: 02/21/2020
+ * Last modified on: 04/22/2020
  * Last modified by: JPCR
  * Edits history:
 
@@ -23,7 +23,7 @@
 
 /* Shorter name */
   replace name="Bolivia" if ccode=="BOL"
-  
+
 /* Current dummy  */
 
 g curr_dum = 0
@@ -32,10 +32,10 @@ replace curr= 1 if stage_current==stage
 /*************************************************/
  /* Calculating additional variables                    */
  /*************************************************/
- 
-  bysort stage: egen a_duration=mean(stage_duration) 
+
+  bysort stage: egen a_duration=mean(stage_duration)
   	lab var a_duration "Mean duration of stage across countries"
-	
+
  /* Create modified regions */
 g region2 = region
 replace region2="LAC" if subregion=="Latin America and the Caribbean"
@@ -108,7 +108,7 @@ foreach st in A B C D E {
 
 foreach st in E D C B A {
 	g was_`st'=0
-	replace was_`st'=1 if stage_current=="`st'" 
+	replace was_`st'=1 if stage_current=="`st'"
 	}
 	replace was_D =1 if was_E==1
 	replace was_C =1 if was_D==1
@@ -118,7 +118,7 @@ foreach st in E D C B A {
 foreach st in E D C B A {
 	bysort stage: egen tot_`st'=total(was_`st')
 	}
-	
+
 /* Average duration of stages across countries */
 /* for cross-country average we need to choose the denominator carefully */
 foreach st in A B C D E {

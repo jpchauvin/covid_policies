@@ -119,7 +119,7 @@ This paper describes how the government responses to  COVID-19 evolve as countri
 
 The COVID-19 pandemic has prompted policy responses from governments around the world.  As the infection wave advances through different stages, the priorities for governments also evolve.  The goal of this paper is to characterize this evolution.  This analysis can be useful to anticipate the need for information and other resources, either for countries that are at earlier stages of the first wave, or in the event of new future waves of COVID-19 or other illnesses.
 
-I start by defining five observable stages of COVID-109, based on the number of daily reported cases as reported in Our World in Data \citep{Roser2020}.  This definition allows me to identify in what stage a country is in at a specific date, for all countries with data available.
+I start by defining five observable stages of COVID-19, based on the number of daily reported cases as reported in Our World in Data \citep{Roser2020}.  This definition allows me to identify in what stage a country is in at a specific date, for all countries with data available.
 
 I combine the cases and stages data with the "Variation in government responses to COVID-19" dataset  \citep{Hale2020}, a panel of government responses to the crisis created and regularly updated by Oxford University.  This allows me to characterize the policy priorities at each stage,
 
@@ -131,15 +131,17 @@ Third, I use data from the World Development Indicators \citep{WorldBank2020} to
 
 \section{Defining observable stages of COVID-19 infection\label{sec:Stages}}
 
-The definition of the sections
+These stages are distinct from other classifications that define phases of the COVID-19 from a purely conceptual standpoint. In contrast, they are defined in terms of information \emph{observable in real time}, both to the analyst and, critically, to the policymaker.
 
 \subsection{Measurement issues}
 
 Researchers working with data on the COVID-19 epidemic have recognized important weaknesses in the cases data.
 
+Despite these limitations, using the reported daily new cases has distinct advantages relative to potential alternative measures from the standpoint of policy analyis. The daily new cases is arguably the most readily available piece of information when it comes to gauging, in real time, how fast the epidemic is spreading in their jurisdiction.  Even when policymakers are aware that this figure significantly underestimates the number of infected people, decisions like closing and reopening schools, cancelling massive gatherings, or mandating the population to stay at home, or have been made around the world relying, at least partially, on this indicator.\footnote{Alternative measures to define observable stages of a COVID-19 infection wave include model-based estimates of the population currently infected, the number of people hospitalized, and the number of deaths. The first two are not readily available with daily frequency for many countries. The third, while it has the advantage of being potentially better measured than the daily number of cases and also being widely available, it reflects the rate of daily infections prevalent in the country between two and three weeks in the past, and therefore less directly connected to the real-time decisions behind the policies analyzed in this paper.}
+
 \subsection{Stage duration around the globe}
 
-Figure \ref{fig:current_stage} summarizes the stage at which countries are in the first wave of the COVID-19 pandemic at the time of writing of the current draft. Most countries were still in the stage of accelerating community spread.
+Figure \ref{fig:current_stage} summarizes the stage at which countries are in the first wave of the COVID-19 pandemic at the time of writing of the current draft. Most countries were still in the stage of accelerating community spread.  From the 134 countries in the sample, only 10 have reached the post-crisis stage, in which daily new cases have stabilized at relatively low levels. Another 31 appear to have passed the peak of the wave, and even though
 
 
 %% FIGURE: Current stage %%
@@ -169,7 +171,7 @@ Figure \ref{fig:stage_by_region} summarizes the average duration of each stage b
 	\resizebox{0.7\width}{!} {
 		\begin{threeparttable}
 
- 			  \includegraphics[width=1\textwidth]{figures/lac_stage_duration}
+ 			  \includegraphics[width=1\textwidth]{figures/regions_stage_duration}
   			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
 			\item \textbf{Note:} All countries are assumed to start stage A on December 31st, 2019.  The last date used in the analysis is April 21, 2020.
 			 \end{tablenotes}

@@ -1,0 +1,1039 @@
+\documentclass[11pt,english]{article}
+
+\usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,color,setspace,sectsty,comment,caption,pdflscape,subfigure,array,authblk,babel,float,rotfloat,booktabs, multirow,graphics,adjustbox,threeparttable,tablefootnote,ltablex}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setstretch{1.2}
+\usepackage{bbm}
+\usepackage[unicode=true,breaklinks=false,colorlinks=true]{hyperref}
+\usepackage{breakurl}
+\setlength{\footnotesep}{12pt}
+\addtolength{\footskip}{0.8cm}
+\usepackage[bottom]{footmisc}
+\usepackage{titlesec}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{threeparttable}
+\setlength{\parskip}{0.5em}
+\usepackage{multirow}
+ \usepackage{array,multirow}
+ \usepackage{bigstrut}
+  \usepackage{nicefrac}
+  \usepackage{breakurl}
+  \usepackage{rotating}
+  \usepackage{longtable}
+
+
+\usepackage[labelfont={bf,sf}, tableposition=top]{caption}
+
+\usepackage[authoryear]{natbib}
+\PassOptionsToPackage{normalem}{ulem}
+% Add commands for files imported from Lyx
+\providecommand{\tabularnewline}{\\}
+
+\titlelabel{\thetitle.\quad}
+
+\makeatletter
+\normalem
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}{Proposition}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}[hyp]
+\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+%AER style headers
+\def\thesection{\arabic{section}}
+\def\thesubsection {\thesection.\arabic{subsection}}
+
+% define subscript / superscript commands
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+
+\geometry{verbose,tmargin=1.1in,bmargin=1.1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0.3in,footskip=0.3in}
+
+\hypersetup{linkcolor=blue}
+\hypersetup{citecolor=blue}
+\hypersetup{urlcolor=blue}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{{\Large{}Subnational disparities and vulnerability to the COVID-19 Pandemic in Latin America}\footnote{Corresponding authors: Busso (mbusso@iadb.org) and Chauvin (juancha@iadb.org). The opinions expressed in this publication are those of the authors and do not necessarily reflect the views of the Inter-American Development Bank, its Board of Directors, or the countries they represent.}}
+
+\author{Matias Busso}
+\author{Juan Pablo Chauvin}
+
+
+\affil{Research Department, Inter-American Development Bank}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\date{\today\\
+\vspace{-10bp}
+}
+
+\maketitle
+\begin{abstract}
+\noindent 
+
+
+This study assesses the empirical relevance of the Harris-Todaro (HT) model at high levels of urbanization using data from Brazil. Comparing observed and model-based predictions of the equilibrium urban population and unemployment at the city level, it finds little support in the data for the most basic version of the model.  However, extensions that incorporate labor informality and housing markets have much better empirical traction, more so for urban population than for unemployment predictions. HT equilibrium relationships are more frequently found in cities that are, in relative terms, larger and more specialized in manufacturing, and where the associated rural area is located at relatively shorter distances, is more specialized in agriculture, and has a population demographically more prone to migrate. 
+  \
+\vspace{0.1in}\\
+\noindent\textbf{Keywords:} Harris-Todaro, rural-urban migration, urban unemployment, developing countries. \\
+\noindent\emph{JEL Codes:} J46, J61, O18, R23\\
+
+\bigskip
+\end{abstract}
+\setcounter{page}{0}
+\thispagestyle{empty}
+\end{titlepage}
+\pagebreak \newpage
+
+
+\onehalfspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+Since its original publication, the Harris-Todaro (\citeyear{Harris1970}) framework (henceforth HT) has been one of the key conceptual tools for the study of rural-urban
+migration and its connection to urban unemployment. At that time,
+ the majority of the world's population lived
+in rural areas, with a global urbanization rate of 36.6\%. Over the
+decades that followed, urbanization proceeded at a rapid pace. In
+the year 2007 global urbanization crossed the 50\% threshold, and
+in 2018 the world was 55.3\% urban (\citealp{WorldBank2020}). In years
+to come rural-urban migration will take place in increasingly urbanized
+low-and-middle-income countries.\footnote{While high urbanization levels used to be treated almost as a measure
+of development, in recent decades it has become more common to see
+countries achieve high levels of urbanization while remaining at relatively
+low income levels (\citealt{Glaeser2014d,Jedwab2015}).} In this environment, the HT model may lose empirical validity
+(e.g. because relative scarcity of rural labor renders the rural-urban
+wage gap negligible), or may require significant extensions to remain useful.
+
+This paper explores the extent to which the HT framework is empirically
+relevant at high-levels of urbanization, and what extensions of the
+model may be most adequate in an increasingly urbanized developing
+world. Our data comes from Brazil, a country that in 1970 had an urbanization
+rate similar to that of the world today (55.9\%), and which went on
+to reach rates north of 85\% in the following five decades (\citealp{WorldBank2020}).
+In addition to providing a context that resembles what other developing
+countries may face in upcoming decades, Brazil has the advantage of
+having a large number of urban centers, which differ in size, education
+levels, and the economic structure of their local economies. This allows
+us to examine at a more granular level the conditions under which
+the model can have more or less empirical bearing.
+
+In order to take advantage of the rich data available, we bring the analysis to the subnational level. This requires us to select an appropriate unit of observation.  Our approach consists in defining, for each of 449 cities, a rural-urban migration ``catchment area'' as the set of rural municipalities of origin of prior migrants. We then construct, at the city level, both urban labor market variables, calculated with observations from within the urban boundary, and their corresponding rural
+variables, calculated as weighted averages from rural municipalities
+in the city's catchment area, where the weights are the municipalities'
+historical migration shares.
+
+We assess the extent to which the HT equilibrium condition (by which the rural wage equals the expected urban wage) holds in the data, starting with the original framework and subsequently considering extensions. For each version of the model, we characterize the corresponding HT equilibrium condition in terms of the urban population/unemployment that should be observed in a given city if we take the values of the other variables from the data and assume that the equilibrium holds. We then contrast the population and unemployment actually observed with these predicted values to create error measures, which we use to quantitatively assess the empirical performance of the model.
+
+We look first at the equilibrium condition in the the original HT environment in which the urban wage is the legislated minimum wage. We find that this basic model does not perform well at predicting what we observe in the data particularly in the decades in which the minimum wage is below the average rural wage (which violates one of the key assumptions of the model). We then consider urban wages observed in the market. A challenge is that, as is typical in many developing countries, urban labor markets nest both formal and informal jobs. We show that using just the formal wage or just the informal wage to compute the expected return to migration renders too many localities to appear to be off-equilibrium. When using only the formal wage, the model tends to under-estimate the actual urban population observed in the data and over-estimate the rate of unemployment. When using only the informal wage, the prediction errors reverse directions.
+
+Next, we explore three extensions to the original HT framework. First, we expand the model to accommodate two urban sectors, formal and informal, and assume that they are fully segmented. This extension improves the empirical performance of the model both in terms of the population and the unemployment equilibrium quantities. Second, we extend the model to accommodate heterogeneous cost of living across localities which, again, improves significantly the model's correspondence with the observed data. Third, the HT model assumes that workers are homogeneous. Even though we do not formally model worker heterogeneity, we explore the empirical traction of the framework for different sub-populations. We find that the HT condition better describes the equilibrium for the relatively less educated workers and for the younger population (who are the ones most likely to migrate).
+
+Finally, we analyze how the HT prediction error varies with characteristics of the city and of their associated rural areas of influence. We find that the errors are smaller in the cases in which the distance between the city and its catchment rural area are shorter. This is in line with one of the assumptions of the HT model, namely that moving costs are low. We also find that the errors are smaller for cities better suited to absorb migration flows (those that are larger have a higher share of employment in manufacturing, in line with \citealp{Henderson2017}), and have in their catchment area more archetypical rural areas (those that are less densely populated and have a higher share of employment in agriculture).  Prediction errors are also smaller when the rural population is younger, which the literature has identified as the segment of the population more likely to migrate to cities (\citealp{Kennan2011}), and they tend to get larger over time as urbanization progresses.
+
+Throughout our analysis, model-based predictions are more consistent with the data of urban population than of unemployment. One of the model's key insights, that urban development policies affecting wages lead to rural-urban migration responses that may shape the policies' outcomes, does appear to have empirical traction in highly-urbanized Brazil. That said, much of the policy discussion associated with the HT framework has been concerned specifically with the case in which the creation of one additional job leads to the migration of more than one rural worker, such that efforts to tackle urban unemployment could \emph{worsen} it -- the well-known ``Todaro paradox''  (\citealp{Todaro1969}).\footnote{\citet{Fields2005a} suggests that this emphasis in unemployment may be undue by showing that, even if formal sector development leads to excess supply in the urban labor market, the net welfare effect is not necessarily negative because the social benefit of the increase in high-paying jobs and the reduction of poverty may outweigh the social costs of unemployment.}  We find the evidence to be less conclusive with regards to model-based unemployment predictions.  We see this as a reflection of the model's parsimony in its characterization of the urban labor market, and conjecture that, in order to be more informative for unemployment policy, it would need to consider not only the urban informal sector but also the labor force participation margin.
+
+Our paper contributes to the empirical literature on rural-urban migration by providing what we believe to be, to date, the most comprehensive test of the validity of the HT framework in a highly urbanized developing country.  This literature has long recognized that rural to urban migration is a fundamental part of the economic development process. Several papers have recently studied the causes and consequences of internal migration in Latin America (e.g. \citealp{Jiang2018}, \citealp{Rodriguez-Vignoli2018}, \citealp{Bernard2017}), Sub-Saharan Africa (e.g. \citealp{DeBrauw2014}), China (e.g. \citealp{Laing2005}, \citealp{Combes2015c}), India (e.g. \citealp{Munshi2016b}, \citealp{Hnatkovska2015}), and elsewhere (e.g. \citealp{Bryan2019}).  As urbanization advances in the developing world, where the urban population is expected to be in 2030 twice as large as in 2000 \citep{TheWorldBank2013a}, much of the world's rural-urban migration in the foreseeable future is likely to take place in contexts similar to that of our study. Prior empirical tests of the HT model, which are surprisingly few given how influential the model has been on theory and policy, have taken place at either lower levels of urbanization (e.g.  \citealp{Barnum1977, Collier1979, Fields1982,Schultz1982,Lucas1985}) or in more developed economies (e.g. \citealp{Garcia-Ferrer1980,Salvatore1981,Petrov2007}).
+
+We follow an approach that allows us to test model-based predictions in individual subnational locations, and is replicable with data that is publicly available in many developing countries. Most existing studies either use individual-level analysis, in which a migrant indicator is regressed on characteristics of places of origin and destination (e.g. \citealp{Fields1982,Schultz1982}), or are based in country-level statistics (e.g.  \citealp{Todaro1976,Collier1979,Salvatore1981}).  Our approach matches better the geographic level at which, arguably, most of the related policy decisions are made and/or implemented. Methodologically, rather than estimating reduced-form or structural elasticities to contrast them with the signs implied by the HT model, our method is in essence an accounting exercise (closer in spirit to the ``growth accounting'' method in macroeconomics), which we see as complementary to prior approaches.
+
+In addition, we contribute to the understanding of the specific circumstances in which the HT framework may be most relevant to inform policy. Prior literature has studied how rural-urban migration decisions vary with personal and place characteristics  (\citealp{Fields1982,Schultz1982,Lucas1985}).  Our approach allows us to have a broader sense of where (across place characteristics), when (across time, as the country continues to urbanize), and for whom (across subpopulations) the model is useful to explain rural-urban migration and urban unemployment.  At the same time, it helps us gauge the extent to which we can improve the empirical traction of the model in a given time and place by incorporating the informal sector and urban costs of living.  This opens the door for a more informed and context-sensitive use of the framework in policy design.
+
+The rest of the paper proceed as follows. Section \ref{sec:Data-and-descriptive}
+describes the data and our definition of localities, and presents a set of descriptive facts to
+contextualize the analysis that follows. Section \ref{sec:Descriptive-evidence-on}
+presents the equilibrium conditions of the basic HT model and of a
+few extensions, and assesses to what extend each of these conditions
+hold in the data. Section \ref{sec:Location-characteristics} discusses
+how the predictive power of the HT framework correlates with characteristics
+of the cities and their rural ``catchment areas''. Lastly, Section \ref{sec:Conclusion} concludes.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Descriptive facts\label{sec:Data-and-descriptive}}
+
+This section characterizes the context in which our study takes place.  It starts by describing how we define cities and their rural migration catchment areas.  In turn, this gives us the functional definition of rural-urban migrants that we use in most of the analysis.  We then move on to describe key socioeconomic characteristics of these migrants, and their labor market performance relative to non-migrants and to their region of origin.  All the variables used in the analysis are constructed from microdata of the Brazilian population census, made publicly available by the Institute of Geography and Statistics (IBGE). The data appendix provides details of the construction of each variable.
+
+\subsection{Defining cities and their rural catchment area}\label{subsec:Defining cities}
+
+In order to proceed with our analysis, we need to define a unit of observation that both takes advantage of the richness of the Brazilian context and the data available, and captures the level at which the economic forces contemplated in the model are likely to operate. In the original HT framework there are only two geographies, an urban and a rural area. While it is relatively straightforward to bring this to the data at the
+national level, where all the rural-urban migrants effectively move
+from one geography to the other, this is not the case at the city
+level. The rural-urban migrants that arrive in a given city come, at different
+intensities, from a subset of the country's rural areas. Conversely,
+potential migrants living in rural locations frequently have more
+than one possible urban destination, and the measures of (expected) urban wage and
+unemployment relevant for their migration decision are not obvious.
+
+Our analysis focuses on cities and data-driven definitions of their rural catchment areas.\footnote{A few existing papers have looked at geographies below the national level, but have not explicitly linked cities with the rural areas from which their migrants originate. \citet{Barnum1977} groups Tanzanian regions in 6 areas (3 urban and 3 rural), and estimate migration equations using as their unit of observation area--education category--time period cells. \citet{Fields1982} uses departments' borders to divide the Colombian territory in 6 urban and 6 rural areas, and studies the determinants of migration from and to any of these locations. \citet{Garcia-Ferrer1980} uses 50 Spanish provinces as its unit of observation, without distinguishing between rural and urban areas.}  To identify cities, we rely on the boundaries of urban commuting zones (``arranjos populacionais''), which are defined by the Brazilian Institute of Geography and Statistics \citet{IBGE2016} as sets of adjacent municipalities linked by high levels of commuting for work or study in the 2010 census.  We also use this to distinguish, in the microdata, between urban observations --individuals living within the boundaries of a commuting zone-- and rural observations --individuals living in municipalities that are not part of any of these zones--.\footnote{The type of area (rural or urban) that the migrant was living in prior to migrating is not consistently available across census rounds. Our approach allows us to measure migrants' location of origin consistently throughout the period of analysis.}
+
+We define the rural-urban migration catchment area of a city as the set of rural municipalities from which migrants originated in the past.\footnote{An alternative would be to define, for each rural area, a set of potential
+urban destinations for migrants. However, a typical rural municipality
+is too small to significantly affect by itself quantities and prices
+in its destinations' urban labor markets, making this approach inappropriate
+to assess the existence of HT-style equilibrium relationships in the
+data.}  For the purpose of our analysis, in the case of the rural wage and the rural housing rent we attribute to each city a single measure, calculated as the weighted average of the corresponding variable in the rural municipalities in the catchment area.  We use as weights the share of each municipality in the city's
+historical rural-urban migration.\footnote{In 1991, 2000 and 2010 we observe the municipality of origin of migrants up to ten years prior to the census.  We calculate these migration weights using data from migrants that arrived in the city between 10 and 6 years before, excluding ``recent migrants'' (those that arrived 5 years or less ago), who are more like to be responding to current incentives (such as wage-gaps and unemployment) in the census year.}  To enhance the precision of our measures, we use in the corresponding calculations only observations that are classified as ``urban'' or ``rural'' both in our definition and in the census definition.  The data appendix provides further details on our computations.
+
+A challenge with this approach is that the number of Brazilian municipalities grew significantly over the period of analysis. This requires us to adjust our geographic units of observation (commuting zones and rural municipalities) to make them consistent across census years.  We adopt the time-consistent municipalities defined by \citet{Chauvin2018}, and employ the same procedure to define time-consistent commuting zones, yielding 449 cities. The rural catchment area in the median city includes 44 rural municipalities.  Appendix Figure \ref{fig:cities} shows the geographic distribution of these locations, and Appendix Table \ref{Tab:Summary_statistics} reports descriptive statistics of these cities and their catchment areas.
+
+\subsection{Rural-urban migration }
+
+Even though internal mobility in Brazil has historically not been as high as in the United States, it has until recently been larger than in many other developing countries, including China and India (\citealp{Chauvin2017}). Figure \ref{fig:migration_over_time} shows how migration evolved over five rounds of the population census. In 1980, around 18\% of the working-age population declared that they had changed municipality of residence at some point in the prior five years.  This figure, which had increased from an initial 15\% in 1970, dropped steadily over the following three decades until reaching 11\% in 2010.  The lion's share of these population movements were directed towards cities.  In 1970, migrants that were living in urban areas at the time of the census accounted for 70\% of total migration.  This share went up to 78\% in 1980, and remained stable at those levels in all subsequent census years.
+
+%% FIGURE: Migration trends %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Internal migration of working-age individuals in Brazil, 1970-2010}  \label{fig:migration_over_time}
+	\resizebox{0.70\width}{!} {
+		\begin{threeparttable}
+
+ 			 \includegraphics[width=1\textwidth]{figures/migration_rate}
+
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item \textbf{Notes:} National-level estimates constructed from individual census microdata. We define migrants as working-age individuals who lived in a different municipality five years before the census. Urban migrants are those residing in cities (per the definition described in section \ref{subsec:Defining cities}) at the time of the census.\end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+Table \ref{Tab: Migration matrix} reports the origins and destinations of internal migrants in Brazil.  About two thirds of all rural migrants move to urban destinations, with the vast majority of them going to cities in the top quartile of the population distribution. The majority of the urban population that migrate also tend to migrate to other cities usually larger than the city of origin. There is also a non-negligible fraction of the people living in urban areas that move to rural locations. This is consistent with the prevalence of return migration which could be due to an unsuccessful performance in the destination labor market (\citealp{Hirvonen2015}), to negative shocks experienced in the city or improved conditions in the place of origin (\citealp{Nguyen2017}). Some of these returned migrants re-enter the labor market in their original rural communities as wage workers or as entrepreneurs (\citealp{Dustmann2002}).
+
+In spite of the country's high levels of urbanization, an important fraction of urban immigrants continue to come from rural areas. Table \ref{Tab: Rural-urban migrants} (Panel A) documents that, over the five years preceding each census, 2\%-3\% of the working-age population moved from rural municipalities to cities.\footnote{Note that starting in this table, and for the remaining of the paper, we adopt the rural-urban definition described in section \ref{subsec:Defining cities}. We are unable to measure rural-urban migration using this definition prior to 1991 because of data limitations.}  In 2010, this amounted to almost 2.8 million people, representing 9.7\% of the rural population in the prior census, and almost 30\% of the total flow of internal migrants into cities. In contrast with other developing countries, the gender split of rural-urban migrants is even.\footnote{This difference relative to the rest of the developing world is found in various Latin American countries as noted by \citet{Mazumdar1987} and \citet{Lall2006}, who attribute the pattern to the prevalence of migrant female domestic workers.}
+
+Rural-urban migrants tend to be young and relatively less educated, but as high-school enrollment grew at a fast pace and primary school became nearly universal  (\citealp{Busso2017}), both age and education levels of migrants have increased over time.  Four out of five rural-urban migrants were younger that 40 at the time of migrating. Regarding educational achievement, 44\% had less than primary schooling in the 1991 census.  The share went down to 24\% in 2000 and 21\% in 2010.  In contrast, the shares with high-school education or higher for the same years, increased from 13\%, to 23\% and to 38\%.
+
+The statistics reported in Panel B of Table \ref{Tab: Rural-urban migrants} describe how rural-urban migrants perform in the labor market after they have arrived to the city. Rural migrants tend to have similar or higher rates of employment than natives. They also tend to be employed in more informal jobs than the incumbent population; although the informality gap between migrants and natives has declined over time. These differences in the quality of jobs also manifest itself in wages: on average, migrants earn that are 2\%-5\% lower than those earned by non-migrant workers working in the same sector and in the same city of residence. This gap is virtually the same for formal and informal workers in all census years.  Relative to their rural municipality of origin, migrants receive a wage premium of around 8\%.\footnote{This wage gap is similar, for instance, to the one reported by \citet{Michaelsen2015} for the case of Mexico.} With this background we turn now to the central question of this paper, which concerns the empirical relevance of the Harris-Todaro model of rural-urban migration in the highly urbanized Brazilian context.
+
+%% TABLE -  Rural-urban migrants%%
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.85\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{Characteristics and labor market performance of rural-urban migrants}}
+ 			 \input{tables/rururb_mig.tex}
+  			 \begin{tablenotes}[flushleft] \vspace*{-7bp}
+			\footnotesize \item \textbf{Notes:}  Own calculations using census microdata. We restrict the sample to working-age migrants (at the time of migrating) and working-age stayers. Rural-urban migrants include all individuals moving from rural municipalities to municipalities located in cities, per the definition described in section \ref{subsec:Defining cities}.
+			 \item \textbf{*}  To capture pre-migration education attainment, these measures are calculated restricting the sample to individuals aged 18 or older at the time of migrating (i.e., the age in which individuals are expected to have finished high-school education in Brazil).
+			\end{tablenotes}
+		  \label{Tab: Rural-urban migrants}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{The HT equilibrium in the data\label{sec:Descriptive-evidence-on}}
+
+In this section we explore the extent to which the the equilibrium relationships
+predicted by the Harris-Todaro model are observed in the data.  We start with a version of the model that is very close to the originally formulated
+by \citet{Harris1970}. We then analyze two variants that release some of the
+original assumptions while keeping the equilibrium concept of the original model, namely
+that the expected payoff of moving to the city equals the payoff of staying in the rural areas.
+
+\subsection{The basic model\label{subsec:Basic-model}}
+
+We start with a simplified version of the original formulation of the HT framework. The
+economy has two sectors, urban and rural. They have isomorphic production
+functions assumed to be $Y_{S}=\psi_{S}L_{S}^{\gamma}$, where $\psi_{S}$ is a labor productivity shifter, subindex $S=\left\{ U,R\right\} $
+denotes urban or rural sector, and $0\le\gamma\le1$. Workers' marginal productivity is $\psi_{S}\gamma L_{S}^{\gamma-1}$, and labor demand is given by:
+\begin{equation}
+L_{S}=\left(\frac{W_{S}}{\psi_{S}\gamma}\right)^{\frac{1}{\gamma-1}}.\label{eq:labor demand}
+\end{equation}
+In line with the HT framework we assume that, in the urban sector, the observed wage is above the competitive equilibrium wage.  In our formulation this is due to an exogenous friction term $\tau$, such that $W_{U}=W_{U}^{comp}+\tau$, where $W_{U}^{comp}$ is the wage under perfect competition.  The wedge between the observed and the competitive wages prevents the urban market from clearing and leads to excess urban labor supply (i.e. unemployment).  In the original HT formulation, the wedge emerged because an institutionally set urban minimum wage ($\underbar{W}$), which in our expression corresponds to $\tau=\underbar{W}-W_{U}^{comp}$.   Subsequent extensions have proposed alternative wage-setting mechanisms for the urban sector, such as market wages with labor turnover costs (\citealp{Stiglitz1974,Sato2004}), costly employee supervision (\citealp{Calvo1978a,Zenou2011}), or wages shaped by employer-union bargaining (\citealp{Calvo1978}). Our generic formulation allows us to develop expansions of the model that both remain parsimonious and allow for multiple alternative explanations of what drives the urban wage above equilibrium.
+
+On the labor supply side, homogeneous workers derive utility exclusively
+from the consumption of a tradable good $C$. Assuming that the good
+is priced at one, the consumer maximizes their (expected) wage income,
+which corresponds to $W_{R}$ if the worker locates in a rural area,
+and $\frac{1}{1+\lambda}W_{U}$ if the worker locates in an urban
+area, where $\lambda=\frac{U}{L_{U}}$ is the incidence of unemployment
+(unemployment as a share of urban employment), and $\frac{1}{1+\lambda}=\frac{L_{U}}{L_{U}+U}$
+is the probability of being employed. Workers will locate and inelastically
+supply one unit of labor in the area where their expected labor income
+is higher. Per the original HT assumptions, workers living in rural
+areas cannot search for jobs in the city and viceversa. For simplicity, we assume away migration costs.
+
+In equilibrium, the expected urban wage is equalized to the rural
+wage, namely:
+\begin{equation}
+W_{R}=\frac{1}{1+\lambda}W_{U}.\label{eq:HT basic equilibrium}
+\end{equation}
+This condition can be rearranged, and the difference between the right
+and left hand sides of the equality can be used to create measures of how  distant the
+data is from the predicted equilibrium condition.  This ``error''  could be expressed in terms of any of the variables included in equation \ref{eq:HT basic equilibrium}. We are interested in assessing deviations from the equilibrium in terms of the model's two key endogenous variables: migration and urban unemployment.  The migratory response will determine how urban population varies with the rural-urban wage gap. Urban population is implicitly defined in equation \ref{eq:HT basic equilibrium} as:
+\begin{equation}
+L_{U}+U=U\frac{W_{U}}{W_{U}-W_{R}}\label{eq: Urban population}
+\end{equation}
+which makes clear that, taking the model at face value, one could predict the urban population of a location based on its rural wage, urban wage, and unemployment, as long as the location is at HT equilibrium.  This suggests that we can use equation \ref{eq: Urban population} to compute population predictions for each city, and treat the ratio of the observed and the predicted values ($\nicefrac{L_{U}+U}{\widehat{L_{U}+U}}$) as a measure of the empirical ``prediction error'' of the HT equilibrium in a given location.
+\begin{equation}
+\varepsilon_{1,L_{u}}^{HT}=\left(1+\frac{L_{U}}{U}\right)\left(1-\frac{W_{R}}{W_{U}}\right)-1.\label{eq: HT population error 1}
+\end{equation}
+
+The minuend term in expression \ref{eq: HT population error 1} corresponds to the ratio between the observed and the predicted urban population. Subtracting one allows us to interpret the error in terms of excess urban population. When the ratio is larger than one the error becomes positive, implying that the observed urban population is larger than the HT model would predict based on the measured rural and urban wages and urban unemployment. When the ratio is smaller than one the error becomes negative, indicating that the observed population falls below the prediction.
+
+Alternatively, we can express the equilibrium condition \ref{eq:HT basic equilibrium}
+in terms of excess urban unemployment --measured as a fraction of the unemployment predicted by the model-- by defining the HT prediction error as:
+\begin{equation}
+\varepsilon_{1,U}^{HT}=\left(\frac{U}{L_{U}}\right)\left(\frac{W_{U}}{W_{R}}-1\right)^{-1}-1.\label{eq:HT unemployment error 1}
+\end{equation}
+The structure of this error is similar to the one in equation \ref{eq: HT population error 1},
+with a term related to employment and another to wages. In equation \ref{eq:HT unemployment error 1} the minuend term corresponds to the ratio between the observed and the predicted unemployment.
+
+We interpret $\varepsilon_{1,L_{u}}^{HT}$ and $\varepsilon_{1,U}^{HT}$ as measuring how far off a city's population and unemployment are, respectively,  relative to where the HT model would predict them to be at equilibrium. This implies that the error can reflect either mis-specification in the model,\footnote{The literature has pointed out several potentially key determinants of rural-urban migration and urban unemployment that the standard model does not consider. Rural-urban migrants may be responding to incentives other than a potentially higher expected income, including public services unavailable in rural areas (\citealp{Brueckner2015,Lall2009}), the strength of migrants' social networks in their potential destinations (\citealp{Giulietti2018}), the risk of losing informal insurance networks in their places of origin (\citealp{Munshi2016b}), and conflict-related displacement (\citealp{Henderson2017, Calderon-Mejia2016}).} or the fact that the city is temporarily off-equilibrium due to contemporary shocks or slow adjustments to prior shocks.  Our approach does not allow us to empirically differentiate between these two components.  However, we make progress in understanding the role of mis-specification by empirically assessing extensions of the model that account potentially relevant variables that are not part of the basic framework.
+
+\subsubsection{Rural-urban wage gaps, informality, and unemployment in Brazilian cities}
+
+In order to obtain city-level measures of equations \ref{eq: HT population error 1} and \ref{eq:HT unemployment error 1}, we use census microdata to calculate their constituent variables for each city and its correspondent rural migration catchment area (see the data appendix for details).  Table \ref{Tab: Equilibrium variables} reports the averages (taken across cities) of the main variables used to measure the HT equilibrium in the basic model and extensions. In addition to rural wage it contains four alternative measures of the urban wage: the official minimum wage at the time of the census, wages of formal and informal workers measured separately, and a weighted average of the formal and informal wages.\footnote{As is standard in the literature on Brazilian labor markets, we define formal workers as those who report having a signed work card, which grants them access to the benefits and protection of the local labor laws. Workers without a signed work card are considered informal.}
+
+On the basis of this summary statistics alone, the minimum wage appears unlikely to be an important driver or rural-urban migration in Brazil. In both 1991 and 2000, the average rural wage was in fact larger than the minimum wage.  This gap closed after the minimum wage increased by 73\% in real terms over the 2000s, and even then it was only 7\% smaller than the rural wage in 2010.
+
+In contrast, the rural wage has been consistently smaller than the market urban wage.  Moreover, the rural-urban wage ratio has remained strikingly constant over time at around 60\%.  This gap is larger relative to the formal urban wage: in the average city, workers living in its rural catchment area earn just around half the wage of formal urban workers, but only around 25\% less than informal urban workers.  Rural areas also have lower costs of living.  The average rural rent represented 75\% of the average urban rent in 1991, and 85\% in 2010, the two census years for which this information is available.
+
+The original HT model assumed away non-participation, such that urban dwellers can be either employed or unemployed.  Incorporating labor force participation decisions into the HT framework is beyond the scope of this paper. At the same time, in taking the model to the data we cannot simply exclude non-participants from the analysis, given that they quantitatively matter for the measurement of key variables such as the total urban population and the expected urban wage (through the probability of being employed).
+
+%% TABLE -  equilibrium variables %%
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.85\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{Variables used to compute HT prediction errors}}
+ 			 \input{tables/equilibrium_variables.tex}
+  			 \begin{tablenotes}[flushleft] \vspace*{-7bp}
+			\footnotesize \item \textbf{Notes:}  The table reports the average of the variables taken across cities. All monetary values are expressed in 2010 Reais. We describe the precise computation of each variable in the data appendix.
+			\end{tablenotes}
+		  \label{Tab: Equilibrium variables}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+
+
+Our approach is to use the non-employed urban population (unemployed plus non-participant) as the empirical counterpart of the HT unemployment variable.  A limitation of this solution is that we may over estimate unemployment, in the sense that  the risk of \emph{involuntary non-employment} may not be as large as our measure suggests in the eyes of potential migrants. If labor supply is upward slopping among urban dwellers, such mismeasurement would be negatively correlated with the urban-rural wage gap.\footnote{Holding the rural wage constant, a higher urban wage would lead to higher participation, and thus the strictly unemployed (i.e. people that are willing to work but unable to find a job) would be a larger share or the non-employed.}  We take note of this issue in the analysis of our empirical results, and consider how it may affect their interpretation.\footnote{Alternatively, we could use the standard definition of unemployment (without non-participants) and still include all the non-employed in the urban population totals. However, because in multiple cities urban unemployment is close to zero, the urban population predictions are unrealistically low.  Other studies (e.g. \citealp{Fields1982,Garcia-Ferrer1980}) have also found unemployment to be a poor measure of the attractiveness of local labor markets for potential migrants.}
+
+The averages of the non-employed/employed ratios and the informality rates in urban areas  are reported at the bottom of Table \ref{Tab: Equilibrium variables}.  Non-employed and informal workers represent a large share of the urban population in Brazil. In 2010, there were as many as 62 non-employed for each 100 employed workers in the average Brazilian city, and among those who did have a job, 43\% worked in the informal sector. Both non-employment and informality had increased significantly between 1991 and 2000, before coming back down in 2010.
+
+\subsubsection{Bringing the model's predictions to the data}\label{subsec:basicmodeleval}
+
+We turn now to the question of the empirical traction of the HT equilibrium, quantifying the extent to which the equilibrium condition from the most basic version of the HT model holds in the data.
+
+We start with the original Harris-Todaro assumption in which this wage is institutionally
+set, and estimate the prediction errors using the official minimum wage ($W_{U}=\underbar{W}$).   Panel A in Table \ref{Tab: Basic model assessment} reports averages of these city-level errors, as well as the fraction of  cities for which the predicted error is within a 10\% neighborhood around zero. By these measures, the model performs dismally at predicting what we observe in the real world, particularly in 1991 and 2000. This is not surprising given that, as discussed before, the average rural wage was larger than the minimum wage in those years, violating one of the key assumptions of the model. The gaps were so large that, for the model's equilibrium to hold in the case of many cities, negative values of urban populations and unemployment would have been needed.  Observed populations are, of course, positive, yielding errors that are between 144\% and 316\% the size of the negative benchmark.
+
+Since the minimum wage appears to be non-binding and to have little bearing in rural-urban migration decisions in Brazil during this period, we turn to considering market-determined urban wages. An important challenge with this approach is that, as in most other
+developing countries, formal and informal labor markets coexists in
+Brazilian cities. The minimum wage and other regulations that effectively
+increase income are enforced in the formal sector but not in the
+informal. If aspiring to a well-paid formal job is the main driver
+of rural migration to cities, the formal wage should matter the most
+for measuring the HT equilibrium. In contrast, if finding informal
+jobs is relatively easier and the urban informal wage still represents
+an improvement relative to the rural wage, the informal market may
+be the relevant urban outside option for potential rural migrants,
+and thus the most appropriate metric to capture HT equilibrium relationships
+in the data.
+
+We explore the relative merits of these two views in the next two
+panels of Table \ref{Tab: Basic model assessment}. Here we report
+calculations of the errors in equations \ref{eq: HT population error 1}
+and \ref{eq:HT unemployment error 1} using, alternatively, the formal
+wage ($W_{U}=W_{F}$) in Panel B, and the informal wage ($W_{U}=W_{I}$)
+in panel C.
+
+When we use the formal sector to compute the reference urban wage (Table  \ref{Tab: Basic model assessment}, Panel B), the observed population tends to exceed the one predicted by the HT equilibrium. On average, it is 23\% higher in 1991, 20\% higher in 2000, and 31\% higher in 2010.  In spite of this average error, a significant number of cities were not far from the HT equilibrium prediction.  In 1991, 19\% of cities had an error smaller than 10\% in absolute value.  The fraction increased to 22\% in 2000, before it went back down to reach 17\% in 2010.
+
+%% TABLE -  Basic model assessment %%
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.85\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{Empirical deviations from the Harris-Todaro equilibrium}}
+ 			 \input{tables/basic_model.tex}
+  			 \begin{tablenotes}[flushleft] \vspace*{-7bp}
+			\footnotesize \item \textbf{Notes:}
+      The errors in Panels A through D are computed using equations \ref{eq: HT population error 1} and \ref{eq:HT unemployment error 1} with alternative wage measures. Errors in Panel E are calculated using equations \ref{eq:HT population error 3} and \ref{eq:HT unemployment error 3}, and assuming  $\alpha=0.33$. We describe the precise computation of each variable in the data appendix.
+			\end{tablenotes}
+		  \label{Tab: Basic model assessment}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+
+
+Using the formal wage as the reference implies a large urban-rural nominal wage gap, which translates into strong incentives for rural workers to migrate to cities. If we only considered this partial effect, we might expect negative errors to be more frequent than positive -- that is, that observed populations tend to fall below the predictions. Yet we find that urban population tends to be larger than the model predicts. This is because, while in the model migration leads to increases in urban unemployment that act as strong disincentives to further migration, in practice the ``urban unemployment'' term does not raise by as much as the model requires to achieve equilibrium.\footnote{This is the case even though to measure $U$ in equation \ref{eq: HT population error 1} we use non-employment, which may over-estimate the disincentives to migrate as previously discussed.}
+
+This pattern is apparent in the estimates of the unemployment prediction error,  $\varepsilon_{1,U}^{HT}$. In 1991, unemployment was on average 24\% smaller than the model's equilibrium would have required given wages and population.  In 2000, when the population error performed relatively better, the unemployment error was also closer to zero, and in 2010, when the model's population prediction deteriorated, so did its unemployment prediction.  This may be, at least partially, the result of assuming away the urban informal sector in this specification. In practice, rural-urban migrants that fail to obtain a formal-sector job in the city do not necessarily face unemployment, and the perspective of working in the informal sector --with wages frequently larger than in rural areas-- may be more of an incentive than a deterrent for many potential migrants.
+
+What happens if, instead, we take the urban informal wage as the reference? Errors computed under this assumption are reported in Panel C of Table  \ref{Tab: Basic model assessment}.\footnote{\citet{Fields1975}, one of the first to introduce in the HT framework the informal sector --which he dubbed the ``murky sector''-- used a similar assumption, constraining rural-urban migrants to find only informal jobs in the city.}  In this case, on average, the observed population tends to be smaller that the model's predictions, by 36\% in 1991 and 2010, and by 43\% in 2000. In the best-performance year (2010), 12 out of 100 cities had an error smaller than 10\% in absolute value.  As in Panel B, the unemployment prediction errors tend to go in the other direction: while the urban population is on average smaller than predicted, the unemployed population tends to be larger than the prediction.
+
+In this case, the size and direction of the errors may be particularly sensitive to the limitations of our measurement approach. As equation \ref{eq: Urban population} shows, if we observe a small urban-rural nominal wage gap along with sizable urban unemployment, a large urban population is needed for the HT equilibrium condition to be satisfied. The population ``prediction'' is more sensitive to unemployment the smaller the wage gap is.  At the same time, stepping outside of the model to consider the urban labor force participation margin under the assumption of upward-sloping labor supply,  note that a lower reference wage implies that non-participants become a relatively larger fraction of the non-employed.  Therefore, when the informal wage is used as the reference urban wage, our choice to include non-participants in the unemployment measure may introduce a positive measurement bias in the unemployment error, and a negative bias in the population error.
+
+Having explored how the HT framework performs empirically if we treat either the formal wage or the informal wage as the reference for urban areas, we turn to considering both urban sectors at the same time.
+
+\subsection{Model extensions\label{subsec:Harris-Todaro-with-two}}
+
+This section moves beyond the basic model to explores two extensions. The first introduces simultaneously a formal and an informal sector in the urban labor market, and the second introduces a housing market, which allows us to account for the effects of the
+increased urban costs of living that migration can bring about.
+
+\subsubsection{Segmented urban labor markets}
+
+In developing-country cities, unemployment tends to be lower
+than in the developed world. This is because, at low income and saving levels,
+people oftentimes cannot afford to survive without an income stream. Facing
+scarcity of formal jobs, these workers frequently engage in informal
+economic activities. The existence of an urban informal sector has
+been considered in the Harris-Todaro literature since its early years
+(e.g. \citealp{Fields1975,Mazumdar1976}). In some variations of the
+model, the urban informal sector takes the place of unemployment,
+such that workers locating in cities can be either formally employed
+or informally employed (e.g. \citealp{Brueckner1999}). In contrast,
+our approach is to incorporate the informal sector into the model but keep the possibility
+that urban dwellers may be unemployed (as in \citealp{Gupta1993}).
+
+We expand the model to accommodate two urban sectors, formal and informal,
+and assume that they are fully segmented. In the spirit of the original
+HT formulation, workers randomly get jobs in one sector or the other,
+depending on each sector's share in total employment. The formal, informal and rural sectors have the same generic production function as in the basic model, and their labor demand  follows equation \ref{eq:labor demand} with $S=\left\{ F,I,R\right\} $. The introduction of the informal sector requires us to redefine the
+expected urban wage as:
+\begin{equation}
+E\left[W_{U}\right]=\frac{\delta_{F}}{1+\lambda}W_{F}+\frac{\delta_{I}}{1+\lambda}W_{I}\label{eq:Expected urban wage}
+\end{equation}
+where $W_{F}$ is the average urban formal wage, $W_{I}$ the average
+urban informal wage, the incidence of unemployment continues to be
+$\lambda=\frac{U}{L_{U}}$ but now with $L_{U}=L_{F}+L_{I}$, and
+we define $\delta_{F}=\frac{L_{F}}{L_{U}}$ and $\delta_{I}=\frac{L_{I}}{L_{U}}$
+as the urban formality and informality rates, respectively.\footnote{Note that the formality and informality rates are defined as a share
+of total employment, and are not the same as the probability of being
+employed in sector $S=\left\{ F,I\right\} $, defined as $\frac{\delta_{S}}{1+\lambda}=\frac{L_{S}}{L_{U}+U}$. }
+
+The location decision rule remains the same as before (i.e. choose the location with the higher expected labor income), implying that the HT
+equilibrium is given by $W_{R}=\frac{\delta_{F}}{1+\lambda}W_{F}+\frac{\delta_{I}}{1+\lambda}W_{I}$.
+Under these assumptions, the HT prediction errors in terms of urban population and unemployment, $\varepsilon_{2,L_{u}}^{HT}$  and $\varepsilon_{2,U}^{HT}$,  are defined as in  equations \ref{eq: HT population error 1} and \ref{eq:HT unemployment error 1},respectively, replacing $W_{U}$ with $\frac{\delta_{F}}{1+\lambda}W_{F}+\frac{\delta_{I}}{1+\lambda}W_{I}$.
+
+When the formal and informal wages are considered simultaneously the model's empirical traction improves significantly, particularly regarding the urban population prediction errors.  Panel D of Table \ref{Tab: Basic model assessment} reports the average of errors  $\varepsilon_{2,L_{u}}^{HT}$  and $\varepsilon_{2,U}^{HT}$ across cities.  The cross-city average of the population error is close to zero in all three years. The observed population was 2\% larger than the model-based prediction in 1991, and 8\% larger in 2010. In the year 2000, it was 5\% \emph{smaller} than the prediction.\footnote{With average errors near zero, changes in sign across different draws are not that surprising, particularly  if our measure has a random component that is symmetrically distributed and centered around zero.} The fraction of cities with an error smaller than 10\% in absolute value was 19\% in the worst-performing census year (2010) and 22\% in the best (2000).
+
+The unemployment prediction error also improves relative to the estimation that uses the informal wage (Panel C). Looking back at equation \ref{eq: Urban population} this is to be expected, given that the urban-rural wage gap is larger when considering the average rather than the informal wage. However the measured unemployment continues to be larger than the model-based prediction in all specifications, going from 42\% larger in 1991 to
+ 18\% larger in 2010, which suggests that the measurement issues discussed in section \ref{subsec:Basic-model} may still be at play.  Relative to the estimation that uses the formal wage (Panel B), the improvements are ambiguous. The average performance (in absolute value) is worse in two of the three years, but a larger share of cities have an error within $\pm$10\%.
+
+\subsubsection{Introducing housing markets}
+
+Costs of living in the city can, in principle, act as a deterrent
+of rural-urban migration, effectively reducing the urban real wage.
+\citet{Brueckner1999} and \citet{Brueckner2001} formally incorporate
+urban land into a model in the Harris-Todaro tradition, and show that
+rural-urban migration can raise the price of urban land, making the
+city more expensive to live in and deterring further migration. This
+effect is at the core of the standard within-city (\citealt{Alonso1964,Muth1969a})
+and across-cities (\citealt{Rosen1979,Roback1982}) spatial
+equilibrium models in Urban Economics.
+
+To keep the model tractable we focus on the housing market and assume
+homogeneous housing. This contrasts with other models in the HT literature,
+which consider multiple land prices within the city (\citealp{Brueckner1999}).
+With this choice, we are able to succinctly capture the demand effects
+that migration has in the urban housing markets, at the expense of
+abstracting from questions related to the location of rural-urban
+migrants within the city.\footnote{The within-city location may in turn be related to urban informality
+and unemployment. For example, \citet{Posada2017} show that rural-urban
+migration increases with cities decentralization, and argue that this
+is driven by lower costs of housing in the outskirts. They also find
+that this is correlated with a larger decentralization of informal
+jobs. }
+
+Production and labor demand continues to have three sectors as before.
+On the labor supply side, we now assume that homogeneous workers derive
+utility from the consumption of a tradable good $C$, which we treat
+as the numeraire, and housing which is rented at $R_{A}$ for $A=\left\{ U,R\right\} $.
+They choose location $A$ to solve the optimization problem:
+\[
+\max_{A}\left\{ C_{a}^{1-\alpha}H_{A}^{\alpha}\right\} \,\,s.t.\,\,E\left[W_{A}\right]=C+R_{A}H
+\]
+where the expected wage is defined as in equation \ref{eq:Expected urban wage}.
+It follow that housing demand at their location of choice will be
+given by:
+\begin{equation}
+H_{A}=\alpha\frac{E\left[W_{A}\right]}{R_{A}}\label{eq:housing demand}
+\end{equation}
+where $E\left[W_{R}\right]=W_{R}$. Total housing demand in each area
+will be given by $H_{A}L_{A}$ where $L_{A}$ is the number of workers
+locating in area $A$.
+
+The indirect utility function can thus be expressed as
+\begin{equation}
+V_{A}=\alpha_{1}E\left[W_{A}\right]R_{A}^{-\alpha}\label{eq:Indirect utility function}
+\end{equation}
+with $\alpha_{1}:=\alpha^{\alpha}\left(1-\alpha\right)^{1-\alpha}$.
+Workers choose to locate, and inelastically supply one unit
+of labor, in the area where their \emph{expected utility} is higher.
+The equilibrium condition is therefore:
+\[
+\alpha_{1}W_{R}R_{R}^{-\alpha}=\alpha_{1}\left(\frac{\delta_{F}}{1+\lambda}W_{F}+\frac{\delta_{I}}{1+\lambda}W_{I}\right)R_{U}^{-\alpha}
+\]
+which corresponds to the following prediction errors, expressed respectively
+in terms of urban population and unemployment:
+\begin{align}
+\varepsilon_{3,L_{u}}^{HT} & =\left(1+\frac{L_{U}}{U}\right)\left(1-\frac{W_{R}}{\delta_{F}W_{F}+\delta_{I}W_{I}}\left(\frac{R_{U}}{R_{R}}\right)^{\alpha}\right)-1\label{eq:HT population error 3}\\
+\varepsilon_{3,U}^{HT} & =\left(\frac{U}{L_{U}}\right)\left(\frac{\delta W_{F}+\delta_{I}W_{I}}{W_{R}}\left(\frac{R_{R}}{R_{U}}\right)^{\alpha}-1\right)^{-1}-1\label{eq:HT unemployment error 3}
+\end{align}
+The structure of the errors remain the same as in equations \ref{eq: HT population error 1} and \ref{eq:HT unemployment error 1}. The first term of the minuend is unchanged,
+but in the term related to prices now incorporates, in addition to
+the rural/urban wage ratios, the urban/rural housing rents ratio weighted
+by the housing share in consumption $\alpha$. Panel E of Table \ref{Tab: Basic model assessment} evaluates the errors in equations \ref{eq:HT population error 3} and \ref{eq:HT unemployment error 3} for the years in which the Brazilian census provides data on housing
+rents (1991, and 2010), assuming an exogenous share of income
+spend in housing of $\alpha=0.33$.
+
+Including urban costs of living in the model significantly improves it's performance in the data.  The average population prediction error is 5\% below zero in 1991, and only 0.2\% below in 2010. In both years, about a quarter of all cities have errors smaller than 10\% in absolute value. Regarding the unemployment prediction error also performs better than in the model without a housing market. In this case, the average improves in 1991 and deteriorates in 2010, but in both years the fraction of cities with errors within $\pm$10\% increase, reaching 19\% and 16\%, respectively.
+
+\subsubsection{Taking stock}
+
+The analysis above makes it clear that even the most basic formulation of the HT model finds some support in the Brazilian data, as long as we use some market-determined urban wage in the computation. Moreover, when we expand the basic framework beyond the single urban sector assumption the empirical performance of the model improves significantly.
+
+This can be seen more clearly in Figure \ref{fig:error_distributions}, which shows the distribution of the prediction errors in the range -2 to 2 for alternative models, pooling observations from all census years.\footnote{We don't include the model that uses the minimum wage in the figure since we have previously shown that it has almost no traction in the data.} When we treat the formal wage as the reference urban wage, the model systematically over-predicts urban population and under-predicts unemployment. If instead we use the informal wage, the errors go in the opposite direction and have a higher variance. The best-performing reference urban wage is a linear combination of wages in the formal and informal sector.  Using this measure, the center of the errors distribution (particularly in the case of the population error) moves much closer to zero.  And if we also account for differences in urban costs of living as proxied by housing rents, the tightness of the distribution around zero meaningfully increases.
+
+Even in the best-performing extension, the model's equilibrium condition is noticeably more useful to predict urban population than to predict unemployment. This may be partly explained by our choice of counting non-participants as part of our unemployment measure, as previously discussed. However, while the existing empirical papers that have tested predictions inspired in the HT framework have found empirical support for the migration/population predictions more often than not, this has not been the case for the unemployment predictions and the related ``Todaro Paradox'' (\citealp{Lall2006}).\footnote{In the studies that are consistent with these predictions, the evidence is mostly indirect or applies only to certain sub-populations.  For instance, \citet{Todaro1976}, finds indirect empirical support for the Todaro Paradox by estimating rural-urban migration elasticities in 14 developing countries and arguing that, in most cases, the elasticities fall in the range in which the theory predicts the paradox would hold. \citet{Barnum1977} and \citet{Schultz1982} also find some support the hypothesis that migrants respond to favorable employment rates in the destination, but in the latter this only holds for males with at least secondary education, and not for workers with lower schooling levels.} This suggests that at least part of the unemployment prediction errors that we observe may indeed reflect specification issues. In particular, by assuming away the participation margin, the HT framework may be too parsimonious in its treatment of the urban labor markets to be able to predict the response of unemployment to shifts in the other variables of the model.
+
+%% FIGURE: Distributions %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Distributions of the HT prediction error under alternative models}  \label{fig:error_distributions}
+	\resizebox{0.65\width}{!} {
+		\begin{threeparttable}
+
+ 			  \includegraphics[width=1\textwidth]{figures/dens_pop}
+			  \includegraphics[width=1\textwidth]{figures/dens_unem}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item
+			\footnotesize \item \textbf{Notes:} Kernel density estimates of the HT prediction errors' distributions at the city level (Panel B, C, D and E of  \ref{Tab: Basic model assessment}). Pooled data from all census years with the required data.  Average wage model corresponds to the HT prediction error using both formal and informal sectors. We restrict the plot to the interval -2,2 where most of the errors' distribution lie.  \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+
+\subsection{The role of human capital heterogeneity}
+
+The standard Harris-Todaro model assumes homogeneous workers, and
+the extensions of the model discussed above maintain
+this assumption. However, it is informative to explore how human
+capital heterogeneity may matter for the empirical traction of the framework.
+Fully-specifying a model that adds heterogeneous human capital is
+beyond the scope of this study. Instead, we approach this issue empirically, replicating the analysis from Table \ref{Tab: Basic model assessment} for sub-samples of the population.
+
+Figure \ref{fig:subgroups} shows the results of these computations. In each case included in the figure we restrict the microdata to the correspondent subpopulation and re-compute wages, population, unemployment, housing rents, and ultimately the errors in equations \ref{eq:HT population error 3} and \ref{eq:HT unemployment error 3}.  These correspond to the model that includes the housing market (Panel E of Table \ref{Tab: Basic model assessment}), which is the best-performer in the data.  As before, we report the average error across cities and the fraction of cities with errors smaller than 10\% in absolute value, this time pooling observations of both census years for which there is rents data available.  As a reference, we include previously-reported results for the whole sample.
+
+%% FIGURE: Subgroups %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{HT prediction errors calculated for population subgroups}  \label{fig:subgroups}
+	\resizebox{0.60\width}{!} {
+		\begin{threeparttable}
+ 			  \includegraphics[width=1\textwidth]{figures/errors_heterogeneity_population}
+			  \includegraphics[width=1\textwidth]{figures/errors_heterogeneity_unemployment}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item
+			\footnotesize \item \textbf{Notes:} The figure plots HT prediction errors using the housing market model (Panel E of Table \ref{Tab: Basic model assessment}) by subsamples at the city level.  Average errors and the fraction of the errors lying in the interval -0.1 and 0.1 are computed using pooled data from the 1991 and 2010 censuses. Errors are winzorized at 1\%. The category ``All'' refers to the results for the full sample.  \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+
+In all cases, restricting our HT equilibrium measures to sub-samples of the working-age population \emph{worsens} the empirical performance of the model relative to the full-sample specification.  Within a given demographic or human capital attribute, errors of different subgroups tend to be of different sign, so that when the groups are considered together the resulting errors are closer to zero.
+
+Take for example gender. Figure \ref{fig:subgroups} reports errors calculated using data of either only males or only females. Similarly to what we found when we considered the formal  vis-à-vis the informal wage in sub-section \ref{subsec:basicmodeleval}, using the model we under-estimate the urban population for the empirically larger urban wage (that of males), and over-estimate it for the smaller.  As before, population and unemployment prediction errors go in opposite directions.   Observed unemployment is smaller than expected in the male sample, and larger than expected in the female sample, which may well reflect the relatively larger labor force participation rates of the former.  These patterns also resonate with prior work showing that migration and labor market outcomes of males and females across Brazilian localities are consistent with a joint optimization of couples in a context where labor demand favors male employment (\citealp{Chauvin2018}), and more generally, with the observation that migration and labor force participation decisions of members of the same family units are interrelated, and assuming this away may affect the empirical traction from the HT framework (\citealp{Lall2006, Gemici2011}).
+
+We obtain similar findings when we split the sample by age and schooling groups.  Relative to the model-driven predictions, the observed urban population is larger among the relatively more educated (at least high school) and older (25 to 64) groups, and smaller among the others.  Population and unemployment errors also tend to be of different signs.  The only slight deviation from the pattern are the errors corresponding to the group with primary but no high-school education, for whom both population and the unemployment are below the prediction, though the latter is very close to zero.  Overall, the errors tend to be smaller among the groups with lower educational attainment.  This contrasts with the findings of \citet{Schultz1982}, who observes migration elasticities consistent with the HT framework only for individuals of with at least high-school education in Venezuela in the 1960s.  These differences are consistent with the sustained growth of primary education enrollment in the region \citep{Busso2017}, which has made relatively scarcer the previously abundant uneducated labor force.  As the rural-urban wage gap shrinks for this sub-population, their migration decisions may become more influenced by other considerations such as risk of unemployment.
+
+Still, the most salient result in Figure \ref{fig:subgroups} remains the fact that the model-based predictions perform better in the full sample than in any of the subsamples.  Even when the errors average is closer to zero --as is the case of the unemployment error among the lower-schooling subgroups-- they still have a larger variance, which translates into a smaller fraction of cities having errors within 10\%.  We interpret this as reflecting the paucity of the framework.  Even if HT captured the key forces behind the rural-urban migration process, its parsimonious representation of the labor market would make it likely to mis-specify the channels affecting specific subpopulations.  When considering the working-age population as a whole, specification errors may offset each other, improving the empirical traction of the model.\footnote{This is similar to the logic described in \citet{Kolesar2015} in the context of multiple invalid instrumental variables.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{HT equilibrium and location characteristics \label{sec:Location-characteristics}}
+
+
+This section aims to shed some light on the contexts in which the HT model equilibrium is most likely to be observed. To understand which location characteristics are associated with HT prediction errors that are closer to zero, we take the absolute value of the prediction error for urban population
+$\varepsilon_{t,L_{U}}^{HT}$ and for urban unemployment $\varepsilon_{t,U}^{HT}$ in each time period $t=1991, 2000, 2010$.  For simplicity we focus on the two models that perform best in the data: the average wage model and the housing market model. Our empirical specification can be written as:
+\[
+|\varepsilon_{jt}^{HT}|=\beta_{0}+\delta C_{j,t-10}+\mu_{year}+\mu_{region}+\varepsilon_{jt}
+\]
+where $C_{jt-10}$ is a vector of variables for city $j$ observed in the previous census year that capture a set of characteristics from the urban zone and its catchment area, $\mu_{year}$ are census year fixed-effects that allow us to evaluate how the model's performance varies over time. We estimate this regression pooling the data from the three census rounds together, and include as controls indicator variables for five macro-regions ($\mu_{region}$).
+
+Table \ref{Tab: Correlates} reports the results. The HT model assumes that the urban area and its associated rural area are connected so that people are free to move across space (thus linking both labor markets). In other words, the cost of migration is low. To approximate this, we look at the average distance between the urban area and its catchment area by computing a weighted average of the distance between the centroids of the city\footnote{Given that our definition of cities include all municipalities that are part of the same commuting zone, we use the centroid of the most populated municipality in the city.} and of each rural municipality that contributed migrants in the past (with the weights being the share of migrants coming from each municipality). The negative effect of distance on migration has consistently been found in multiples studies (e.g. \citealp{Barnum1977,Fields1982, Schultz1982}). Consistently with the assumptions of the model, we find that the HT prediction errors tend to be larger for those urban areas whose rural areas tend to be further away (where migration costs are likely higher).
+
+Secondly, we find that the prediction errors are smaller for more archetypical rural areas. Rural areas are usually defined by statistical agencies as those regions that have a low population density and are located outside cities. In our case, we consider the rural area associated to each city as all those rural localities from which a city received migrants in the recent past. Our catchment areas are a collection of smaller (possibly dispersed) localities that could include a small town which itself attracts migrants. Potential migrants in more dispersed and in more densely populated rural areas might form a different wage expectation of migration than the one implied by the model. We therefore include a measure of the population density of the catchment rural area and find that the HT prediction errors are larger for cities with a more dense populated catchment rural area. We also include the log of the number of rural localities that are part of the catchment areas: the prediction errors are larger in cities whose catchment areas are composed by more localities.
+
+%% TABLE -  correlates %%
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.75\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{Correlates of the HT prediction errors}}
+ 			 \input{tables/correlates.tex}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\small \item \textbf{Notes:}  Regressions estimated at the city level using pooled data from all census years with available information. All regressions include macroregion fixed effects. We describe the precise computation of each variable in the data appendix. Robust standard errors in parenthesis. * p < 0.1 , ** p < 0.05, and *** p < 0.01.  
+ 	\end{tablenotes}
+		  \label{Tab: Correlates}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%
+
+
+
+Third,  for the HT model to work there should be a large urban area that can attract enough potential migrants by providing higher expected utility.   \citet{Henderson2017} have documented that city-level characteristics such as manufacturing share affect the extent to which urban areas can absorb inflows of rural migrants, although not explicitly connecting this to the HT framework. We find that the HT prediction error is indeed smaller for larger cities that have a more educated labor force and a larger share of employment in the manufacturing sectors.
+
+Fourth, a feature of the HT model is that workers in the rural area work in agriculture at a fairly low wage. We find that cities whose catchment rural areas have a higher share of their employment in agriculture have a smaller prediction error. Similarly, the literature has consistently found that young adults are more likely to migrate that older or very young individuals. This has typically been associated with the view that migration is an investment,  and since the number of working years are finite, it has a higher present value for younger workers (\citealp{Kennan2011}). Consistently with this empirical regularity, we find that rural areas with a lower share of the population that are 15-39 years old have a smaller prediction error.
+
+Finally, we report the census year fixed effects. They show that the fit of the model was better 30 years ago than in the last available census. This is consistent with our conjecture that as the country urbanization increased, the fit of the HT model worsen.
+
+%%%%%%%%%%%%%%
+
+\section{Conclusions\label{sec:Conclusion}}
+
+Our findings show that, even at high levels of urbanization, the key insights of the HT framework can remain empirically relevant as long as features of the original formulation are adapted to include some of the extensions proposed in the literature.  As the population becomes more educated, the minimum wage becomes less binding and thus less relevant for the formation of expectations among potential rural-urban migrants.  The observed average urban wage does appear to factor in the migrants' decisions.  This includes the wage in the urban informal sector, which seems to be seen more as a source of (second-best) economic opportunities than as a potential risk akin to unemployment. Urban costs of living also play a role, counter-acting the pull effects of high city wages.
+
+The insights of the HT model apply more to some localities than others. Although the empirical traction of the framework did decrease on average as Brazil continued to urbanize we find that, in 1/4 of the locations considered, the population remains within 10\% of what would be expected if they were at a HT equilibrium.  These were locations that resembled the environment than Harris and Todaro likely had in mind. One in which, on average, the rural areas were dispersed, had low population density, and where cities were large enough to attract potential workers and had rural agricultural economies with sizeable young-adults populations located at relatively short distances.
+
+In terms of policy, our findings support the HT proposition that urban policymakers need to factor in the general equilibrium effects brought about by rural-migration-driven population growth. These considerations are particularly relevant for medium and large cities with an archetypically rural catchment area nearby.   However, even though the prevalence of urban unemployment was a key motivation for the authors and the possible existence of a ``Todaro paradox'' has been present in policy discussions for decades, we find the framework to be relatively less useful to think about urban unemployment reduction policies. The paucity of the model, which is one of its most attractive features, also limits its ability to capture some of the key forces shaping unemployment.
+
+Moving forward, the classic HT framework can be enriched to further expand its empirical relevance in highly urbanized environments.  Our research suggests that one of the most consequential extensions would be to incorporate labor force participation decisions of individuals and families in contexts where informal jobs are widely available.  Furthermore, in the absence of a binding minimum wage, alternative micro-foundations for the urban-rural wage gap appear to be in order.  These could leverage some of the lessons developed by the urban literature in recent decades. Agglomeration economies, for example, can explain higher productivity levels and labor demand in cities.  However, in the absence of wage rigidities, alternative mechanisms are needed to rationalize why rural-urban migration does not proceed further, to the point where the (real) urban and rural wages are equalized and urban unemployment is driven to zero. Potential explanations include non-wage determinants of migration (``amenities'', broadly defined), other frictions such as migration and search costs, tied migration among family members, and skills mismatch in the supply and demand of labor.
+Moreover, it may prove useful to nest rural-urban models in broader spatial equilibrium frameworks that also account for urban-urban flows. Further research is needed to understand how rural-urban migration is likely to proceed as the developing world continues to urbanize, and to better inform future policy.
+
+
+\pagebreak{}
+
+\setlength\bibsep{0.65pt}
+\setlength{\parskip}{0.1em}
+
+\bibliographystyle{elsarticle-harv-nourl}
+\bibliography{bibliography}
+
+
+\pagebreak{}
+
+
+%%%%%%%%%%%%%%
+
+\appendix
+\vphantom{}
+\begin{center}
+\textbf{\LARGE{}Appendix}
+\par\end{center}{\LARGE \par}
+
+\setcounter{figure}{0} \renewcommand{\thefigure}{A.\arabic{figure}}
+\setcounter{table}{0} \renewcommand{\thetable}{A.\arabic{table}}
+
+%%%%
+\section{Figures\label{sec:Figures}}
+\begin{spacing}{0.40000000000000002}
+
+
+
+
+%% FIGURE: Cities maps %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Commuting zones in Brazil, time-consistent borders for 1970-2010}  \label{fig:cities}
+	\resizebox{1\width}{!} {
+		\begin{threeparttable}
+
+ 			 \includegraphics[width=0.8\textwidth]{figures/rural_urban_map}
+
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item
+			\item \footnotesize \textbf{Notes:} Geographic distribution of time-consistent urban and rural areas as described in section \ref{subsec:Defining cities}. The Amazonian states of Rondônia and Roraima contain only one time-consistent commuting zone each, and represent less than 1\% of the population of the country in 2010.
+    \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+
+
+
+%%%%
+\pagebreak{}
+\section{Tables\label{sec:Tables}}
+
+
+%% TABLE -  summary stats %%
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.9\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{Summary statistics of cities and their rural migration catchment areas}}
+ 			 \input{tables/Summary_statistics.tex}
+  			 \begin{tablenotes}[flushleft] \vspace*{-7bp}
+			\footnotesize \item \textbf{Notes:}  The table reports summary statistics for urban and rural areas, as described in section \ref{subsec:Defining cities}. Rural values represent the weighted average over the catchment area of a city. Pooled data from all census years with available information. We describe the precise computation of each variable in the data appendix.
+			\end{tablenotes}
+		  \label{Tab:Summary_statistics}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+
+
+%% TABLE -  migration matrix %%
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.9\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{Internal migrants' origins and destinations}}
+ 			 \input{tables/mig_matrix.tex}
+  			 \begin{tablenotes}[flushleft] \vspace*{-7bp}
+			\footnotesize \item \textbf{Notes:}  The table reports origins and destinations of internal migrants in Brazil.
+We describe the geographic areas used in section \ref{subsec:Defining cities}. Shares represent the ratio between the number of immigrants to a rural/urban destination over the total amount of emigrants from a rural/urban origin during the 5 years before the period of reference. We compute the population quantiles for cities only.
+			\end{tablenotes}
+		  \label{Tab: Migration matrix}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+%%%
+\begin{landscape}
+
+\section{Data Appendix\label{sec:Data Appendix}}
+
+%% TABLE -  Definitions %%
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.9\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{Definitions}}
+ 			 \input{tables/data_appendix_1.tex}
+  			 \begin{tablenotes}[flushleft]
+			\footnotesize \item \textbf{*} Housing rents are not available for the 2000 census. We discarded the upper 1\%  extreme values to compute the average values of this variable.
+\item \textbf{**}  The 2000 census does not allow to identify the municipality of the previous residence for individuals who migrated before 1995. We use instead, the share of migrants between 1991-1986 (from the 1991 census) as weights for this year.
+			\end{tablenotes}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+
+%% TABLE -  Error vars 1 %%
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.85\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{Variables used in HT error computations}}
+ 			 \input{tables/data_appendix_2.tex}
+  			 \begin{tablenotes}[flushleft]
+			\footnotesize \item \textbf{*}  For rural areas, we compute the average value for a location; subsequently, we compute the weighted average of the rural areas within the catchment area of a city.  We used the share of emigrants from each rural municipality to an urban area as weights.  Migration shares represent the total number of individuals who migrated from a rural area to an urban area between 10 and 5 years previous to the census year over the total number of immigrants of the urban area.
+
+\item \textbf{**}  It is computed separately for formal and informal workers within a city. Finally, we compute a weighted average of both average values using the share of formality/informality in a given city as weights.
+
+			\end{tablenotes}
+			\label{Tab:Error vars}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+
+%% TABLE -  Error vars 2%%
+
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.85\width}{!} {
+		\begin{threeparttable}
+			\caption*{\textbf{(Table \ref{Tab:Error vars} continued)}}
+ 			 \input{tables/data_appendix_3.tex}
+  			 \begin{tablenotes}[flushleft]
+			\footnotesize \item \textbf{***}   To avoid extreme values, errors are winzorized at 1\% and 99\%.
+			\end{tablenotes}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+
+%% TABLE -  Error vars 3%%
+
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.85\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{City and catchment areas characteristics}}
+ 			 \input{tables/data_appendix_4.tex}
+  			 \begin{tablenotes}[flushleft]
+			\footnotesize \item \textbf{*}  For rural areas, we compute the average value for a location; subsequently, we compute the weighted average of the rural areas within the catchment area of a city.  We used the share of emigrants from each rural municipality to an urban area as weights.  Migration shares represent the total number of individuals who migrated from a rural area to an urban area between 10 and 5 years previous to the census year over the total number of immigrants of the urban area.
+			\end{tablenotes}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+
+
+\end{landscape}
+
+\end{spacing}
+
+\end{document}
+
+%% UNUSED WRITING... %%
+
+This study assesses the empirical relevance of the Harris-Todaro (HT) model at high levels of urbanization using data from Brazil. It evaluates if the predicted equilibrium relationships are observed in the data. While the basic version of the model does not seem to fit the data well, other versions, that incorporates labor informality and housing markets, lead to much better predictions of the observed rural-urban migration and urban unemployment patterns. The HT model fits better in those markets where the city has a larger manufacturing sector, where the associated rural area has a larger fraction of the population more likely to migrate, and where moving between these areas in less costly. A result that is consistent with some of the assumptions of the original HT model.
+
+We study the empirical traction of the Harris-Todaro model at high
+levels of urbanization using data from Brazil.
+We first evaluate if the equilibrium relationships predicted by different
+versions of the model are observed in the data, and how that changes
+as urbanization levels increase.
+
+We find that, while the basic version of the model has lost predictive
+power as the country has become more urbanized, versions of the model
+that incorporate urban informality and local housing markets remain
+a good predictor of the observed rural-urban migration and urban unemployment
+patterns.
+
+
+
+
+
+We start by defining
+the borders of 449 ``cities'' based on nightlight satellite data,
+and geo-merging these with municipality borders and ultimately with
+census microdata, using a variation of the algorightm proposed by
+\citet{Dingel2019}. Next we define for each city its rural-urban
+migration ``catchment area'', as the set of rural municipalities
+of origin of prior migrants.
+
+Section \ref{sec:Causal-estimates} reports causal
+estimates of the response of the key endogenous variables in the model
+to shocks to the rural-urban wage gap.
+
+
+\subsubsection{Incorporating the housing market to the HT equilibrium without rents
+data}
+
+The use of rent data in this context may be potentially flawed. Measurement
+errors could be more accentuated among rural-urban migrants, if for
+example this population disproportionally locates in informal settlements
+occupied paying a minimum or zero cost. Differences between rural
+and urban rents may not appropriately capture differences in the cost
+of living in these areas if the share of renters among rural households
+is significantly smaller than in cities. In face of these concerns,
+an alternative is to fully model the housing market and use the theoretical
+equilibrium rent to express the HT equilibrium in terms of the other
+obsevable variables.
+
+We start by characterizing the equilibrium in the housing market.
+Following \citet{Glaeser2008h}, we assume that both urban and rural
+housing belongs to absentee landlords, who buy it from developers
+and rent it to local residents at $R_{U}$ and $R_{R}$, respectively.
+Profits for developers, are given by:
+\[
+\pi=\sum_{t=0}^{\infty}\frac{R_{A}}{(1+r)^{t}}-CC
+\]
+where $r$ is the national interest rate, and $CC$ are construction
+costs.
+
+Assuming free entry and zero-profits, developers sell housing at the
+cost of construction, $\frac{\left(1+r\right)}{r}R_{A}=CC$. Additional
+housing units can be supplied at a higher construction costs, with
+elasticity $\rho$, such that the (upward-sloping) supply curve is
+given by $\bar{H}\cdot CC^{\rho}$. Housing supply can also be expressed
+in terms of rents:
+\begin{equation}
+\bar{H}\left(\frac{1+r}{r}\right)^{\rho}R_{A}^{\rho}\label{eq:Housing supply}
+\end{equation}
+
+Equating housing demand and housing supply, we obtain the equilibrium
+rent, namely:
+\begin{equation}
+R_{A}^{*}=\left(\alpha\zeta E\left[W_{A}\right]L_{A}\right)^{\frac{1}{1+\rho}}\label{eq:Equilibrium rent}
+\end{equation}
+where $\zeta:=\frac{1}{\bar{H}\left(\frac{1+r}{r}\right)^{\rho}}$.
+Using this result, we can express the Harris-todaro equilibrium condition
+with informal labor market and housing market as:
+\[
+W_{R}^{\frac{1+\rho-\alpha}{1+\rho}}L_{R}^{-\frac{\alpha}{1+\rho}}=\left(\frac{\delta_{F}}{1+\lambda}W_{F}+\frac{\delta_{I}}{1+\lambda}W_{I}\right)^{\frac{1+\rho-\alpha}{1+\rho}}L_{U}^{-\frac{\alpha}{1+\rho}}
+\]
+which corresponds to the following versions of the HT urban population
+and unemployment prediction errors:
+\begin{align}
+\varepsilon_{4,L_{u}}^{HT} & =\ln\left(1+\frac{L_{U}}{U}\right)+\ln\left(1-\left(\frac{W_{R}}{\delta_{F}W_{F}+\delta_{I}W_{I}}\right)^{\frac{1+\rho-\alpha}{1+\rho}}\left(\frac{L_{U}}{L_{R}}\right)^{\frac{\alpha}{1+\rho}}\right)\label{eq:HT population error 4}\\
+\varepsilon_{4,U}^{HT} & =\ln\left(\frac{L_{U}}{U}\right)+\left(\left(\frac{\delta_{F}W_{F}+\delta_{I}W_{I}}{W_{R}}\right)^{\frac{1+\rho-\alpha}{1+\rho}}\left(\frac{L_{R}}{L_{U}}\right)^{\frac{\alpha}{1+\rho}}-1\right)\label{eq:HT unemployment error 4}
+\end{align}
+
+Relative to their homologous measures in equations \ref{eq:HT population error 3}
+and \ref{eq:HT unemployment error 3}, these formulations replace
+the urban-rural rent gap by its deeper determinants (the relative
+size of rural and urban wage and labor force) weighted by combinations
+of the key parameters rulling housing demand ($\alpha$) and supply
+($\rho$).
+
+Panel C in Table \ref{Tab: Model extensions assessment} measures the
+prediction errors in equations \ref{eq:HT population error 4} and
+\ref{eq:HT unemployment error 4}, assuming that $\alpha=0.33$ and
+that the elasticity of housing supply is $\rho=0.1$, based on the
+existing literature.
+
+Analysis...
+
+
+%%%%%%%%%%%%%%
+
+\section{Causal estimates \label{sec:Causal-estimates}}
+
+
+In this section we provide causal estimates on whether the key endogenous
+variables of interest (rural-urban migration and urban unemployment)
+respond the way the model predicts to exogenous shocks. We leverage
+shocks to the urban-rural wage gap brougth about by droughts-induced
+drops in agricultural productivity. We start by describing our measure
+of droughts and our empirical specifications, and then proceed to
+report and discuss or results.
+
+
+\subsection{Droughts measurement and empirical specifications}
+
+Discussion of droughts measurement
+
+
+Appendix table \ref{Tab: first-stage} reports the reduced-form effects of our drought measure on rural out-migration.
+
+Our empirical specifications take the general form
+\[
+\Delta Y_{jt}=\beta_{0}+\theta_{t}D_{jt}+\gamma C_{jt-10}+\mu_{state}+\Delta\varepsilon_{jt}
+\]
+where $\Delta Y_{jt}$ is the change (typically relative to the prior
+census year) in the outcome of interest in city $j$ in census year
+$t$, $D_{jt}$ is our measure of drought for census year $t$, $C_{jt-10}$
+is a vector of controls\footnote{The controls are meant to account for the fact that the same shock
+may lead to different migration responses on the rural areas (due
+to different age or skills composition), and the labor market effects
+may vary with the same characteristics in the receiving market. Our
+preferred specification includes a set of urban controls that includes
+the share of the working age population with high-school education
+or higher, and the shares of the population in 3 age categories. It
+also includes a set of rural controls, which consist of the same four
+variables measured for the rural sector as weighted averages of the
+city's ``rural catchment area'' (as in equation XX), and the log
+of total land area.} measured at the beninnig of the period, $\Delta\varepsilon_{jt}$
+is an error term, $\mu_{state}$ are state fixed-effects, and $\beta_{0}$
+is a constant. The coefficient of interest $\theta_{t}$ captures
+the average effect of the shock on the outcome for census year $t$.
+
+\subsection{Results}
+
+Table \ref{Tab: Causal estimates} reports the main identified results.
+\begin{itemize}
+\item We start by looking at the ``first-stage'' effect of droughts on
+the rural-urban wage gap and its components.
+\item We then looked at the reduced-form effect of the droughts on the key
+endogenous variables (rural-urban migration and urban unemployment
+and informality)
+\item Lastly we looked at the effects of the changes in the rural-urban
+wage gap (instrumented with droughts) on the key endogenous variables.
+\end{itemize}
+
+%% TABLE -  causal estimates %%
+\begin{table}[H]
+	\singlespacing
+	\centering
+	\resizebox{0.68\width}{!} {
+		\begin{threeparttable}
+			\caption{\textbf{Causal estimates the responses of the HT endogenous variables to changes in the rural-urban wage}}
+ 			 \input{tables/causal_estimates.tex}
+  			 \begin{tablenotes}[flushleft]
+			\small \item \textbf{Notes:}  Need to add more Notes:
+			\end{tablenotes}
+		  \label{Tab: Causal estimates}
+  		\end{threeparttable}
+ 	}
+\onehalfspacing
+\end{table}%%
+
+
+We start by documenting the relationship between the HT population prediction error and unemployment prediction error. Figure \ref{fig:error_scatter} shows a scatter plot of both, showing a negative correlation. Cities where the model tends to predict more population than the observed one, are also those cities where the model predicts a lower unemployment rate, and vice versa.  This is not surprising. Mechanically, the model predicted unemployment is low, the expected return of moving to the city high and therefore the population predicted by the model results in one that is also higher than the one we observe in the data.
+
+%% FIGURE: Errors scatterplot %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Relationship between urban population and unemployment errors}  \label{fig:error_scatter}
+	\resizebox{1\width}{!} {
+		\begin{threeparttable}
+ 			  \includegraphics[width=0.5\textwidth]{figures/pop_unem_av_wag}
+			  \includegraphics[width=0.5\textwidth]{figures/pop_unem_rent}
+  			 \begin{tablenotes}[flushleft]
+			\item
+			\footnotesize \item \textbf{Notes:} Add notes here. Outliers left out.  \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+
+
+The absence of the urban formal sector in these calculations can likely account for the observed patterns. At a low urban-rural nominal wage gap, as may be the case when the informal wage is taken as the reference, the model expects the incentives to migrate to be relatively low, and because urban unemployment is driven by migration,
+
+The negative effect of distance on migration has consistently been found in multiples studies (e.g. \citealp{Fields1982, Schultz1982,Barnum1977})
+
+Other studies have documented that city-level characteristics such as manufacturing share (\citealp{Henderson2017}) affect the extent to which urban areas can absorb inflows of rural migrants, without explicitly connecting it to the HT framework.
+
+
+
+(e.g. treating urban informal jobs as the main labor market ``outside
+option'' for potential rural-urban migrants).
+
+Arguably, the most important policy take-away associated with the HT framework is that, because of the rural-urban migration response, efforts to tackle urban unemployment by promoting the creation of urban jobs could lead to \emph{higher} unemployment, which became known as the
+``Todaro paradox''  (\citealp{Todaro1969}). Because of the ``Todaro paradox'' the main recommendation is don't promote urban employment, but promote rural development. \footnote{\citet{Fields2005a} shows that, even if formal sector development leads to increases in unemployment, the net welfare effect is not necessarily negative because the social benefit of the increase in high-paying jobs and the reduction of poverty may outweigh the social costs.}
+The Todaro paradox arises when the creation of one additional job leads to the migration of more than one rural worker.
+
+We assess the extent to which the HT equilibrium condition (by which the rural wage equals the expected urban wage) holds in the data for these cities and their respective rural catchment areas. We start with a simplified version
+of the original framework, in which there are two sectors, urban
+and rural, and the wage in the urban sector is institutionally
+set. Then, we go on to examine extensions of the model, first allowing
+the urban wage to be determined by the market, then introducing two
+urban sectors (formal and informal), and finally incorporating a housing
+market. For each version of the model, we characterize the corresponding HT equilibrium condition in terms of the population and the unemployment levels that should be observed in the city if the equilibrium hold. We then contrast these equilibrium levels to the population and unemployment levels observed in the data and create prediction error measures that we use to quantitatively assess the empirical performance of the model.
