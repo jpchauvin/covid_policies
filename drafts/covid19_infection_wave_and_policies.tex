@@ -161,7 +161,7 @@ Researchers working with data on the COVID-19 epidemic have recognized important
 
 Despite these limitations, using the reported daily new cases has distinct advantages relative to potential alternative measures from the standpoint of policy analyis. The daily new cases is arguably the most readily available piece of information when it comes to gauging, in real time, how fast the epidemic is spreading in their jurisdiction.  Even when policymakers are aware that this figure significantly underestimates the number of infected people, decisions like closing and reopening schools, cancelling massive gatherings, or mandating the population to stay at home, or have been made around the world relying, at least partially, on this indicator.\footnote{Alternative measures to define observable stages of a COVID-19 infection wave include model-based estimates of the population currently infected, the number of people hospitalized, and the number of deaths. The first two are not readily available with daily frequency for many countries. The third, while it has the advantage of being potentially better measured than the daily number of cases and also being widely available, it reflects the rate of daily infections prevalent in the country between two and three weeks in the past, and therefore less directly connected to the real-time decisions behind the policies analyzed in this paper.}
 
-\subsection{Stage duration around the globe}
+\subsection{Stage duration around the globe\label{subsec:Duration}}
 
 At the time of writing, most countries in the sample are at stages B and C (see Figure \ref{fig:current_stage}). This prevents me from accurately characterizing the behavior of all stages.Looking the data from the first three stages alone, it does seem clear that COVID-19 waves can follow very different paths. Figure \ref{fig:stage_by_region} reports the average number of days spent at each stage by countries of a given region in the world. The low average durations of stages D and E are not very informative, as they reflect the fact that most countries in those stages entered them very recently. But the duration of the first three stages, for which there is already meaningful information, reveal clear differences across regions of the world.
 
@@ -214,9 +214,9 @@ Another non-mutually exclusive explanation is that the virus has been present in
 
 I turn now to describe how national governments have responded to the pandemic at each stage of their country's wave, using data from the Oxford University's "Variation in government responses to COVID-19" dataset  \citep{Hale2020}
 
-\subsection{How policy intensity varies by stage \label{subsec:Policies-by-stage}}
+\subsection{What policies are more prevalent at each stage? \label{subsec:Policies-by-stage}}
 
-Figure \ref{fig:policies_by_stage} summarizes the most frequently-used policy at each stage.
+Figure \ref{fig:policies_by_stage} summarizes the most frequently-used policy at each stage. It shows that many countries around the world had already started responding to the pandemic even before they reported their first confirmed case.  Most of them put forward public information campaigns, to educate the public about the virus and the most common preventive measures such as washing hands frequently and avoiding touching the face.  But almost as many countries also started limiting international travel in some way, either screening and quarantining I international travelers arriving for virus hot-spot countries, or even closing all air linkages to those countries. And an important share of them complemented these measure with basic contact-tracing protocols, seeking to reconstruct the travel history of suspected patients and to keep track of their social interactions.
 
 %% FIGURE: Policy frequency%%
 \begin{figure}[H]
@@ -235,7 +235,17 @@ Figure \ref{fig:policies_by_stage} summarizes the most frequently-used policy at
   	 \onehalfspacing
 \end{figure}
 
-Figure \ref{fig:stringency} summarizes the average stringency of policies at each stage.
+Public information campaigns and international travel restrictions were present in virtually all countries in the period after the first case was announced.  At this point, close to one hundred countries also starting cancelling large gatherings and public events, in an effort to slow down what was seen by most, at this point, as the inevitable acceleration of the contagion wave.
+
+In the period in which the number of daily confirmed cases started to raise at an accelerated pace, most countries implemented a large set of physical distancing measures. The specific policies varied across countries, but in most cases policymakers moved to close schools. Public events remained cancelled, and in most countries, public information campaigns remained in place.
+
+As in the analysis of stage durations in section \ref{subsec:Duration}, the information about stages D and E is still building up at the time of writing. However, they do show that governments in advanced stages of the first COVID-19 wave are keeping in place most of the measures implemented earlier.
+
+\subsection{How policy intensity varies by stage \label{subsec:Policies-stringency}}
+
+The analysis above assumes that a country adopts a policy  measure even if its implementation is limited to specific populations or geographies.  But countries implement each of these measures at very different levels of intensity, which in turn implies differences in the potential health and economic consequences of specific policies.
+
+Oxford's "Variation in government responses to COVID-19" project has produced an stringency index, which provides a measure of the number and overall intensity of the government responses to the pandemic at a specific point in time.  I use this to calculate the average stringency of goverment policies at each stage of the infection wave.  The results are shown in Figure \ref{fig:stringency}.
 
 %% FIGURE: Policy frequency%%
 \begin{figure}[H]
@@ -254,13 +264,13 @@ Figure \ref{fig:stringency} summarizes the average stringency of policies at eac
   	 \onehalfspacing
 \end{figure}
 
-
+The figure shows that, in the preparation stage, most countries implemented few and non-stringent measures.  Even as the first case was detected, and the number of cases started to rise, only a few countries moved to put in place very stringent restrictions.  In about half of the cases, stringency remained below half the maximum score.  It was only when countries entered stage C, and confirmed cases started to grow at an accelerated pace, that the most stringent measures became generalized.  At the time of writing, countries that have progressed to stages D and E have kept high stringency levels.
 
 %%%%%%%%%%%%%%
 
-\section{Final note\label{sec:Conclusion}}
+\section{Closing remarks\label{sec:Conclusion}}
 
-This paper is a work in progress.
+This paper offers a firt glance at how the government responses to the COVID-19 pandemic have evolved along different stages of the infection wave.  This is work in progress, and the observations below are preliminary and incomplete.  The paper will be updated in the following days, as we learn more about the responses of the governments of countries in advanced stages of the current infection wave.
 
 \pagebreak{}
 
@@ -296,7 +306,7 @@ This appendix describes in more detail how the main variables of this paper are 
 
 The definition of observable stages is based in the variable "Daily new confirmed cases per million", obtained from Our World in Data \citep{Roser2020}. I start by smoothing this variable with a five-day rolling average to tease-out the underlying trend from short-term fluctuations, driven largely by the reporting issues described in Section \ref{subsec:Measurement}.  Next, I proceed to classify each country-day cell in one of the stages described in Section \ref{sec:Stages}. The number of confirmed cases is considered to be \emph{increasing} if the average of the prior five days of the smoothed variable is positive or zero, and \emph{decreasing} if this average is negative. The threshold for low-levels of new cases (see Figure \ref{fig:stages}) is defined at 1 per million.
 
-This procedure yields some instances in which countries "return" to a prior stage for short periods. In the variables used in the main part of the analysis, I introduce adjustments to asimilate the measurement of stages to the conceptual framework, in which countries progress from one stage to the next in only one direction, inputing a cell to a prior stage if the thre-days leads and lags of the smoothed variable are mostly from the prior stage.
+This procedure yields some instances in which countries "return" to a prior stage for short periods. In the variables used in the main part of the analysis, I introduce adjustments to asimilate the measurement of stages to the conceptual framework, in which countries progress from one stage to the next in only one direction, inputing a cell to a prior stage if the thre-days leads and lags of the smoothed variable are mostly from the prior stage.  All the replication files are available \href{https://github.com/jpchauvin/covid_policies}{here}.
 
 \subsection{Policy variables}
 
