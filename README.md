@@ -1,14 +1,14 @@
 # Government Policies along the COVID infection wave
 
-This is the git repository for the white paper "Global Policy Responses Along the First COVID-19 Infection wave" and the related blog posts.
+This is the git repository for the white paper *"Global Policy Responses Along the First COVID-19 Infection wave"* and the related blog posts.
 
 This analysis is work in progress, if you find mistakes in the code please let us know! Direct any communication to the white paper's corresponding e-mail.
 
 ## Paper and corresponding blog posts
 
-* You can obrain the most recent version of the white paper [here](https://github.com/jpchauvin/covid_policies/drafts/covid19_infection_wave_and_policies.pdf).
+* You can obrain the most recent version of the white paper [here](drafts/covid19_infection_wave_and_policies.pdf).
 * Blog post: Where is Latin America and Caribbean on the COVID-19 Curve?
-* Blog posts figures [updated with more current data](https://github.com/jpchauvin/covid_policies/updates/cblog_posts_updates.md).
+* Blog posts figures [updated with more current data](updates/cblog_posts_updates.md).
 
 ## Folders and replication
 
