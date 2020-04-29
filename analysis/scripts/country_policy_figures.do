@@ -44,29 +44,29 @@ graph export "$dd_fig/policies_by_stage.png", as(png) replace;
 /*************************************************/
  /* 3 Most frequent policies                    */
  /*************************************************/
- 
+
 #delimit ;
 local today: di "`c(current_date)'";
  preserve;
  keep stage policy stage_polgen_count stage_pol_rank; duplicates drop;
  keep if stage_pol_rank<4; drop stage_pol_rank;
  reshape wide stage_polgen_count, i(stage) j(policy);
-  
+
 	 /* Blog version */
 	   #delimit ;
 	local today: di "`c(current_date)'";
-	graph bar stage_polgen_count6 stage_polgen_count3 stage_polgen_count4  stage_polgen_count5  stage_polgen_count7  stage_polgen_count9 , 
- 	over(stage, sort(#))  xsize(11) ysize(8) nofill 
+	graph bar stage_polgen_count6 stage_polgen_count3 stage_polgen_count4  stage_polgen_count5  stage_polgen_count7  stage_polgen_count9 ,
+ 	over(stage, sort(#))  xsize(11) ysize(8) nofill
  	legend(label(1 "Public info campaigns") label(2 "International travel restrictions") label(3 "Internal movement restrictions") label(4 "Cancel public events") label(5 "School closing") label(6 "Contact tracing")r(3) )
- 	title("Figure 6. What are the most used policies at each stage?", span)
-	note("Note: Sample restricted to 134 countries with population 250k or larger. Only policies ranked first through" "third within each stage are shown. Data from: The Oxford COVID-19 Government Response Tracker" "(bsg.ox.ac.uk/covidtracker). Last updated on `today'.");
+ 	title("Figure 6. What are the most used policies at each stage?", size(medlarge) span)
+	note("Note: Sample restricted to 134 countries with population 250k or larger. Only policies ranked first through" "third within each stage are shown. Data from: The Oxford COVID-19 Government Response Tracker" "(bsg.ox.ac.uk/covidtracker). Last updated on April 24, 2020.");
 	  graph export "$dd_blog/top_policies_by_stage.png", as(png) replace;
 
 	/* Paper version */
 	 #delimit ;
 	local today: di "`c(current_date)'";
-	graph bar stage_polgen_count6 stage_polgen_count3 stage_polgen_count4  stage_polgen_count5  stage_polgen_count7  stage_polgen_count9 , 
- 	over(stage, sort(#))  xsize(11) ysize(8) nofill 
+	graph bar stage_polgen_count6 stage_polgen_count3 stage_polgen_count4  stage_polgen_count5  stage_polgen_count7  stage_polgen_count9 ,
+ 	over(stage, sort(#))  xsize(11) ysize(8) nofill
  	legend(label(1 "Public info campaigns") label(2 "International travel restrictions") label(3 "Internal movement restrictions") label(4 "Cancel public events") label(5 "School closing") label(6 "Contact tracing")r(3) );
 	 graph export "$dd_fig/top_policies_by_stage.png", as(png) replace;
    restore;

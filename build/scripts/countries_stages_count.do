@@ -12,7 +12,7 @@
   **************************************************************************/
 
   #delimit ;
-  
+
   use "$db_out/policies_int_working_dataset.dta", clear;
 
 /*************************************************/
@@ -23,12 +23,66 @@
   drop if stage=="";
   drop if pop==. | gdp==.;
   drop if pop<250000;
-  drop if s1_s==. & s2_w==. & s3_c==. & s4_c==. & s5_p==. & s6_r==. & s7==. & s8==. & s9==. & s10==. & s11==. & s12==. & s13==. ;
+
+/*************************************************/
+ /* Collapse covid variables only dataset       */
+ /*************************************************/
+
+ /* These include all countries with COVID and WDI data */
+
+ collapse (mean) stage_duration stringency=stringencyindexfordisplay
+ (max) cum_case cum_deaths
+ , by (ccode stage);
+
+ /* Merging to outside datasets */
+
+ merge m:1 ccode using $db_out/current_stage.dta;
+ drop if _merge==2;
+ drop _merge;
+
+ merge m:1 ccode using $db_out/WDI_2018_pop_gdp.dta;
+ drop if _merge==2; drop _merge;
+
+ merge m:1 ccode using $db_out/countries_regions.dta;
+ drop if _merge==2; drop _merge;
+
+/* Generate log and relative variables */
+ g l_pop = ln(pop);
+  lab var l_pop "Log of Population";
+  lab var pop "Population";
+ g gdppc = gdp/pop;
+  lab var gdppc "GDP per capita";
+  lab var gdp "GDP";
+ g l_gdppc = ln(gdppc);
+  lab var l_gdppc "Log of GDP per capita";
+  /* Labeling and saving */
+  lab var region "Region";
+  lab var stage_duration "Duration of stage in country";
+  lab var cum_case "Cumulative confirmed cases in stage";
+  lab var cum_deaths "Cumulative confirmed deaths in stage";
+
+   /* Order and save */
+  save "$db_out/covid_countries_stages", replace;
+
 
  /*************************************************/
-  /* Collapse country aggregates                    */
+  /* Collapse country aggregates  dataset           */
   /*************************************************/
+  /* Exclude observations that don't have policies data */
+ 
+  #delimit ;
 
+  use "$db_out/policies_int_working_dataset.dta", clear;
+
+
+  /* Drop small countries and countries without data */
+  drop if stage=="";
+  drop if pop==. | gdp==.;
+  drop if pop<250000;
+
+  drop if s1_s==. & s2_w==. & s3_c==. & s4_c==. & s5_p==. & s6_r==. & s7==. & s8==. & s9==. & s10==. & s11==. & s12==. & s13==. ;
+
+  /* Collapse */
   collapse (sum) fiscal health vacc
   (mean) stage_duration stringency=stringencyindexfordisplay
   (max)
@@ -48,9 +102,8 @@
   cum_case cum_deaths
   , by (ccode stage);
 
-/*************************************************/
- /* Merging to outside datasets                    */
- /*************************************************/
+
+ /* Merging to outside datasets */
 
  merge m:1 ccode using $db_out/current_stage.dta;
  drop if _merge==2;
@@ -72,9 +125,7 @@
  g l_gdppc = ln(gdppc);
   lab var l_gdppc "Log of GDP per capita";
 
-/*************************************************/
  /* Labeling                    */
- /*************************************************/
 
 #delimit cr
  lab var polgensch_close "School closing"
@@ -121,7 +172,7 @@
  lab var stringency "Average Oxford stringency index in stage"
  lab var cum_case "Cumulative confirmed cases in stage"
  lab var cum_deaths "Cumulative confirmed deaths in stage"
- 
+
   /* Order and save */
  drop   fiscal_ext health_ext vacc_ext
  save "$db_out/pol_countries_stages", replace

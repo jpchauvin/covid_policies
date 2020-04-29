@@ -36,3 +36,7 @@
 # Ignore Icon file, from Dropbox
 Icon
 Icon?
+
+# Ignore directory of draft notes
+"notes/*"
+"notes/Blogs_drafts/*"

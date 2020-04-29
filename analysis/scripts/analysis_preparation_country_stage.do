@@ -21,6 +21,12 @@
   drop if _merge==2
   drop _merge
 
+  merge m:1 ccode using "$db_inp/country-codes-latam.dta"
+  drop if _merge==2
+  drop _merge
+
+  
+  
 /* Shorter name */
   replace name="Bolivia" if ccode=="BOL"
 

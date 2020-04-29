@@ -35,4 +35,11 @@ do "$da_scr/country_stage_figures.do"
 /* Produce country-policy figures */
 do "$da_scr/country_policy_figures.do"
 
+/*************************************************/
+ /* Updated figures for blogs posts              */
+ /*************************************************/
+
+ /* Produce updated figures for blog posts */
+ do "$da_scr/blog_posts_updates.do"
+
 /* End of do file */

@@ -1,17 +1,20 @@
-/*---------------------------------------------------------------*
-	Regional Pandemia
-* Purpose: Script store paths and settings to run scripts.
-* Created by: Nicolas Herrera L.
-* Created on: 4/6/2020
-* Last modified on: 4/6/2020
-* Last modified by: NHL
+/***********************************************************************
+* Government Policies along the COVID infection wave
+* Juan Pablo Chauvin
+
+* Purpose: Script to define paths and settings for the project
+* Created by: Juan Pablo Chauvin
+* Created on: 4/18/2020
+* Last modified on: 4/21/2020
+* Last modified by: JPC
 * Edits history:
 
----------------------------------------------------------------*/
+* Notes:
+   - The dropbox folder points to the root directory of any dropbox. We recommend
+   to set the path in your profile.do to run smothly the code in any computer.
+   - Stata 16 version
 
-/*---------------------------------------------------------------
-  Globals to paths
----------------------------------------------------------------*/
+  **************************************************************************/
 
 /* Root directory */
 global dir "$dropbox/covid_policies"
@@ -38,10 +41,11 @@ global da_log "$danalysis/logs"
 global da_grs "$danalysis/outputs/graphs"
 global da_tab "$danalysis/outputs/tables"
 
-/* Paper figures folder */
+/* Paper and blogs folder */
 global dd_fig "$dir/drafts/figures"
 global dd_tab "$dir/drafts/tables"
 global dd_blog "$dir/drafts/blog_posts/assets"
+global dd_upd "$dir/updates"
 
 /*---------------------------------------------------------------
   General settings
@@ -49,9 +53,6 @@ global dd_blog "$dir/drafts/blog_posts/assets"
 
 /* Set the scheme of colors for the figures */
 set scheme plotplainblind
-
-/* Execute a code with a set of programs coded for this project */
-include $db_scr/programs.do
 
 /* The following global stores the names of the packages used in the project
 to check their existance and installe them if they are not */
