@@ -41,7 +41,7 @@ bysort ccode : egen aux2=seq()
  graph bar  a_tot_lac a_tot_usa a_tot_afr a_tot_asi a_tot_eur a_tot_oce if stage==stage_current,
  	over(stage) stack xsize(11) ysize(8)
 	 legend(label(1 "Latin America and Caribbean") label(2 "USA and Canada") label(3 "Africa") label(4 "Asia") label(5 "Europe") label(6 "Oceania") r(2) )
- 	note("Note: Sample restricted to 134 countries with population 250,000 or larger." "Data from: Our World in Data (ourworldindata.org/coronavirus). Last updated on April 28, 2020.");
+ 	note("Note: Sample restricted to 134 countries with population 250,000 or larger." "Data from: Our World in Data (ourworldindata.org/coronavirus). Last updated on April 29, 2020.");
  graph export "$dd_blog/countries_today.png", as(png) replace;
 
  /* Blog version, all regions, Spanish */
@@ -50,7 +50,7 @@ local today: di "`c(current_date)'";
 graph bar  a_tot_lac a_tot_usa a_tot_afr a_tot_asi a_tot_eur a_tot_oce if stage==stage_current,
  over(stage) stack xsize(11) ysize(8)
   legend(label(1 "América Latina y el Caribe") label(2 "EEUU y Canadá") label(3 "África") label(4 "Asia") label(5 "Europa") label(6 "Oceanía") r(2) )
- note("Nota: Muestra restringida a 134 países con población de al menos 250.000." "Datos de: Our World in Data (ourworldindata.org/coronavirus). Última actualización: Abril 28, 2020.");
+ note("Nota: Muestra restringida a 134 países con población de al menos 250.000." "Datos de: Our World in Data (ourworldindata.org/coronavirus). Última actualización: Abril 29, 2020.");
 graph export "$dd_blog/countries_today_esp.png", as(png) replace;
 
    /* Paper version, all regions */
@@ -83,7 +83,7 @@ graph export "$dd_blog/countries_today_esp.png", as(png) replace;
  graph bar  a_duration_afr a_duration_lac a_duration_eur  a_duration_oce  a_duration_asi a_duration_usa  if aux==1,
  	over(stage) xsize(11) ysize(8) nofill
 	 legend(label(1 "Africa")  label(2 "Europe") label(3 "Latin America and the Caribbean") label(4 "Oceania") label(5 "Asia") label(6 "USA and Canada")   r(2) )
- 	note("Note: Unweighted averages across countries in each region-stage cell. Sample restricted to 134 countries" "with population 250,000 or larger. Data from: Our World in Data (ourworldindata.org/coronavirus)." "Last updated on April 28, 2020.");
+ 	note("Note: Unweighted averages across countries in each region-stage cell. Sample restricted to 134 countries" "with population 250,000 or larger. Data from: Our World in Data (ourworldindata.org/coronavirus)." "Last updated on April 29, 2020.");
  graph export "$dd_blog/regions_stage_duration.png", as(png) replace;
 
  /* Blog version, Spanish*/
@@ -92,7 +92,7 @@ graph export "$dd_blog/countries_today_esp.png", as(png) replace;
   graph bar  a_duration_afr a_duration_lac a_duration_eur  a_duration_oce  a_duration_asi a_duration_usa  if aux==1,
   	over(stage) xsize(11) ysize(8) nofill
  	 legend(label(1 "África")  label(2 "Europa") label(3 "América Latina y el Caribe") label(4 "Oceanía") label(5 "Asia") label(6 "EEUU y Canadá")   r(2) )
-  	note("Nota: Promedios no ponderados entre los países de cada celda (región-etapa). Muestra restringida" "a 134 países con población de al menos 250.000." "Datos de: Our World in Data (ourworldindata.org/coronavirus). Última actualización: Abril 28, 2020.");
+  	note("Nota: Promedios no ponderados entre los países de cada celda (región-etapa). Muestra restringida" "a 134 países con población de al menos 250.000." "Datos de: Our World in Data (ourworldindata.org/coronavirus). Última actualización: Abril 29, 2020.");
   graph export "$dd_blog/regions_stage_duration_esp.png", as(png) replace;
 
 /* Paper version */
@@ -115,7 +115,7 @@ graph export "$dd_blog/countries_today_esp.png", as(png) replace;
  	if aux2==1  & subregioncode==419, over(name) stack
  	legend(label(1 "A") label(2 "B") label(3 "C") label(4 "D") label(5 "E") r(1)) bar(3, color(green))
  	xsize(11) ysize(16)
- 	note("Note: All countries are assumed to start stage A in 31 Dec 2019." "Data from: Our World in Data (ourworldindata.org/coronavirus)." "Last updated on April 28, 2020.", span);
+ 	note("Note: All countries are assumed to start stage A in 31 Dec 2019." "Data from: Our World in Data (ourworldindata.org/coronavirus)." "Last updated on April 29, 2020.", span);
  graph export "$dd_blog/lac_stage_duration.png", as(png) replace;
 
  /* Blog version, Spanish */
@@ -125,7 +125,7 @@ graph export "$dd_blog/countries_today_esp.png", as(png) replace;
   	if aux2==1  & subregioncode==419, over(name_esp) stack
   	legend(label(1 "A") label(2 "B") label(3 "C") label(4 "D") label(5 "E") r(1)) bar(3, color(green))
   	xsize(11) ysize(16)
-  	note("Nota: Los estimados asumen que todos los países empezaron la etapa A" "el 31 de Diciembre de 2019. Datos de: Our World in Data" "(ourworldindata.org/coronavirus). Última actualización: Abril 28, 2020.", span);
+  	note("Nota: Los estimados asumen que todos los países empezaron la etapa A" "el 31 de Diciembre de 2019. Datos de: Our World in Data" "(ourworldindata.org/coronavirus). Última actualización: Abril 29, 2020.", span);
   graph export "$dd_blog/lac_stage_duration_esp.png", as(png) replace;
 
 /* Paper version */
@@ -205,12 +205,12 @@ graph export "$dd_fig/correlation_B_C.png", as(png) replace;
 #delimit ;
 /* Combined correlations for blog */
 qui gr combine $da_tmp/correlation_A_B.gph $da_tmp/correlation_B_C.gph, iscale(1) col(2) graphr(margin(zero))  xsize(11) ysize(6)
-note("Data from: Our World in Data (ourworldindata.org/coronavirus). Last updated on April 28, 2020.", span);
+note("Data from: Our World in Data (ourworldindata.org/coronavirus). Last updated on April 29, 2020.", span);
 graph export "$dd_blog/correlation_A_B_C.png", as(png) replace;
 
 /* Combined correlations for blog, Spanish*/
 qui gr combine $da_tmp/correlation_A_B_esp.gph $da_tmp/correlation_B_C_esp.gph, iscale(1) col(2) graphr(margin(zero))  xsize(11) ysize(6)
-note("Datos de: Our World in Data (ourworldindata.org/coronavirus). Última actualización: Abril 28, 2020.", span);
+note("Datos de: Our World in Data (ourworldindata.org/coronavirus). Última actualización: Abril 29, 2020.", span);
 graph export "$dd_blog/correlation_A_B_C_esp.png", as(png) replace;
 
  /*************************************************/
@@ -245,7 +245,7 @@ twoway (kdensity stringency if stage =="A" &  aux==1 ,
 	lw(medthick) lcolor(red) lp(longdash) legend(label(5 "E")))
 , xsize(11) ysize(8) xtitle("Stringecy Index (OxCGRT)" ) title("Figure 7. Distribution of stringency of policies at each stage", size(medlarge)) ytitle("")
 legend(label(1 "A") label(2 "B") label(3 "C") label(4 "D") label(5 "E") r(1))
-note("Note: Sample restricted to 134 countries with population 250k or larger." "Data from: The Oxford COVID-19 Government Response Tracker (bsg.ox.ac.uk/covidtracker)." "Last updated on April 28, 2020.");
+note("Note: Sample restricted to 134 countries with population 250k or larger." "Data from: The Oxford COVID-19 Government Response Tracker (bsg.ox.ac.uk/covidtracker)." "Last updated on April 29, 2020.");
  graph export "$dd_blog/stringency_by_stage.png", as(png) replace;
 
  /* Paper version */

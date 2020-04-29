@@ -45,7 +45,7 @@ global da_tab "$danalysis/outputs/tables"
 global dd_fig "$dir/drafts/figures"
 global dd_tab "$dir/drafts/tables"
 global dd_blog "$dir/drafts/blog_posts/assets"
-global dd_upd "$dir/updates"
+global dd_upd "$dir/updates/assets"
 
 /*---------------------------------------------------------------
   General settings
