@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex covid19_infection_wave_and_policies"] 1587871142 "covid19_infection_wave_and_policies.aux" "covid19_infection_wave_and_policies.bbl" "covid19_infection_wave_and_policies" 1587871143
-  "./elsarticle-harv-nourl.bst" 1587611381 28236 83c068560d0c09d0d934493d36b6cd01 ""
-  "bibliography.bib" 1587736921 2435526 b3917658a5ce0bfa783d614c06379508 ""
-  "covid19_infection_wave_and_policies.aux" 1587871143 4105 75e75f826568acfe063367e2390e49ce ""
+["bibtex covid19_infection_wave_and_policies"] 1588142450 "covid19_infection_wave_and_policies.aux" "covid19_infection_wave_and_policies.bbl" "covid19_infection_wave_and_policies" 1588142504
+  "./elsarticle-harv-nourl.bst" 1587884788 28236 83c068560d0c09d0d934493d36b6cd01 ""
+  "bibliography.bib" 1588134535 2438996 9d7cd74c69e01c111b855a52e37b5ad5 ""
+  "covid19_infection_wave_and_policies.aux" 1588142504 4792 67897f2a2824dacd0d941502fbd078da ""
   (generated)
   "covid19_infection_wave_and_policies.bbl"
   "covid19_infection_wave_and_policies.blg"
-["pdflatex"] 1587871142 "covid19_infection_wave_and_policies.tex" "covid19_infection_wave_and_policies.pdf" "covid19_infection_wave_and_policies" 1587871143
+["pdflatex"] 1588142499 "covid19_infection_wave_and_policies.tex" "covid19_infection_wave_and_policies.pdf" "covid19_infection_wave_and_policies" 1588142504
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1480098666 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1480098696 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -164,13 +164,17 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "covid19_infection_wave_and_policies.aux" 1587871143 4105 75e75f826568acfe063367e2390e49ce ""
-  "covid19_infection_wave_and_policies.bbl" 1587871142 999 cf0c9b5bb2e36dc75c8867fd11277a4d "bibtex covid19_infection_wave_and_policies"
-  "covid19_infection_wave_and_policies.out" 1587871143 2348 f7bd6fe81e04e2fb5ed21ec0fdc8c447 ""
-  "covid19_infection_wave_and_policies.tex" 1587871140 10374 fc1321c5bfc4b68d7ec97ee093ddd743 ""
-  "figures/countries_today.png" 1587790077 10490 a60aa91cba09e9a88d5302fc3d9eb054 ""
-  "figures/policies_by_stage.png" 1587790089 16826 42475d9253556ade566325ad43dca5a7 ""
-  "figures/regions_stage_duration.png" 1587790086 11936 088eee6fa123c18718b7812911827474 ""
+  "covid19_infection_wave_and_policies.aux" 1588142504 4792 67897f2a2824dacd0d941502fbd078da ""
+  "covid19_infection_wave_and_policies.bbl" 1588142450 1102 648a0ad55ac5740dfbf8b69ab9de218c "bibtex covid19_infection_wave_and_policies"
+  "covid19_infection_wave_and_policies.out" 1588142504 2003 30d891b2efe31c8aaf24d1fad0d8cf6d ""
+  "covid19_infection_wave_and_policies.tex" 1588142499 19967 0071698a0c40b69de2871fe80bf6261e ""
+  "figures/correlation_A_B.png" 1587884792 47161 7ec9f81533edce3e56cae497157dcbb0 ""
+  "figures/correlation_B_C.png" 1587884792 38565 50dc1bd778fc9cdb92fb6d299aceafcc ""
+  "figures/countries_today.png" 1587884792 28250 7275401251be13b24d7b2bf4bbe2329c ""
+  "figures/regions_stage_duration.png" 1587884792 32385 281505c10e306e818c6dc13fb70d6db4 ""
+  "figures/stages.png" 1588098961 835480 2b5dafeeebf41012dfad8f4912bb6afa ""
+  "figures/stringency_by_stage.png" 1587884792 49447 f06df2028c949add05c21b9b87cf5b3f ""
+  "figures/top_policies_by_stage.png" 1587884792 37302 90165c2e4bc3818c34f4a6fcd4172b12 ""
   (generated)
   "covid19_infection_wave_and_policies.pdf"
   "covid19_infection_wave_and_policies.out"

@@ -84,23 +84,20 @@
 
 \affil{Research Department, Inter-American Development Bank}
 
-
-
 \begin{document}
 
 \begin{titlepage}
 
-\date{\today\\
-\vspace{-10bp}
-}
+  \date{\today\textbf{}\\
+  \textbf{{[}Work in progress. Find the latest version \href{https://github.com/jpchauvin/covid_policies/blob/master/drafts/covid19_infection_wave_and_policies.pdf?raw=true}{here}.{]}}\\
+  \vspace{-10bp}
+  }
 
 \maketitle
 \begin{abstract}
 \noindent
 
-
-This paper describes how the government responses to  COVID-19 evolve as countries go through different stages of the first wave of the pandemic.  I define five observable stages of the wave, and identify them in the data for most countries. Combining this with a panel of government responses to the crisis, I characterize the policy priorities at each stage, and how they vary with country characteristics. This analysis can be useful to anticipate the need for financial and other resources, either for countries that are at earlier stages of the first wave, or in the event of new future waves.
-
+This paper describes how the government responses to  COVID-19 evolve as countries go through different stages of the first wave of the pandemic.  I define five observable stages of the wave, and identify them in the data for most countries. I describe the empirical characteristics of each stage, and use a panel of government responses to the crisis to characterize the policy priorities of governments at each stage. This analysis can be useful to anticipate the need for financial and other resources, either for countries that are at earlier stages of the first wave, or in the event of new future waves.
 
 
 \bigskip
@@ -119,11 +116,9 @@ This paper describes how the government responses to  COVID-19 evolve as countri
 
 The COVID-19 pandemic has prompted policy responses from governments around the world.  As the infection wave advances through different stages, the priorities for governments also evolve.  The goal of this paper is to characterize this evolution.  This analysis can be useful to anticipate the need for information and other resources, either for countries that are at earlier stages of the first wave, or in the event of new future waves of COVID-19 or other illnesses.
 
-I start by defining five observable stages of COVID-19, based on the number of daily reported cases as reported in Our World in Data \citep{Roser2020}.  This definition allows me to identify in what stage a country is in at a specific date, for all countries with data available.
+I start by defining five observable stages for a COVID-19 wave in a country.  These are based on the Pandemic Intervals Framework from the U.S. Centers for Disease Control and Prevention - CDC \citep{Holloway2014}, but constructed in terms of data from the current wave of the pandemic that is publicly available for most countries.  Applying these definitios to data from Our World in Data \citep{Roser2020}, I am able to classify in what stage a country is in at a specific date for all countries with data available.
 
-I combine the cases and stages data with the "Variation in government responses to COVID-19" dataset  \citep{Hale2020}, a panel of government responses to the crisis created and regularly updated by Oxford University.  This allows me to characterize the policy priorities at each stage,
-
-Third, I use data from the World Development Indicators \citep{WorldBank2020} to describe how policy responses vary with country characteristics.
+I combine the cases and stages data with the "Variation in government responses to COVID-19" dataset  \citep{Hale2020}, a panel of government responses to the crisis created and regularly updated by Oxford University.  This allows me to characterize the revealed policy priorities of governments at each stage.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,81 +126,128 @@ Third, I use data from the World Development Indicators \citep{WorldBank2020} to
 
 \section{Defining observable stages of COVID-19 infection\label{sec:Stages}}
 
-These stages are distinct from other classifications that define phases of the COVID-19 from a purely conceptual standpoint. In contrast, they are defined in terms of information \emph{observable in real time}, both to the analyst and, critically, to the policymaker.
+To organize the analysis, I define five observable stages of a wave of COVID-19 spread.  I base these on the Pandemic Intervals Framework \citep{Holloway2014}, developed by the U.S. Centers for Disease Control and Prevention (CDC) as a tool for preparedness and response to novel influenza viruses. This classification considers six stages (separating the pre-pandemic period in two: Investigation and Recognition).  I modify this framework to define five stages that can be mapped to observable and widely available data on daily confirmed cases. The classification is illustrated in Figure \ref{fig:stages}, and consists of the following stages:
 
-\subsection{Measurement issues}
+\begin{itemize}
+\item \textbf{Stage A: No cases detected.} The period between the day the disease was first reported in China (on December 31st, 2019) and the day of the first confirmed case in the country. Including this stage in the analysis is important from the policy standpoint, since multiple countries already started implementing response policies before having any confirmed cases.
+\item \textbf{Stage B: Slow spread.} The period between the first recorded case, and the day the daily number of confirmed cases crosses a low-levels threshold (in this application, when it becomes larger than one per million people).
+\item \textbf{Stage C: Accelerating spread.} The period in which the daily confirmed cases remain high (above one per million) and consistently increasing. It ends at the peak of the infection wave, once the number of cases starts to drop.
+\item \textbf{Stage D: Decelerating spread.} The period in which the daily confirmed cases remain high but are consistently decreasing.
+\item \textbf{Stage E: Stable low levels.} The period after the daily confirmed cases goes back to low levels (below one per million) and is not consistently increasing.
+\end{itemize}
 
-Researchers working with data on the COVID-19 epidemic have recognized important weaknesses in the cases data.
+Appendix \ref{sec:DataAppendix} provides more details on how this classification ais used to assign a stage to each country-day cell.
+
+%% FIGURE: Current stage %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Observable stages of COVID-19 spread}  \label{fig:stages}
+	\resizebox{0.9\width}{!} {
+		\begin{threeparttable}
+ 			  \includegraphics[width=1\textwidth]{figures/stages}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item
+			 \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+%%%%
+\subsection{Measurement issues\label{subsec:Measurement}}
+
+Researchers working with data on the COVID-19 epidemic have recognized important weaknesses in the cases data. There are delays between the original recording and the official counting and reporting. It is only possible to detect an infection if the person is tested, but tests are not widely available. And the severity of these concerns varies from one country to another. Hence, readers should not think of this measure as an accurate portrayal of the number of people actually infected with the virus on a given date.
 
 Despite these limitations, using the reported daily new cases has distinct advantages relative to potential alternative measures from the standpoint of policy analyis. The daily new cases is arguably the most readily available piece of information when it comes to gauging, in real time, how fast the epidemic is spreading in their jurisdiction.  Even when policymakers are aware that this figure significantly underestimates the number of infected people, decisions like closing and reopening schools, cancelling massive gatherings, or mandating the population to stay at home, or have been made around the world relying, at least partially, on this indicator.\footnote{Alternative measures to define observable stages of a COVID-19 infection wave include model-based estimates of the population currently infected, the number of people hospitalized, and the number of deaths. The first two are not readily available with daily frequency for many countries. The third, while it has the advantage of being potentially better measured than the daily number of cases and also being widely available, it reflects the rate of daily infections prevalent in the country between two and three weeks in the past, and therefore less directly connected to the real-time decisions behind the policies analyzed in this paper.}
 
 \subsection{Stage duration around the globe}
 
-Figure \ref{fig:current_stage} summarizes the stage at which countries are in the first wave of the COVID-19 pandemic at the time of writing of the current draft. Most countries were still in the stage of accelerating community spread.  From the 134 countries in the sample, only 10 have reached the post-crisis stage, in which daily new cases have stabilized at relatively low levels. Another 31 appear to have passed the peak of the wave, and even though
+At the time of writing, most countries in the sample are at stages B and C (see Figure \ref{fig:current_stage}). This prevents me from accurately characterizing the behavior of all stages.Looking the data from the first three stages alone, it does seem clear that COVID-19 waves can follow very different paths. Figure \ref{fig:stage_by_region} reports the average number of days spent at each stage by countries of a given region in the world. The low average durations of stages D and E are not very informative, as they reflect the fact that most countries in those stages entered them very recently. But the duration of the first three stages, for which there is already meaningful information, reveal clear differences across regions of the world.
 
-
-%% FIGURE: Current stage %%
+%% FIGURE: Stage duration %%
 \begin{figure}[H]
 	\singlespacing
 	\centering
-	 \caption{Stage of countries in the first wave of the COVID-19 pandemic at writing date}  \label{fig:current_stage}
-	\resizebox{0.8\width}{!} {
-		\begin{threeparttable}
-
- 			  \includegraphics[width=1\textwidth]{figures/countries_today}
-  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
-			\item \textbf{Note:} Sample restricted to 113 countries with population 250k or larger.
-			 \end{tablenotes}
-  		\end{threeparttable}
- 		}
-  	 \onehalfspacing
-\end{figure}
-
-Figure \ref{fig:stage_by_region} summarizes the average duration of each stage by region of the world.
-
-%% FIGURE: Current stage %%
-\begin{figure}[H]
-	\singlespacing
-	\centering
-	 \caption{Stage duration by region of the world}  \label{fig:stage_by_region}
+	 \caption{Stages duration around the world}  \label{fig:stage_by_region}
 	\resizebox{0.7\width}{!} {
 		\begin{threeparttable}
-
  			  \includegraphics[width=1\textwidth]{figures/regions_stage_duration}
   			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
-			\item \textbf{Note:} All countries are assumed to start stage A on December 31st, 2019.  The last date used in the analysis is April 21, 2020.
+			\item \textbf{Note:} Unweighted averages across countries in each region-stage cell. Sample restricted to 134 countries with population 250,000 or larger. Data from: Our World in Data (ourworldindata.org/coronavirus). Last updated on April 28, 2020.
 			 \end{tablenotes}
   		\end{threeparttable}
  		}
   	 \onehalfspacing
 \end{figure}
+
+The U.S. and Canada reported their first confirmed cases already in late January with five days of difference, and their curves progressed at a similar pace. In both cases, stage B lasted around 50 days, and at the time of writing, they had been at stage C for around 45 days.  In contrast, the average Asian country reported its first case in the second half of February, went through a shorter stage B, with an average of around 30 days, and so far has had an even shorter stage C, although the latter may still change.
+
+Latin American and Caribbean countries appear to have followed yet a different path. Like in Asia, most of them experienced a short stage B after a relatively late announcement of the first confirmed case. However, most countries have seen a noticeably longer stage C (see Figure 4).  Conversely, compared to the U.S. and Canada, the first coronavirus case in the region was reported over a month later.  Nonetheless, most of Latin America and the Caribbean entered stage C at around the same time as the North-American countries.
+
+The fact that Latin American and Caribbean countries appear to have gone from their first confirmed case to the accelerated spread stage in a very short time could indicate that the initial outbreak propagated faster than elsewhere. Analysts have pointed to structural characteristics that make the region more vulnerable than others to the pandemic, including large shares of urban populations living in crowded informal settlements and working in informal jobs that only allow them to live hand to mouth, and make social distancing extremely difficult.
+
+%% FIGURE: Stage duration %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Stages duration around the world}  \label{fig:stage_by_region}
+	\resizebox{0.7\width}{!} {
+		\begin{threeparttable}
+ 			  \includegraphics[width=1\textwidth]{figures/correlation_A_B}
+        \includegraphics[width=1\textwidth]{figures/correlation_B_C}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item \textbf{Note:} Unweighted averages across countries in each region-stage cell. Sample restricted to 134 countries with population 250,000 or larger. Data from: Our World in Data (ourworldindata.org/coronavirus). Last updated on April 28, 2020.
+			 \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+
+Another non-mutually exclusive explanation is that the virus has been present in the region for longer than is currently believed, and countries were late to detect it. This is certainly plausible: recent evidence from autopsies in California showed that the virus had spread in the U.S. weeks earlier than originally thought. Even though there is no comparable evidence collected in Latin American countries at the time of writing, the relative duration of the stages of the COVID-19 spread can provide some clues. Across the world, as shown in Figure 5, countries that reported their first case relatively late (i.e. had a longer stage A) saw a shorter period of slow spread (i.e. stage B). This includes nations with different levels of structural vulnerability to the pandemic.  The correlation between the duration of stages B and C is also negative but much weaker. While this is far from conclusive evidence, it is consistent with the hypothesis that, during the first couple of months of the pandemic, many countries may have only detected the virus weeks after the spread in their territories had begun.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Government policies at different stages \label{sec:Policies}}
 
-In this section I..
-
-\subsection{Policies data \label{subsec:Policies-data}}
-
-The Oxford dataset
+I turn now to describe how national governments have responded to the pandemic at each stage of their country's wave, using data from the Oxford University's "Variation in government responses to COVID-19" dataset  \citep{Hale2020}
 
 \subsection{How policy intensity varies by stage \label{subsec:Policies-by-stage}}
 
-Figure \ref{fig:policies_by_stage} summarizes the average duration of each stage by region of the world.
+Figure \ref{fig:policies_by_stage} summarizes the most frequently-used policy at each stage.
 
-%% FIGURE: Current stage %%
+%% FIGURE: Policy frequency%%
 \begin{figure}[H]
 	\singlespacing
 	\centering
-	 \caption{Stage duration by region of the world}  \label{fig:policies_by_stage}
+	 \caption{Most frequent policies at each stage}  \label{fig:policies_by_stage}
 	\resizebox{0.7\width}{!} {
 		\begin{threeparttable}
 
- 			  \includegraphics[width=1\textwidth]{figures/policies_by_stage}
+ 			  \includegraphics[width=1\textwidth]{figures/top_policies_by_stage}
   			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
-			\item \textbf{Note:} The figure considers all policies implemented between December 31, 2019 and April 21, 2020.
+			\item \textbf{Note:} Sample restricted to 134 countries with population 250k or larger. Only policies ranked first through third within each stage are shown. Data from: The Oxford COVID-19 Government Response Tracker (bsg.ox.ac.uk/covidtracker). Last updated on April 24, 2020.
+			 \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
+
+Figure \ref{fig:stringency} summarizes the average stringency of policies at each stage.
+
+%% FIGURE: Policy frequency%%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Distribution of stringency of policies at each stage}  \label{fig:stringency}
+	\resizebox{0.7\width}{!} {
+		\begin{threeparttable}
+
+ 			  \includegraphics[width=1\textwidth]{figures/stringency_by_stage}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item \textbf{Note:} Sample restricted to 134 countries with population 250k or larger. Data from: The Oxford COVID-19 Government Response Tracker (bsg.ox.ac.uk/covidtracker). Last updated on April 24, 2020.
 			 \end{tablenotes}
   		\end{threeparttable}
  		}
@@ -213,18 +255,12 @@ Figure \ref{fig:policies_by_stage} summarizes the average duration of each stage
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{COVID-19 policy responses and government characteristics \label{sec:Characteristics}}
-
-
-This section
 
 %%%%%%%%%%%%%%
 
-\section{Conclusions\label{sec:Conclusion}}
+\section{Final note\label{sec:Conclusion}}
 
-Conclusions here
+This paper is a work in progress.
 
 \pagebreak{}
 
@@ -251,21 +287,63 @@ Conclusions here
 
 
 %%%%
-\section{Data appendix\label{sec:Figures}}
-\begin{spacing}{0.40000000000000002}
+\section{Data appendix\label{sec:DataAppendix}}
 
-This appendix describes the calculation of the main variables used in the analysis.
+
+This appendix describes in more detail how the main variables of this paper are produced.
 
 \subsection{Definition of observable stages}
 
-The stages are defined....
+The definition of observable stages is based in the variable "Daily new confirmed cases per million", obtained from Our World in Data \citep{Roser2020}. I start by smoothing this variable with a five-day rolling average to tease-out the underlying trend from short-term fluctuations, driven largely by the reporting issues described in Section \ref{subsec:Measurement}.  Next, I proceed to classify each country-day cell in one of the stages described in Section \ref{sec:Stages}. The number of confirmed cases is considered to be \emph{increasing} if the average of the prior five days of the smoothed variable is positive or zero, and \emph{decreasing} if this average is negative. The threshold for low-levels of new cases (see Figure \ref{fig:stages}) is defined at 1 per million.
+
+This procedure yields some instances in which countries "return" to a prior stage for short periods. In the variables used in the main part of the analysis, I introduce adjustments to asimilate the measurement of stages to the conceptual framework, in which countries progress from one stage to the next in only one direction, inputing a cell to a prior stage if the thre-days leads and lags of the smoothed variable are mostly from the prior stage.
 
 \subsection{Policy variables}
 
-The policy variables...
+All policy variables are based on data from Oxford University's "Variation in government responses to COVID-19" dataset  \citep{Hale2020}, a panel of government responses to the crisis that continues to be updated at the moment of writing.
+
+\newpage
+%%%%
+\section{Additional Figures\label{sec:Figures}}
+\begin{spacing}{0.40000000000000002}
+
+\setcounter{figure}{0}
+\renewcommand\appendix{\par
+  \renewcommand\thefigure{A\arabic{figure}}}
+\appendix
+\renewcommand*{\theHfigure}{\arabic{section}.{A\arabic{figure}}}
 
 
+%% FIGURE: Current stage %%
+\begin{figure}[H]
+	\singlespacing
+	\centering
+	 \caption{Stage of countries in the first wave of the COVID-19 pandemic at writing date}  \label{fig:current_stage}
+	\resizebox{0.8\width}{!} {
+		\begin{threeparttable}
+
+ 			  \includegraphics[width=1\textwidth]{figures/countries_today}
+  			 \begin{tablenotes}[flushleft]\vspace*{-7bp}
+			\item \textbf{Note:} Sample restricted to 134 countries with population 250,000 or larger. Data from: Our World in Data (ourworldindata.org/coronavirus). Last updated on April 28, 2020.
+			 \end{tablenotes}
+  		\end{threeparttable}
+ 		}
+  	 \onehalfspacing
+\end{figure}
 
 \end{spacing}
 
 \end{document}
+
+
+
+%% UNUSED WRITING... %%
+
+Third, I use data from the World Development Indicators \citep{WorldBank2020} to describe how policy responses vary with country characteristics.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{COVID-19 policy responses and government characteristics \label{sec:Characteristics}}
+
+
+This section
