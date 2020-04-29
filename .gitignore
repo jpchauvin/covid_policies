@@ -38,5 +38,5 @@ Icon
 Icon?
 
 # Ignore directory of draft notes
-"notes/*"
-"notes/Blogs_drafts/*"
+notes/*
+notes/Blogs_drafts/*

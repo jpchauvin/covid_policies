@@ -1,20 +1,19 @@
 # Government Policies along the COVID infection wave
-# Need to write more, this file corresponds to something else
 
-This is the git repository for the Covid-19 expansion in LATAM cities task force.
+This is the git repository for the white paper "Global Policy Responses Along the First COVID-19 Infection wave" and the related blog posts.
 
-## Folder structure
+This analysis is work in progress, if you find mistakes in the code please let us know! Direct any communication to the white paper's corresponding e-mail.
 
-The folder structure following the notation of (Asher & Novosad, 2018), which is described on the `RA_manual.pdf` file. This is the same folder structure of the Dropbox shared folder.
+## Paper and corresponding blog posts
 
-The main advantage of git repositories is that they're  useful to control the version of the codes. For example, if a new code causes a bug, it is possible to roll back to the previous version.
+* You can obrain the most recent version of the white paper [here](https://github.com/jpchauvin/covid_policies/drafts/covid19_infection_wave_and_policies.pdf).
+* Blog post: Where is Latin America and Caribbean on the COVID-19 Curve?
+* Blog posts figures [updated with more current data](https://github.com/jpchauvin/covid_policies/updates/cblog_posts_updates.md).
 
-The main difference between this repository and the Dropbox shared folder is that in git repositories we don't store large files. For instance, GitHub will warn you for any file larger than 50MB and will deny any push larger than 100MB.
+## Folders and replication
 
-## Warning
+This repository contains all the necessary scripts to replicate the analysis. They are all written in Stata.
 
-Do not sync the github repository with Dropbox, because the internal files inside `.git` repository confuses Dropbox sync algorithm, which could cause sync problems to the team.
+The folder "build" contains the necessary scripts to build the working datasets starting from the original data files downloaded from public sources.  To replicate the construction of these files from scratch run build/scripts/rundirectory.do
 
-## Running R scripts
-
-To run R scripts, one must first have [R installed on the computer](https://cran.r-project.org/). The `R` files will be stored inside `build/scripts/R` subfolder. It'll have a `rundirectory.R` file to run all the data munging scripts to generate the output files.
+The folder "analysis" contains the necessary scripts to replicate the analysis reported in the white paper and the related blog posts. To replicate only this part, first make sure that the outputs of the built process exist in build/outputs, and run analysis/scripts/rundirectory.do
