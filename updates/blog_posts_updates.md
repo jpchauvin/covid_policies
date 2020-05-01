@@ -1,6 +1,6 @@
 #  Blog posts figures updates
 
-The data underlying the blog posts related to the white paper are rapidly changing, and the published figures may be come outdated. Below you can find reproductions of these figures using more up-to-date data.
+The data underlying the blog post are rapidly changing, and the published figures may become outdated. Below you can find reproductions of these figures using more up-to-date data.
 
 ## Where is Latin America and Caribbean on the COVID-19 Curve?
 
