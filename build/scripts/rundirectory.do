@@ -46,5 +46,4 @@ do "$db_scr/countries_stages_count.do"
 
 /* Build Country-stage-policies-level  aggregates  */
 do "$db_scr/countries_stages_policies_count.do"
-
 /* End of do file */

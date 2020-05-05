@@ -13,6 +13,8 @@
    - The dropbox folder points to the root directory of any dropbox. We recommend
    to set the path in your profile.do to run smothly the code in any computer.
    - Stata 16 version
+   - rd_root refers to the R disk. A large hard drive we have access at the IADB where
+   we store large files. Available files upon request.
 
   **************************************************************************/
 
@@ -27,7 +29,7 @@ global db_scr "$dbuild/scripts"
 global db_tmp "$dbuild/temp"
 global db_log "$dbuild/logs"
 global mappings_br "$db_inp/municipality_level_data/brazil/mappings"
-global census_br "$db_inp/individual_level_data/brazil"
+global census_br "$rd_root/data/brazil/ibge/census/datazoom"
 global covid_br "$db_inp/municipality_level_data/brazil/covid"
 
 /* Analysis folder */
