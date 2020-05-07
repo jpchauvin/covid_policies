@@ -1,6 +1,6 @@
 #  Blog posts figures updates
 
-The data underlying the blog post are rapidly changing, and the published figures may become outdated. Below you can find reproductions of these figures using more up-to-date data. Last update: May 4, 2020.
+The data underlying the blog post are rapidly changing, and the published figures may become outdated. Below you can find reproductions of these figures using more up-to-date data. Last update: May 6, 2020.
 
 ## Where is Latin America and Caribbean on the COVID-19 Curve?
 

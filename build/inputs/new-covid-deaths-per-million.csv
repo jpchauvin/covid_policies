@@ -27,6 +27,7 @@ Afghanistan,AFG,"May 1, 2020",0.103
 Afghanistan,AFG,"May 2, 2020",0.103
 Afghanistan,AFG,"May 3, 2020",0.103
 Afghanistan,AFG,"May 4, 2020",0.334
+Afghanistan,AFG,"May 5, 2020",0.128
 Africa,,"Mar 9, 2020",0.001
 Africa,,"Mar 12, 2020",0.001
 Africa,,"Mar 13, 2020",0.001
@@ -81,6 +82,7 @@ Africa,,"May 1, 2020",0.033
 Africa,,"May 2, 2020",0.041
 Africa,,"May 3, 2020",0.052
 Africa,,"May 4, 2020",0.029
+Africa,,"May 5, 2020",0.034
 Albania,ALB,"Mar 12, 2020",0.347
 Albania,ALB,"Mar 19, 2020",0.347
 Albania,ALB,"Mar 24, 2020",0.695
@@ -153,6 +155,7 @@ Algeria,DZA,"May 1, 2020",0.137
 Algeria,DZA,"May 2, 2020",0.068
 Algeria,DZA,"May 3, 2020",0.137
 Algeria,DZA,"May 4, 2020",0.091
+Algeria,DZA,"May 5, 2020",0.046
 Andorra,AND,"Mar 27, 2020",38.827
 Andorra,AND,"Mar 29, 2020",12.942
 Andorra,AND,"Mar 30, 2020",25.885
@@ -228,6 +231,7 @@ Argentina,ARG,"May 1, 2020",0.089
 Argentina,ARG,"May 2, 2020",0.155
 Argentina,ARG,"May 3, 2020",0.266
 Argentina,ARG,"May 4, 2020",0.199
+Argentina,ARG,"May 5, 2020",0.31
 Armenia,ARM,"Mar 27, 2020",0.337
 Armenia,ARM,"Mar 29, 2020",0.675
 Armenia,ARM,"Apr 3, 2020",0.337
@@ -251,6 +255,7 @@ Armenia,ARM,"Apr 28, 2020",0.337
 Armenia,ARM,"May 1, 2020",0.675
 Armenia,ARM,"May 2, 2020",0.337
 Armenia,ARM,"May 4, 2020",0.675
+Armenia,ARM,"May 5, 2020",1.35
 Aruba,ABW,"Apr 16, 2020",9.366
 Aruba,ABW,"Apr 18, 2020",9.366
 Asia,,"Jan 21, 2020",0.001
@@ -357,6 +362,7 @@ Asia,,"May 1, 2020",0.076
 Asia,,"May 2, 2020",0.072
 Asia,,"May 3, 2020",0.081
 Asia,,"May 4, 2020",0.063
+Asia,,"May 5, 2020",0.097
 Australia,AUS,"Mar 1, 2020",0.039
 Australia,AUS,"Mar 5, 2020",0.039
 Australia,AUS,"Mar 8, 2020",0.039
@@ -445,6 +451,7 @@ Austria,AUT,"May 1, 2020",0.444
 Austria,AUT,"May 2, 2020",0.555
 Austria,AUT,"May 3, 2020",0.777
 Austria,AUT,"May 4, 2020",0.222
+Austria,AUT,"May 5, 2020",0.222
 Azerbaijan,AZE,"Mar 21, 2020",0.099
 Azerbaijan,AZE,"Mar 26, 2020",0.099
 Azerbaijan,AZE,"Mar 27, 2020",0.099
@@ -466,6 +473,7 @@ Azerbaijan,AZE,"Apr 28, 2020",0.099
 Azerbaijan,AZE,"Apr 30, 2020",0.099
 Azerbaijan,AZE,"May 1, 2020",0.099
 Azerbaijan,AZE,"May 2, 2020",0.099
+Azerbaijan,AZE,"May 5, 2020",0.099
 Bahamas,BHS,"Apr 2, 2020",2.543
 Bahamas,BHS,"Apr 4, 2020",5.086
 Bahamas,BHS,"Apr 5, 2020",2.543
@@ -518,6 +526,7 @@ Bangladesh,BGD,"May 1, 2020",0.03
 Bangladesh,BGD,"May 2, 2020",0.012
 Bangladesh,BGD,"May 3, 2020",0.03
 Bangladesh,BGD,"May 4, 2020",0.012
+Bangladesh,BGD,"May 5, 2020",0.03
 Barbados,BRB,"Apr 6, 2020",3.48
 Barbados,BRB,"Apr 7, 2020",3.48
 Barbados,BRB,"Apr 8, 2020",3.48
@@ -554,6 +563,7 @@ Belarus,BLR,"May 1, 2020",0.529
 Belarus,BLR,"May 2, 2020",0.423
 Belarus,BLR,"May 3, 2020",0.423
 Belarus,BLR,"May 4, 2020",0.212
+Belarus,BLR,"May 5, 2020",0.423
 Belgium,BEL,"Mar 12, 2020",0.259
 Belgium,BEL,"Mar 15, 2020",0.086
 Belgium,BEL,"Mar 17, 2020",0.086
@@ -604,6 +614,7 @@ Belgium,BEL,"May 1, 2020",8.024
 Belgium,BEL,"May 2, 2020",9.405
 Belgium,BEL,"May 3, 2020",5.35
 Belgium,BEL,"May 4, 2020",6.816
+Belgium,BEL,"May 5, 2020",6.903
 Belize,BLZ,"Apr 6, 2020",2.515
 Belize,BLZ,"Apr 11, 2020",2.515
 Benin,BEN,"Apr 7, 2020",0.082
@@ -647,6 +658,7 @@ Bolivia,BOL,"May 1, 2020",0.257
 Bolivia,BOL,"May 2, 2020",0.343
 Bolivia,BOL,"May 3, 2020",0.428
 Bolivia,BOL,"May 4, 2020",0.428
+Bolivia,BOL,"May 5, 2020",0.514
 Bosnia and Herzegovina,BIH,"Mar 22, 2020",0.305
 Bosnia and Herzegovina,BIH,"Mar 25, 2020",0.305
 Bosnia and Herzegovina,BIH,"Mar 26, 2020",0.305
@@ -684,6 +696,7 @@ Bosnia and Herzegovina,BIH,"May 1, 2020",0.61
 Bosnia and Herzegovina,BIH,"May 2, 2020",1.829
 Bosnia and Herzegovina,BIH,"May 3, 2020",0.61
 Bosnia and Herzegovina,BIH,"May 4, 2020",1.524
+Bosnia and Herzegovina,BIH,"May 5, 2020",0.305
 Botswana,BWA,"Apr 2, 2020",0.425
 Brazil,BRA,"Mar 18, 2020",0.005
 Brazil,BRA,"Mar 19, 2020",0.014
@@ -733,6 +746,7 @@ Brazil,BRA,"May 1, 2020",2.046
 Brazil,BRA,"May 2, 2020",2.014
 Brazil,BRA,"May 3, 2020",1.981
 Brazil,BRA,"May 4, 2020",1.294
+Brazil,BRA,"May 5, 2020",1.393
 British Virgin Islands,VGB,"Apr 20, 2020",33.072
 Brunei,BRN,"Mar 29, 2020",2.286
 Bulgaria,BGR,"Mar 12, 2020",0.144
@@ -768,6 +782,7 @@ Bulgaria,BGR,"May 1, 2020",0.288
 Bulgaria,BGR,"May 2, 2020",0.432
 Bulgaria,BGR,"May 3, 2020",0.432
 Bulgaria,BGR,"May 4, 2020",0.144
+Bulgaria,BGR,"May 5, 2020",0.72
 Burkina Faso,BFA,"Mar 19, 2020",0.048
 Burkina Faso,BFA,"Mar 22, 2020",0.096
 Burkina Faso,BFA,"Mar 29, 2020",0.287
@@ -792,6 +807,7 @@ Burkina Faso,BFA,"Apr 27, 2020",0.048
 Burkina Faso,BFA,"Apr 30, 2020",0.048
 Burkina Faso,BFA,"May 2, 2020",0.048
 Burkina Faso,BFA,"May 4, 2020",0.048
+Burkina Faso,BFA,"May 5, 2020",0.048
 Burundi,BDI,"Apr 15, 2020",0.084
 Cameroon,CMR,"Mar 25, 2020",0.038
 Cameroon,CMR,"Mar 29, 2020",0.038
@@ -863,6 +879,7 @@ Canada,CAN,"May 1, 2020",4.981
 Canada,CAN,"May 2, 2020",5.485
 Canada,CAN,"May 3, 2020",4.637
 Canada,CAN,"May 4, 2020",3.073
+Canada,CAN,"May 5, 2020",4.557
 Cape Verde,CPV,"Mar 25, 2020",1.799
 Cape Verde,CPV,"May 2, 2020",1.799
 Cayman Islands,CYM,"Mar 21, 2020",15.216
@@ -911,6 +928,7 @@ Chile,CHL,"May 1, 2020",0.575
 Chile,CHL,"May 2, 2020",0.366
 Chile,CHL,"May 3, 2020",0.68
 Chile,CHL,"May 4, 2020",0.68
+Chile,CHL,"May 5, 2020",0.523
 China,CHN,"Jan 11, 2020",0.001
 China,CHN,"Jan 15, 2020",0.001
 China,CHN,"Jan 19, 2020",0.001
@@ -1039,6 +1057,8 @@ Colombia,COL,"May 1, 2020",0.295
 Colombia,COL,"May 2, 2020",0.413
 Colombia,COL,"May 3, 2020",0.197
 Colombia,COL,"May 4, 2020",0.314
+Colombia,COL,"May 5, 2020",0.354
+Comoros,COM,"May 5, 2020",1.15
 Congo,COG,"Apr 1, 2020",0.362
 Congo,COG,"Apr 3, 2020",0.181
 Congo,COG,"Apr 5, 2020",0.362
@@ -1098,6 +1118,7 @@ Croatia,HRV,"May 1, 2020",0.487
 Croatia,HRV,"May 2, 2020",1.462
 Croatia,HRV,"May 3, 2020",0.487
 Croatia,HRV,"May 4, 2020",0.487
+Croatia,HRV,"May 5, 2020",0.244
 Cuba,CUB,"Mar 19, 2020",0.088
 Cuba,CUB,"Mar 27, 2020",0.088
 Cuba,CUB,"Mar 29, 2020",0.088
@@ -1129,6 +1150,7 @@ Cuba,CUB,"May 1, 2020",0.265
 Cuba,CUB,"May 2, 2020",0.265
 Cuba,CUB,"May 3, 2020",0.177
 Cuba,CUB,"May 4, 2020",0.088
+Cuba,CUB,"May 5, 2020",0.177
 Curacao,CUW,"Mar 26, 2020",6.094
 Cyprus,CYP,"Mar 25, 2020",3.425
 Cyprus,CYP,"Mar 28, 2020",2.283
@@ -1182,6 +1204,7 @@ Czech Republic,CZE,"May 1, 2020",0.84
 Czech Republic,CZE,"May 2, 2020",0.374
 Czech Republic,CZE,"May 3, 2020",0.467
 Czech Republic,CZE,"May 4, 2020",0.28
+Czech Republic,CZE,"May 5, 2020",0.374
 Democratic Republic of Congo,COD,"Mar 22, 2020",0.011
 Democratic Republic of Congo,COD,"Mar 23, 2020",0.011
 Democratic Republic of Congo,COD,"Mar 25, 2020",0.011
@@ -1249,6 +1272,7 @@ Denmark,DNK,"May 1, 2020",1.554
 Denmark,DNK,"May 2, 2020",1.381
 Denmark,DNK,"May 3, 2020",2.59
 Denmark,DNK,"May 4, 2020",1.554
+Denmark,DNK,"May 5, 2020",1.554
 Djibouti,DJI,"Apr 10, 2020",1.012
 Djibouti,DJI,"Apr 12, 2020",1.012
 Dominican Republic,DOM,"Mar 21, 2020",0.184
@@ -1292,6 +1316,7 @@ Dominican Republic,DOM,"May 1, 2020",0.737
 Dominican Republic,DOM,"May 2, 2020",1.106
 Dominican Republic,DOM,"May 3, 2020",1.198
 Dominican Republic,DOM,"May 4, 2020",0.645
+Dominican Republic,DOM,"May 5, 2020",1.198
 Ecuador,ECU,"Mar 14, 2020",0.057
 Ecuador,ECU,"Mar 15, 2020",0.057
 Ecuador,ECU,"Mar 19, 2020",0.057
@@ -1335,6 +1360,7 @@ Ecuador,ECU,"May 1, 2020",0.964
 Ecuador,ECU,"May 2, 2020",9.239
 Ecuador,ECU,"May 3, 2020",17.457
 Ecuador,ECU,"May 4, 2020",10.939
+Ecuador,ECU,"May 5, 2020",0.283
 Egypt,EGY,"Mar 9, 2020",0.01
 Egypt,EGY,"Mar 13, 2020",0.01
 Egypt,EGY,"Mar 18, 2020",0.02
@@ -1380,6 +1406,7 @@ Egypt,EGY,"May 1, 2020",0.117
 Egypt,EGY,"May 2, 2020",0.137
 Egypt,EGY,"May 3, 2020",0.088
 Egypt,EGY,"May 4, 2020",0.137
+Egypt,EGY,"May 5, 2020",0.068
 El Salvador,SLV,"Apr 1, 2020",0.154
 El Salvador,SLV,"Apr 2, 2020",0.154
 El Salvador,SLV,"Apr 4, 2020",0.154
@@ -1392,7 +1419,9 @@ El Salvador,SLV,"Apr 29, 2020",0.154
 El Salvador,SLV,"May 1, 2020",0.154
 El Salvador,SLV,"May 3, 2020",0.154
 El Salvador,SLV,"May 4, 2020",0.154
+El Salvador,SLV,"May 5, 2020",0.154
 Equatorial Guinea,GNQ,"Apr 24, 2020",0.713
+Equatorial Guinea,GNQ,"May 5, 2020",0.713
 Estonia,EST,"Mar 26, 2020",0.754
 Estonia,EST,"Mar 30, 2020",1.508
 Estonia,EST,"Apr 1, 2020",0.754
@@ -1484,16 +1513,17 @@ Europe,,"Apr 21, 2020",3.627
 Europe,,"Apr 22, 2020",5.109
 Europe,,"Apr 23, 2020",4.502
 Europe,,"Apr 24, 2020",4.093
-Europe,,"Apr 25, 2020",4.185
-Europe,,"Apr 26, 2020",3.95
-Europe,,"Apr 27, 2020",2.018
-Europe,,"Apr 28, 2020",3.158
-Europe,,"Apr 29, 2020",3.886
-Europe,,"Apr 30, 2020",3.674
-Europe,,"May 1, 2020",2.868
-Europe,,"May 2, 2020",3.158
+Europe,,"Apr 25, 2020",4.22
+Europe,,"Apr 26, 2020",3.946
+Europe,,"Apr 27, 2020",2.021
+Europe,,"Apr 28, 2020",3.151
+Europe,,"Apr 29, 2020",3.892
+Europe,,"Apr 30, 2020",3.662
+Europe,,"May 1, 2020",2.87
+Europe,,"May 2, 2020",3.134
 Europe,,"May 3, 2020",2.504
-Europe,,"May 4, 2020",1.399
+Europe,,"May 4, 2020",1.426
+Europe,,"May 5, 2020",2.021
 Finland,FIN,"Mar 22, 2020",0.18
 Finland,FIN,"Mar 26, 2020",0.361
 Finland,FIN,"Mar 27, 2020",0.18
@@ -1533,6 +1563,7 @@ Finland,FIN,"May 1, 2020",0.902
 Finland,FIN,"May 2, 2020",1.263
 Finland,FIN,"May 3, 2020",0.361
 Finland,FIN,"May 4, 2020",1.805
+Finland,FIN,"May 5, 2020",1.805
 France,FRA,"Feb 15, 2020",0.015
 France,FRA,"Feb 27, 2020",0.015
 France,FRA,"Mar 3, 2020",0.015
@@ -1597,11 +1628,13 @@ France,FRA,"May 1, 2020",4.428
 France,FRA,"May 2, 2020",3.34
 France,FRA,"May 3, 2020",2.543
 France,FRA,"May 4, 2020",2.068
+France,FRA,"May 5, 2020",4.688
 Gabon,GAB,"Mar 21, 2020",0.449
 Gabon,GAB,"Apr 24, 2020",0.449
 Gabon,GAB,"Apr 25, 2020",0.449
 Gabon,GAB,"May 2, 2020",0.449
 Gabon,GAB,"May 3, 2020",0.449
+Gabon,GAB,"May 5, 2020",0.449
 Gambia,GMB,"Mar 24, 2020",0.414
 Georgia,GEO,"Apr 6, 2020",0.501
 Georgia,GEO,"Apr 8, 2020",0.251
@@ -1661,6 +1694,7 @@ Germany,DEU,"Apr 30, 2020",2.065
 Germany,DEU,"May 2, 2020",3.425
 Germany,DEU,"May 3, 2020",0.883
 Germany,DEU,"May 4, 2020",0.513
+Germany,DEU,"May 5, 2020",1.659
 Ghana,GHA,"Mar 22, 2020",0.032
 Ghana,GHA,"Mar 24, 2020",0.032
 Ghana,GHA,"Mar 26, 2020",0.032
@@ -1715,6 +1749,7 @@ Greece,GRC,"Apr 30, 2020",0.288
 Greece,GRC,"May 1, 2020",0.096
 Greece,GRC,"May 3, 2020",0.288
 Greece,GRC,"May 4, 2020",0.096
+Greece,GRC,"May 5, 2020",0.192
 Guam,GUM,"Mar 22, 2020",5.925
 Guam,GUM,"Apr 1, 2020",11.85
 Guam,GUM,"Apr 4, 2020",5.925
@@ -1731,11 +1766,13 @@ Guatemala,GTM,"Apr 26, 2020",0.112
 Guatemala,GTM,"Apr 27, 2020",0.112
 Guatemala,GTM,"Apr 29, 2020",0.056
 Guatemala,GTM,"May 3, 2020",0.056
+Guatemala,GTM,"May 5, 2020",0.112
 Guinea,GIN,"Apr 16, 2020",0.076
 Guinea,GIN,"Apr 18, 2020",0.152
 Guinea,GIN,"Apr 20, 2020",0.152
 Guinea,GIN,"Apr 22, 2020",0.076
 Guinea,GIN,"Apr 26, 2020",0.076
+Guinea,GIN,"May 5, 2020",0.152
 Guinea-Bissau,GNB,"Apr 27, 2020",0.508
 Guinea-Bissau,GNB,"May 4, 2020",0.508
 Guyana,GUY,"Mar 13, 2020",1.271
@@ -1753,6 +1790,7 @@ Haiti,HTI,"Apr 22, 2020",0.088
 Haiti,HTI,"Apr 24, 2020",0.088
 Haiti,HTI,"Apr 26, 2020",0.088
 Haiti,HTI,"May 1, 2020",0.175
+Haiti,HTI,"May 5, 2020",0.263
 Honduras,HND,"Mar 27, 2020",0.101
 Honduras,HND,"Mar 29, 2020",0.101
 Honduras,HND,"Mar 30, 2020",0.101
@@ -1819,6 +1857,7 @@ Hungary,HUN,"May 1, 2020",1.139
 Hungary,HUN,"May 2, 2020",1.242
 Hungary,HUN,"May 3, 2020",0.518
 Hungary,HUN,"May 4, 2020",1.139
+Hungary,HUN,"May 5, 2020",1.242
 Iceland,ISL,"Mar 20, 2020",2.93
 Iceland,ISL,"Mar 24, 2020",2.93
 Iceland,ISL,"Apr 3, 2020",5.861
@@ -1873,6 +1912,7 @@ India,IND,"May 1, 2020",0.053
 India,IND,"May 2, 2020",0.051
 India,IND,"May 3, 2020",0.06
 India,IND,"May 4, 2020",0.052
+India,IND,"May 5, 2020",0.141
 Indonesia,IDN,"Mar 12, 2020",0.004
 Indonesia,IDN,"Mar 14, 2020",0.011
 Indonesia,IDN,"Mar 16, 2020",0.004
@@ -1922,6 +1962,7 @@ Indonesia,IDN,"May 1, 2020",0.029
 Indonesia,IDN,"May 2, 2020",0.029
 Indonesia,IDN,"May 3, 2020",0.113
 Indonesia,IDN,"May 4, 2020",0.051
+Indonesia,IDN,"May 5, 2020",0.069
 Iran,IRN,"Feb 20, 2020",0.024
 Iran,IRN,"Feb 22, 2020",0.024
 Iran,IRN,"Feb 23, 2020",0.012
@@ -1995,6 +2036,7 @@ Iran,IRN,"May 1, 2020",0.845
 Iran,IRN,"May 2, 2020",0.75
 Iran,IRN,"May 3, 2020",0.774
 Iran,IRN,"May 4, 2020",0.56
+Iran,IRN,"May 5, 2020",0.881
 Iraq,IRQ,"Mar 6, 2020",0.05
 Iraq,IRQ,"Mar 9, 2020",0.099
 Iraq,IRQ,"Mar 12, 2020",0.05
@@ -2034,6 +2076,7 @@ Iraq,IRQ,"May 1, 2020",0.025
 Iraq,IRQ,"May 2, 2020",0.025
 Iraq,IRQ,"May 3, 2020",0.025
 Iraq,IRQ,"May 4, 2020",0.05
+Iraq,IRQ,"May 5, 2020",0.025
 Ireland,IRL,"Mar 12, 2020",0.203
 Ireland,IRL,"Mar 15, 2020",0.203
 Ireland,IRL,"Mar 20, 2020",0.203
@@ -2079,6 +2122,7 @@ Ireland,IRL,"Apr 30, 2020",6.278
 Ireland,IRL,"May 1, 2020",8.506
 Ireland,IRL,"May 2, 2020",6.683
 Ireland,IRL,"May 4, 2020",7.696
+Ireland,IRL,"May 5, 2020",3.24
 Isle of Man,IMN,"Apr 3, 2020",11.76
 Isle of Man,IMN,"Apr 13, 2020",11.76
 Isle of Man,IMN,"Apr 17, 2020",23.521
@@ -2090,6 +2134,7 @@ Isle of Man,IMN,"Apr 24, 2020",11.76
 Isle of Man,IMN,"Apr 25, 2020",23.521
 Isle of Man,IMN,"Apr 29, 2020",35.281
 Isle of Man,IMN,"May 2, 2020",11.76
+Isle of Man,IMN,"May 5, 2020",11.76
 Israel,ISR,"Mar 21, 2020",0.116
 Israel,ISR,"Mar 25, 2020",0.231
 Israel,ISR,"Mar 26, 2020",0.231
@@ -2131,6 +2176,7 @@ Israel,ISR,"May 1, 2020",0.809
 Israel,ISR,"May 2, 2020",0.347
 Israel,ISR,"May 3, 2020",0.462
 Israel,ISR,"May 4, 2020",0.347
+Israel,ISR,"May 5, 2020",0.347
 Italy,ITA,"Feb 23, 2020",0.033
 Italy,ITA,"Feb 25, 2020",0.066
 Italy,ITA,"Feb 26, 2020",0.083
@@ -2202,6 +2248,7 @@ Italy,ITA,"May 1, 2020",4.714
 Italy,ITA,"May 2, 2020",4.449
 Italy,ITA,"May 3, 2020",7.84
 Italy,ITA,"May 4, 2020",2.878
+Italy,ITA,"May 5, 2020",3.225
 Jamaica,JAM,"Mar 25, 2020",0.338
 Jamaica,JAM,"Apr 2, 2020",0.675
 Jamaica,JAM,"Apr 9, 2020",0.338
@@ -2267,6 +2314,7 @@ Japan,JPN,"May 1, 2020",0.134
 Japan,JPN,"May 2, 2020",0.206
 Japan,JPN,"May 3, 2020",0.269
 Japan,JPN,"May 4, 2020",0.142
+Japan,JPN,"May 5, 2020",0.087
 Jordan,JOR,"Mar 29, 2020",0.098
 Jordan,JOR,"Mar 31, 2020",0.392
 Jordan,JOR,"Apr 7, 2020",0.098
@@ -2288,6 +2336,7 @@ Kazakhstan,KAZ,"Apr 20, 2020",0.107
 Kazakhstan,KAZ,"Apr 24, 2020",0.16
 Kazakhstan,KAZ,"Apr 25, 2020",0.16
 Kazakhstan,KAZ,"May 4, 2020",0.107
+Kazakhstan,KAZ,"May 5, 2020",0.107
 Kenya,KEN,"Mar 27, 2020",0.019
 Kenya,KEN,"Apr 3, 2020",0.037
 Kenya,KEN,"Apr 4, 2020",0.019
@@ -2318,6 +2367,7 @@ Kosovo,OWID_KOS,"Apr 24, 2020",0.517
 Kosovo,OWID_KOS,"Apr 26, 2020",0.517
 Kosovo,OWID_KOS,"Apr 27, 2020",0.517
 Kosovo,OWID_KOS,"Apr 28, 2020",0.517
+Kosovo,OWID_KOS,"May 5, 2020",2.07
 Kuwait,KWT,"Apr 5, 2020",0.234
 Kuwait,KWT,"Apr 14, 2020",0.234
 Kuwait,KWT,"Apr 15, 2020",0.234
@@ -2338,12 +2388,14 @@ Kuwait,KWT,"May 1, 2020",0.468
 Kuwait,KWT,"May 2, 2020",0.937
 Kuwait,KWT,"May 3, 2020",0.702
 Kuwait,KWT,"May 4, 2020",1.171
+Kuwait,KWT,"May 5, 2020",0.468
 Kyrgyzstan,KGZ,"Apr 2, 2020",0.153
 Kyrgyzstan,KGZ,"Apr 6, 2020",0.46
 Kyrgyzstan,KGZ,"Apr 10, 2020",0.153
 Kyrgyzstan,KGZ,"Apr 20, 2020",0.307
 Kyrgyzstan,KGZ,"Apr 23, 2020",0.153
 Kyrgyzstan,KGZ,"May 3, 2020",0.307
+Kyrgyzstan,KGZ,"May 5, 2020",0.153
 Latvia,LVA,"Apr 4, 2020",0.53
 Latvia,LVA,"Apr 8, 2020",0.53
 Latvia,LVA,"Apr 12, 2020",0.53
@@ -2483,6 +2535,7 @@ Macedonia,MKD,"May 1, 2020",1.92
 Macedonia,MKD,"May 2, 2020",1.92
 Macedonia,MKD,"May 3, 2020",0.48
 Macedonia,MKD,"May 4, 2020",0.96
+Macedonia,MKD,"May 5, 2020",0.48
 Malawi,MWI,"Apr 8, 2020",0.052
 Malawi,MWI,"Apr 12, 2020",0.052
 Malawi,MWI,"Apr 23, 2020",0.052
@@ -2543,6 +2596,7 @@ Mali,MLI,"Apr 29, 2020",0.049
 Mali,MLI,"Apr 30, 2020",0.049
 Mali,MLI,"May 1, 2020",0.049
 Mali,MLI,"May 4, 2020",0.049
+Mali,MLI,"May 5, 2020",0.099
 Malta,MLT,"Apr 9, 2020",2.265
 Malta,MLT,"Apr 10, 2020",2.265
 Malta,MLT,"Apr 12, 2020",2.265
@@ -2597,6 +2651,7 @@ Mexico,MEX,"May 1, 2020",0.985
 Mexico,MEX,"May 2, 2020",0.876
 Mexico,MEX,"May 3, 2020",0.69
 Mexico,MEX,"May 4, 2020",0.721
+Mexico,MEX,"May 5, 2020",0.907
 Moldova,MDA,"Mar 19, 2020",0.248
 Moldova,MDA,"Mar 28, 2020",0.248
 Moldova,MDA,"Apr 1, 2020",0.496
@@ -2632,6 +2687,7 @@ Moldova,MDA,"May 1, 2020",1.983
 Moldova,MDA,"May 2, 2020",0.744
 Moldova,MDA,"May 3, 2020",0.496
 Moldova,MDA,"May 4, 2020",0.248
+Moldova,MDA,"May 5, 2020",1.735
 Monaco,MCO,"Apr 5, 2020",50.963
 Monaco,MCO,"Apr 16, 2020",25.482
 Monaco,MCO,"Apr 24, 2020",25.482
@@ -2686,6 +2742,7 @@ Morocco,MAR,"May 1, 2020",0.054
 Morocco,MAR,"May 2, 2020",0.027
 Morocco,MAR,"May 3, 2020",0.054
 Morocco,MAR,"May 4, 2020",0.027
+Morocco,MAR,"May 5, 2020",0.135
 Myanmar,MMR,"Apr 1, 2020",0.018
 Myanmar,MMR,"Apr 9, 2020",0.037
 Myanmar,MMR,"Apr 13, 2020",0.018
@@ -2746,6 +2803,7 @@ Netherlands,NLD,"May 1, 2020",4.902
 Netherlands,NLD,"May 2, 2020",5.719
 Netherlands,NLD,"May 3, 2020",5.486
 Netherlands,NLD,"May 4, 2020",4.027
+Netherlands,NLD,"May 5, 2020",1.517
 New Zealand,NZL,"Mar 29, 2020",0.207
 New Zealand,NZL,"Apr 10, 2020",0.207
 New Zealand,NZL,"Apr 11, 2020",0.415
@@ -2786,6 +2844,7 @@ Niger,NER,"Apr 30, 2020",0.041
 Niger,NER,"May 2, 2020",0.041
 Niger,NER,"May 3, 2020",0.083
 Niger,NER,"May 4, 2020",0.041
+Niger,NER,"May 5, 2020",0.041
 Nigeria,NGA,"Mar 24, 2020",0.005
 Nigeria,NGA,"Mar 31, 2020",0.005
 Nigeria,NGA,"Apr 5, 2020",0.01
@@ -2812,6 +2871,7 @@ Nigeria,NGA,"May 1, 2020",0.034
 Nigeria,NGA,"May 2, 2020",0.049
 Nigeria,NGA,"May 3, 2020",0.082
 Nigeria,NGA,"May 4, 2020",0.01
+Nigeria,NGA,"May 5, 2020",0.029
 North America,,"Mar 1, 2020",0.003
 North America,,"Mar 2, 2020",0.003
 North America,,"Mar 3, 2020",0.011
@@ -2877,6 +2937,7 @@ North America,,"May 1, 2020",6.479
 North America,,"May 2, 2020",6.514
 North America,,"May 3, 2020",4.354
 North America,,"May 4, 2020",4.142
+North America,,"May 5, 2020",4.243
 Northern Mariana Islands,MNP,"Apr 2, 2020",17.374
 Northern Mariana Islands,MNP,"Apr 8, 2020",17.374
 Norway,NOR,"Mar 13, 2020",0.184
@@ -3016,6 +3077,7 @@ Pakistan,PAK,"May 1, 2020",0.177
 Pakistan,PAK,"May 2, 2020",0.145
 Pakistan,PAK,"May 3, 2020",0.104
 Pakistan,PAK,"May 4, 2020",0.1
+Pakistan,PAK,"May 5, 2020",0.109
 Palestine,PSE,"Mar 27, 2020",0.196
 Palestine,PSE,"Apr 11, 2020",0.196
 Palestine,PSE,"May 1, 2020",0.392
@@ -3061,6 +3123,7 @@ Panama,PAN,"May 1, 2020",2.318
 Panama,PAN,"May 2, 2020",0.927
 Panama,PAN,"May 3, 2020",1.159
 Panama,PAN,"May 4, 2020",0.695
+Panama,PAN,"May 5, 2020",0.695
 Paraguay,PRY,"Mar 21, 2020",0.14
 Paraguay,PRY,"Mar 25, 2020",0.28
 Paraguay,PRY,"Apr 6, 2020",0.28
@@ -3112,6 +3175,7 @@ Peru,PER,"May 1, 2020",3.276
 Peru,PER,"May 2, 2020",2.214
 Peru,PER,"May 3, 2020",2.305
 Peru,PER,"May 4, 2020",2.608
+Peru,PER,"May 5, 2020",1.759
 Philippines,PHL,"Feb 2, 2020",0.009
 Philippines,PHL,"Mar 12, 2020",0.009
 Philippines,PHL,"Mar 14, 2020",0.037
@@ -3160,6 +3224,7 @@ Philippines,PHL,"May 1, 2020",0.091
 Philippines,PHL,"May 2, 2020",0.1
 Philippines,PHL,"May 3, 2020",0.219
 Philippines,PHL,"May 4, 2020",0.037
+Philippines,PHL,"May 5, 2020",0.146
 Poland,POL,"Mar 13, 2020",0.026
 Poland,POL,"Mar 14, 2020",0.026
 Poland,POL,"Mar 15, 2020",0.026
@@ -3207,6 +3272,7 @@ Poland,POL,"May 1, 2020",0.528
 Poland,POL,"May 2, 2020",0.185
 Poland,POL,"May 3, 2020",0.343
 Poland,POL,"May 4, 2020",0.37
+Poland,POL,"May 5, 2020",0.528
 Portugal,PRT,"Mar 18, 2020",0.098
 Portugal,PRT,"Mar 19, 2020",0.098
 Portugal,PRT,"Mar 20, 2020",0.098
@@ -3245,16 +3311,15 @@ Portugal,PRT,"Apr 21, 2020",2.059
 Portugal,PRT,"Apr 22, 2020",2.648
 Portugal,PRT,"Apr 23, 2020",2.256
 Portugal,PRT,"Apr 24, 2020",3.432
-Portugal,PRT,"Apr 25, 2020",3.334
-Portugal,PRT,"Apr 26, 2020",2.55
-Portugal,PRT,"Apr 27, 2020",2.256
-Portugal,PRT,"Apr 28, 2020",2.452
-Portugal,PRT,"Apr 29, 2020",1.961
-Portugal,PRT,"Apr 30, 2020",2.452
-Portugal,PRT,"May 1, 2020",1.569
-Portugal,PRT,"May 2, 2020",1.765
+Portugal,PRT,"Apr 25, 2020",5.884
+Portugal,PRT,"Apr 26, 2020",2.256
+Portugal,PRT,"Apr 27, 2020",2.452
+Portugal,PRT,"Apr 28, 2020",1.961
+Portugal,PRT,"Apr 29, 2020",2.452
+Portugal,PRT,"Apr 30, 2020",1.569
+Portugal,PRT,"May 1, 2020",1.765
 Portugal,PRT,"May 3, 2020",1.569
-Portugal,PRT,"May 4, 2020",1.961
+Portugal,PRT,"May 4, 2020",3.923
 Puerto Rico,PRI,"Mar 28, 2020",0.699
 Puerto Rico,PRI,"Mar 29, 2020",0.35
 Puerto Rico,PRI,"Mar 30, 2020",0.699
@@ -3342,6 +3407,7 @@ Romania,ROU,"May 1, 2020",2.183
 Romania,ROU,"May 2, 2020",1.403
 Romania,ROU,"May 3, 2020",1.403
 Romania,ROU,"May 4, 2020",0.468
+Romania,ROU,"May 5, 2020",1.196
 Russia,RUS,"Mar 27, 2020",0.014
 Russia,RUS,"Mar 28, 2020",0.014
 Russia,RUS,"Mar 29, 2020",0.007
@@ -3381,6 +3447,7 @@ Russia,RUS,"May 1, 2020",0.692
 Russia,RUS,"May 2, 2020",0.658
 Russia,RUS,"May 3, 2020",0.363
 Russia,RUS,"May 4, 2020",0.397
+Russia,RUS,"May 5, 2020",0.521
 San Marino,SMR,"Mar 2, 2020",29.465
 San Marino,SMR,"Mar 10, 2020",29.465
 San Marino,SMR,"Mar 12, 2020",29.465
@@ -3405,6 +3472,7 @@ San Marino,SMR,"Apr 18, 2020",29.465
 San Marino,SMR,"Apr 22, 2020",29.465
 San Marino,SMR,"Apr 27, 2020",29.465
 Sao Tome and Principe,STP,"May 1, 2020",4.563
+Sao Tome and Principe,STP,"May 5, 2020",9.126
 Saudi Arabia,SAU,"Mar 25, 2020",0.029
 Saudi Arabia,SAU,"Mar 26, 2020",0.029
 Saudi Arabia,SAU,"Mar 27, 2020",0.029
@@ -3442,6 +3510,7 @@ Saudi Arabia,SAU,"May 1, 2020",0.144
 Saudi Arabia,SAU,"May 2, 2020",0.201
 Saudi Arabia,SAU,"May 3, 2020",0.201
 Saudi Arabia,SAU,"May 4, 2020",0.23
+Saudi Arabia,SAU,"May 5, 2020",0.201
 Senegal,SEN,"Apr 2, 2020",0.06
 Senegal,SEN,"Apr 5, 2020",0.06
 Senegal,SEN,"Apr 18, 2020",0.06
@@ -3450,6 +3519,7 @@ Senegal,SEN,"Apr 21, 2020",0.06
 Senegal,SEN,"Apr 23, 2020",0.06
 Senegal,SEN,"Apr 25, 2020",0.06
 Senegal,SEN,"Apr 27, 2020",0.119
+Senegal,SEN,"May 5, 2020",0.06
 Serbia,SRB,"Mar 21, 2020",0.147
 Serbia,SRB,"Mar 26, 2020",0.147
 Serbia,SRB,"Mar 27, 2020",0.147
@@ -3488,11 +3558,13 @@ Serbia,SRB,"May 1, 2020",0.882
 Serbia,SRB,"May 2, 2020",0.882
 Serbia,SRB,"May 3, 2020",0.588
 Serbia,SRB,"May 4, 2020",0.588
+Serbia,SRB,"May 5, 2020",0.588
 Sierra Leone,SLE,"Apr 24, 2020",0.125
 Sierra Leone,SLE,"Apr 25, 2020",0.251
 Sierra Leone,SLE,"Apr 27, 2020",0.125
 Sierra Leone,SLE,"May 1, 2020",0.376
 Sierra Leone,SLE,"May 3, 2020",0.125
+Sierra Leone,SLE,"May 5, 2020",0.125
 Singapore,SGP,"Mar 22, 2020",0.342
 Singapore,SGP,"Mar 29, 2020",0.171
 Singapore,SGP,"Apr 2, 2020",0.171
@@ -3531,6 +3603,7 @@ Slovakia,SVK,"Apr 29, 2020",0.366
 Slovakia,SVK,"Apr 30, 2020",0.366
 Slovakia,SVK,"May 1, 2020",0.183
 Slovakia,SVK,"May 3, 2020",0.183
+Slovakia,SVK,"May 5, 2020",0.183
 Slovenia,SVN,"Mar 18, 2020",0.481
 Slovenia,SVN,"Mar 25, 2020",0.962
 Slovenia,SVN,"Mar 26, 2020",0.481
@@ -3568,6 +3641,7 @@ Slovenia,SVN,"May 1, 2020",0.962
 Slovenia,SVN,"May 2, 2020",0.962
 Slovenia,SVN,"May 3, 2020",0.481
 Slovenia,SVN,"May 4, 2020",0.962
+Slovenia,SVN,"May 5, 2020",0.481
 Somalia,SOM,"Apr 10, 2020",0.063
 Somalia,SOM,"Apr 13, 2020",0.063
 Somalia,SOM,"Apr 16, 2020",0.189
@@ -3581,6 +3655,7 @@ Somalia,SOM,"Apr 28, 2020",0.189
 Somalia,SOM,"Apr 29, 2020",0.126
 Somalia,SOM,"May 3, 2020",0.189
 Somalia,SOM,"May 4, 2020",0.063
+Somalia,SOM,"May 5, 2020",0.189
 South Africa,ZAF,"Mar 27, 2020",0.034
 South Africa,ZAF,"Mar 31, 2020",0.017
 South Africa,ZAF,"Apr 1, 2020",0.034
@@ -3610,6 +3685,7 @@ South Africa,ZAF,"Apr 30, 2020",0.169
 South Africa,ZAF,"May 2, 2020",0.219
 South Africa,ZAF,"May 3, 2020",0.118
 South Africa,ZAF,"May 4, 2020",0.135
+South Africa,ZAF,"May 5, 2020",0.118
 South America,,"Mar 8, 2020",0.002
 South America,,"Mar 13, 2020",0.002
 South America,,"Mar 14, 2020",0.005
@@ -3662,6 +3738,7 @@ South America,,"May 1, 2020",1.386
 South America,,"May 2, 2020",1.632
 South America,,"May 3, 2020",1.962
 South America,,"May 4, 2020",1.386
+South America,,"May 5, 2020",0.945
 South Korea,KOR,"Feb 21, 2020",0.02
 South Korea,KOR,"Feb 22, 2020",0.02
 South Korea,KOR,"Feb 23, 2020",0.059
@@ -3730,6 +3807,7 @@ South Korea,KOR,"Apr 30, 2020",0.02
 South Korea,KOR,"May 1, 2020",0.02
 South Korea,KOR,"May 2, 2020",0.039
 South Korea,KOR,"May 4, 2020",0.039
+South Korea,KOR,"May 5, 2020",0.039
 Spain,ESP,"Mar 5, 2020",0.021
 Spain,ESP,"Mar 6, 2020",0.043
 Spain,ESP,"Mar 7, 2020",0.043
@@ -3787,6 +3865,7 @@ Spain,ESP,"Apr 30, 2020",5.732
 Spain,ESP,"May 1, 2020",6.01
 Spain,ESP,"May 2, 2020",5.903
 Spain,ESP,"May 3, 2020",3.508
+Spain,ESP,"May 5, 2020",3.508
 Sri Lanka,LKA,"Mar 29, 2020",0.047
 Sri Lanka,LKA,"Apr 1, 2020",0.047
 Sri Lanka,LKA,"Apr 3, 2020",0.047
@@ -3794,6 +3873,7 @@ Sri Lanka,LKA,"Apr 4, 2020",0.047
 Sri Lanka,LKA,"Apr 5, 2020",0.047
 Sri Lanka,LKA,"Apr 8, 2020",0.047
 Sri Lanka,LKA,"Apr 9, 2020",0.047
+Sri Lanka,LKA,"May 5, 2020",0.047
 Sudan,SDN,"Mar 15, 2020",0.023
 Sudan,SDN,"Mar 31, 2020",0.023
 Sudan,SDN,"Apr 14, 2020",0.046
@@ -3861,6 +3941,7 @@ Sweden,SWE,"May 1, 2020",12.278
 Sweden,SWE,"May 2, 2020",6.634
 Sweden,SWE,"May 3, 2020",1.584
 Sweden,SWE,"May 4, 2020",0.99
+Sweden,SWE,"May 5, 2020",8.912
 Switzerland,CHE,"Mar 6, 2020",0.116
 Switzerland,CHE,"Mar 9, 2020",0.116
 Switzerland,CHE,"Mar 11, 2020",0.116
@@ -3916,6 +3997,7 @@ Switzerland,CHE,"May 1, 2020",1.733
 Switzerland,CHE,"May 2, 2020",1.387
 Switzerland,CHE,"May 3, 2020",3.697
 Switzerland,CHE,"May 4, 2020",0.693
+Switzerland,CHE,"May 5, 2020",0.462
 Syria,SYR,"Mar 30, 2020",0.057
 Syria,SYR,"Mar 31, 2020",0.057
 Syria,SYR,"Apr 20, 2020",0.057
@@ -3924,6 +4006,7 @@ Taiwan,TWN,"Mar 21, 2020",0.042
 Taiwan,TWN,"Mar 30, 2020",0.126
 Taiwan,TWN,"Apr 12, 2020",0.042
 Tajikistan,TJK,"May 4, 2020",0.21
+Tajikistan,TJK,"May 5, 2020",0.105
 Tanzania,TZA,"Mar 29, 2020",0.017
 Tanzania,TZA,"Apr 11, 2020",0.033
 Tanzania,TZA,"Apr 16, 2020",0.017
@@ -3931,6 +4014,7 @@ Tanzania,TZA,"Apr 18, 2020",0.017
 Tanzania,TZA,"Apr 22, 2020",0.05
 Tanzania,TZA,"Apr 23, 2020",0.033
 Tanzania,TZA,"Apr 30, 2020",0.1
+Tanzania,TZA,"May 5, 2020",0.033
 Thailand,THA,"Mar 1, 2020",0.014
 Thailand,THA,"Mar 24, 2020",0.043
 Thailand,THA,"Mar 27, 2020",0.014
@@ -3993,6 +4077,7 @@ Tunisia,TUN,"Apr 28, 2020",0.085
 Tunisia,TUN,"Apr 29, 2020",0.085
 Tunisia,TUN,"May 2, 2020",0.085
 Tunisia,TUN,"May 3, 2020",0.085
+Tunisia,TUN,"May 5, 2020",0.085
 Turkey,TUR,"Mar 19, 2020",0.012
 Turkey,TUR,"Mar 20, 2020",0.036
 Turkey,TUR,"Mar 21, 2020",0.059
@@ -4040,6 +4125,7 @@ Turkey,TUR,"May 1, 2020",1.103
 Turkey,TUR,"May 2, 2020",0.996
 Turkey,TUR,"May 3, 2020",0.925
 Turkey,TUR,"May 4, 2020",0.723
+Turkey,TUR,"May 5, 2020",0.759
 Turks and Caicos Islands,TCA,"Apr 6, 2020",25.828
 Ukraine,UKR,"Mar 19, 2020",0.046
 Ukraine,UKR,"Mar 21, 2020",0.023
@@ -4078,6 +4164,7 @@ Ukraine,UKR,"Apr 29, 2020",0.434
 Ukraine,UKR,"Apr 30, 2020",0.252
 Ukraine,UKR,"May 2, 2020",0.663
 Ukraine,UKR,"May 4, 2020",0.206
+Ukraine,UKR,"May 5, 2020",0.343
 United Arab Emirates,ARE,"Mar 22, 2020",0.202
 United Arab Emirates,ARE,"Mar 31, 2020",0.303
 United Arab Emirates,ARE,"Apr 1, 2020",0.101
@@ -4108,6 +4195,7 @@ United Arab Emirates,ARE,"May 1, 2020",0.708
 United Arab Emirates,ARE,"May 2, 2020",0.607
 United Arab Emirates,ARE,"May 3, 2020",0.809
 United Arab Emirates,ARE,"May 4, 2020",0.708
+United Arab Emirates,ARE,"May 5, 2020",1.112
 United Kingdom,GBR,"Mar 7, 2020",0.015
 United Kingdom,GBR,"Mar 8, 2020",0.015
 United Kingdom,GBR,"Mar 10, 2020",0.015
@@ -4165,6 +4253,7 @@ United Kingdom,GBR,"May 1, 2020",9.928
 United Kingdom,GBR,"May 2, 2020",10.886
 United Kingdom,GBR,"May 3, 2020",9.148
 United Kingdom,GBR,"May 4, 2020",4.64
+United Kingdom,GBR,"May 5, 2020",4.242
 United States,USA,"Mar 1, 2020",0.003
 United States,USA,"Mar 2, 2020",0.003
 United States,USA,"Mar 3, 2020",0.012
@@ -4229,6 +4318,7 @@ United States,USA,"May 1, 2020",6.163
 United States,USA,"May 2, 2020",6.23
 United States,USA,"May 3, 2020",3.979
 United States,USA,"May 4, 2020",3.918
+United States,USA,"May 5, 2020",3.782
 United States Virgin Islands,VIR,"Apr 6, 2020",9.576
 United States Virgin Islands,VIR,"Apr 18, 2020",9.576
 United States Virgin Islands,VIR,"Apr 19, 2020",9.576
@@ -4356,16 +4446,17 @@ World,OWID_WRL,"Apr 21, 2020",0.685
 World,OWID_WRL,"Apr 22, 2020",0.934
 World,OWID_WRL,"Apr 23, 2020",0.783
 World,OWID_WRL,"Apr 24, 2020",0.955
-World,OWID_WRL,"Apr 25, 2020",0.694
-World,OWID_WRL,"Apr 26, 2020",0.802
+World,OWID_WRL,"Apr 25, 2020",0.697
+World,OWID_WRL,"Apr 26, 2020",0.801
 World,OWID_WRL,"Apr 27, 2020",0.504
 World,OWID_WRL,"Apr 28, 2020",0.628
 World,OWID_WRL,"Apr 29, 2020",0.836
-World,OWID_WRL,"Apr 30, 2020",0.857
+World,OWID_WRL,"Apr 30, 2020",0.856
 World,OWID_WRL,"May 1, 2020",0.71
-World,OWID_WRL,"May 2, 2020",0.751
+World,OWID_WRL,"May 2, 2020",0.749
 World,OWID_WRL,"May 3, 2020",0.612
-World,OWID_WRL,"May 4, 2020",0.449
+World,OWID_WRL,"May 4, 2020",0.452
+World,OWID_WRL,"May 5, 2020",0.51
 Yemen,YEM,"May 1, 2020",0.067
 Zambia,ZMB,"Apr 3, 2020",0.054
 Zambia,ZMB,"Apr 11, 2020",0.054
