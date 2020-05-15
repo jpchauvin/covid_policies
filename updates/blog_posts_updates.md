@@ -1,6 +1,10 @@
 #  Blog posts figures updates
 
-The data underlying the blog post are rapidly changing, and the published figures may become outdated. Below you can find reproductions of these figures using more up-to-date data. Last update: May 15, 2020.
+The data underlying the blog post are rapidly changing, and the published figures may become outdated. Below you can find reproductions of these figures using more up-to-date data.
+
+In multiple countries, the decrease in the number of reported daily cases after reaching the peak has not been consistent enough for the algorithm to classify them as currently in stage D. In fact, a few countries have seen new increases in cases, such the algorithm has re-classified their current stage from D to C.
+
+ Last update: May 15, 2020.
 
 ## Where is Latin America and Caribbean on the COVID-19 Curve?
 
