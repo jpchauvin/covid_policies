@@ -20,8 +20,6 @@
  /* Settings                                    */
  /*************************************************/
 
-global dropbox "/nfs/home/J/jchauvin/shared_space/data_urb/covid_projects/"
-
 /* Set the folder structure and install packages*/
 do "$dropbox/covid_policies/build/scripts/settings.do"
 
